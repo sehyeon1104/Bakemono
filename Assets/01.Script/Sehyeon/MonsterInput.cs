@@ -7,14 +7,18 @@ public class MonsterInput : MonoBehaviour
     [Header("몬스터가 입력받는 모든것을 넣는 스크립트")]
 
     [SerializeField] UnityEvent<Vector3> moveKeyPress;
-    [SerializeField] UnityEvent AttackButtonPress;
+    [SerializeField] UnityEvent JumpButtonPress;
+
+    [SerializeField]
+    float jump = 5;
     void Update()
     {
-        MonsterMove();  
+        MonsterMove();
     }
-    void MonsterMove()
+   public void MonsterMove()
     {
-        moveKeyPress?.Invoke(new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")));
+        moveKeyPress?.Invoke(new Vector3(Input.GetAxisRaw("Horizontal"), jump, Input.GetAxisRaw("Vertical")));
     }
+    
     
 }
