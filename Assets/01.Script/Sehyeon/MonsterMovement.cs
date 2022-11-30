@@ -15,15 +15,14 @@ public class MonsterMovement : MonoBehaviour
     [SerializeField]
     float animatoinSpeed = 10;
     [SerializeField]
-    float jumpSpeed = 5;
+    float jumpSpeed = 3;
     [SerializeField]
     float gravity = 10f;
     readonly int jump = Animator.StringToHash("Jump");
-    readonly int attack = Animator.StringToHash("Attack");
     readonly int horizontal = Animator.StringToHash("Horizontal");
     readonly int vertical = Animator.StringToHash("Vertical");
 
-    public Vector3 cashed_move;
+    public Vector3 cashed_move = Vector3.zero;
     private void Awake()
     {
         monstercontroller = GetComponent<CharacterController>();
@@ -43,17 +42,20 @@ public class MonsterMovement : MonoBehaviour
         }
         monsterAni.SetFloat(horizontal, x);
         monsterAni.SetFloat(vertical, z);
+
+        cashed_move.x = moveInput.x;
+        cashed_move.z = moveInput.z;
+
         if (Input.GetKeyDown(KeyCode.Space)&&monstercontroller.isGrounded)
         {
-            cashed_move.y = jumpSpeed;
-            
             monsterAni.SetTrigger(jump);
+            cashed_move.y = jumpSpeed;   
         }
         else if(!monstercontroller.isGrounded)
         {
-            cashed_move.y -= gravity * Time.deltaTime;
+           cashed_move.y -= gravity * Time.deltaTime;
         }
-        monstercontroller.Move(moveInput * speed*Time.deltaTime);
+        monstercontroller.Move(cashed_move * speed*Time.deltaTime);
 
     }
 
