@@ -15,7 +15,7 @@ public class MonsterMovement : MonoBehaviour
     [SerializeField]
     float animatoinSpeed = 10;
     [SerializeField]
-    float jumpSpeed = 3;
+    float jumpSpeed = 2;
     [SerializeField]
     float gravity = 10f;
     readonly int jump = Animator.StringToHash("Jump");
