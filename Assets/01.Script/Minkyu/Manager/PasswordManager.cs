@@ -45,16 +45,16 @@ public class PasswordManager : MonoBehaviour
 
     public void InputPassword()
     {
+        if(pivot > 2)
+        {
+            return;
+        }
         string n = "";
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
         n = clickObject.GetComponentInChildren<TextMeshProUGUI>().text;
 
         pivot++;
 
-        if(pivot > 3)
-        {
-            return;
-        }
 
         inputPasswords[pivot].text = n;
     }
@@ -66,7 +66,7 @@ public class PasswordManager : MonoBehaviour
             pivot = 0;
         }
 
-        inputPasswords[pivot].text = "0";
+        inputPasswords[pivot].text = "-";
         pivot--;
     }
 
