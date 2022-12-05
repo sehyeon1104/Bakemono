@@ -11,10 +11,13 @@ public class PasswordManager : MonoBehaviour
     private TextMeshProUGUI[] inputPasswords = new TextMeshProUGUI[4];
     int pivot = -1;
 
+    [Header("SetPasswordRoom")]
     [SerializeField]
     private List<GameObject> passwordRoom = new List<GameObject>();     // 암호가 생성될 수 있는 모든 방
     [SerializeField]
     private GameObject[] passwordRoomLocation = new GameObject[4];      // 암호가 생성될 방 4개
+    [SerializeField]
+    private TextMeshProUGUI[] passwordHint = new TextMeshProUGUI[4];
 
     private void Awake()
     {
@@ -88,11 +91,6 @@ public class PasswordManager : MonoBehaviour
             Debug.LogError("암호 배치 구역이 정해지지 않음");
         }
 
-        for(int i = 0; i < passwordRoom.Count; ++i)
-        {
-            Debug.Log(passwordRoom[i].name);
-        }
-
         // 암호가 배치될 수 있는 모든 구역 셔플
         for(int i = 0; i < 100; ++i)
         {
@@ -102,17 +100,15 @@ public class PasswordManager : MonoBehaviour
             passwordRoom.Add(temp);
         }
 
-        Debug.Log("Shuffle");
-
-        for (int i = 0; i < passwordRoom.Count; ++i)
-        {
-            Debug.Log(passwordRoom[i].name);
-        }
-
         // 암호가 생성될 방 설정
         for(int i = 0; i < 4; ++i)
         {
             passwordRoomLocation[i] = passwordRoom[i];
+        }
+
+        for(int i = 0; i < 4; ++i)
+        {
+            passwordHint[i].text = (i + 1) + password[i].ToString();
         }
     }
 }
