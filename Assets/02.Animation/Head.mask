@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Head
+  m_Mask: 00000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: root
+    m_Weight: 1
+  - m_Path: root/Dimaxillosaurus_
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ L Thigh
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ L Thigh/Dimaxillosaurus_
+      L Calf
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ L Thigh/Dimaxillosaurus_
+      L Calf/Dimaxillosaurus_ L Foot
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ L Thigh/Dimaxillosaurus_
+      L Calf/Dimaxillosaurus_ L Foot/Dimaxillosaurus_ L Toe0
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ L Thigh/Dimaxillosaurus_
+      L Calf/Dimaxillosaurus_ L Foot/Dimaxillosaurus_ L Toe1
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ L Thigh/Dimaxillosaurus_
+      L Calf/Dimaxillosaurus_ L Foot/Dimaxillosaurus_ L Toe2
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ R Thigh
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ R Thigh/Dimaxillosaurus_
+      R Calf
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ R Thigh/Dimaxillosaurus_
+      R Calf/Dimaxillosaurus_ R Foot
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ R Thigh/Dimaxillosaurus_
+      R Calf/Dimaxillosaurus_ R Foot/Dimaxillosaurus_ R Toe0
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ R Thigh/Dimaxillosaurus_
+      R Calf/Dimaxillosaurus_ R Foot/Dimaxillosaurus_ R Toe1
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ R Thigh/Dimaxillosaurus_
+      R Calf/Dimaxillosaurus_ R Foot/Dimaxillosaurus_ R Toe2
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm/Dimaxillosaurus_ L Forearm
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm/Dimaxillosaurus_ L Forearm/Dimaxillosaurus_ L Hand
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm/Dimaxillosaurus_ L Forearm/Dimaxillosaurus_ L Hand/Dimaxillosaurus_
+      L Finger0
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm/Dimaxillosaurus_ L Forearm/Dimaxillosaurus_ L Hand/Dimaxillosaurus_
+      L Finger0/Dimaxillosaurus_ L Finger01
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm/Dimaxillosaurus_ L Forearm/Dimaxillosaurus_ L Hand/Dimaxillosaurus_
+      L Finger1
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm/Dimaxillosaurus_ L Forearm/Dimaxillosaurus_ L Hand/Dimaxillosaurus_
+      L Finger1/Dimaxillosaurus_ L Finger11
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm/Dimaxillosaurus_ L Forearm/Dimaxillosaurus_ L Hand/Dimaxillosaurus_
+      L Finger2
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ L Clavicle/Dimaxillosaurus_
+      L UpperArm/Dimaxillosaurus_ L Forearm/Dimaxillosaurus_ L Hand/Dimaxillosaurus_
+      L Finger2/Dimaxillosaurus_ L Finger21
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck
+    m_Weight: 1
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft/Dimaxillosaurus_TongueLeft1
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft/Dimaxillosaurus_TongueLeft1/Dimaxillosaurus_TongueLeft2
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft/Dimaxillosaurus_TongueLeft1/Dimaxillosaurus_TongueLeft2/Dimaxillosaurus_TongueLeft3
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft/Dimaxillosaurus_TongueLeft1/Dimaxillosaurus_TongueLeft2/Dimaxillosaurus_TongueLeft3/Dimaxillosaurus_TongueLeft4
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft/Dimaxillosaurus_TongueLeft1/Dimaxillosaurus_TongueLeft2/Dimaxillosaurus_TongueLeft3/Dimaxillosaurus_TongueLeft4/Dimaxillosaurus_TongueLeft5
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft/Dimaxillosaurus_TongueLeft1/Dimaxillosaurus_TongueLeft2/Dimaxillosaurus_TongueLeft3/Dimaxillosaurus_TongueLeft4/Dimaxillosaurus_TongueLeft5/Dimaxillosaurus_TongueLeft6
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft/Dimaxillosaurus_TongueLeft1/Dimaxillosaurus_TongueLeft2/Dimaxillosaurus_TongueLeft3/Dimaxillosaurus_TongueLeft4/Dimaxillosaurus_TongueLeft5/Dimaxillosaurus_TongueLeft6/Dimaxillosaurus_TongueLeft7
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawLeft/Dimaxillosaurus_TongueLeft1/Dimaxillosaurus_TongueLeft2/Dimaxillosaurus_TongueLeft3/Dimaxillosaurus_TongueLeft4/Dimaxillosaurus_TongueLeft5/Dimaxillosaurus_TongueLeft6/Dimaxillosaurus_TongueLeft7/Dimaxillosaurus_TongueLeft8
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight/Dimaxillosaurus_TongueRight1
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight/Dimaxillosaurus_TongueRight1/Dimaxillosaurus_TongueRight2
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight/Dimaxillosaurus_TongueRight1/Dimaxillosaurus_TongueRight2/Dimaxillosaurus_TongueRight3
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight/Dimaxillosaurus_TongueRight1/Dimaxillosaurus_TongueRight2/Dimaxillosaurus_TongueRight3/Dimaxillosaurus_TongueRight4
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight/Dimaxillosaurus_TongueRight1/Dimaxillosaurus_TongueRight2/Dimaxillosaurus_TongueRight3/Dimaxillosaurus_TongueRight4/Dimaxillosaurus_TongueRight5
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight/Dimaxillosaurus_TongueRight1/Dimaxillosaurus_TongueRight2/Dimaxillosaurus_TongueRight3/Dimaxillosaurus_TongueRight4/Dimaxillosaurus_TongueRight5/Dimaxillosaurus_TongueRight6
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight/Dimaxillosaurus_TongueRight1/Dimaxillosaurus_TongueRight2/Dimaxillosaurus_TongueRight3/Dimaxillosaurus_TongueRight4/Dimaxillosaurus_TongueRight5/Dimaxillosaurus_TongueRight6/Dimaxillosaurus_TongueRight7
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ Neck/Dimaxillosaurus_ Head/Dimaxillosaurus_JawRight/Dimaxillosaurus_TongueRight1/Dimaxillosaurus_TongueRight2/Dimaxillosaurus_TongueRight3/Dimaxillosaurus_TongueRight4/Dimaxillosaurus_TongueRight5/Dimaxillosaurus_TongueRight6/Dimaxillosaurus_TongueRight7/Dimaxillosaurus_TongueRight8
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm/Dimaxillosaurus_ R Forearm
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm/Dimaxillosaurus_ R Forearm/Dimaxillosaurus_ R Hand
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm/Dimaxillosaurus_ R Forearm/Dimaxillosaurus_ R Hand/Dimaxillosaurus_
+      R Finger0
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm/Dimaxillosaurus_ R Forearm/Dimaxillosaurus_ R Hand/Dimaxillosaurus_
+      R Finger0/Dimaxillosaurus_ R Finger01
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm/Dimaxillosaurus_ R Forearm/Dimaxillosaurus_ R Hand/Dimaxillosaurus_
+      R Finger1
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm/Dimaxillosaurus_ R Forearm/Dimaxillosaurus_ R Hand/Dimaxillosaurus_
+      R Finger1/Dimaxillosaurus_ R Finger11
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm/Dimaxillosaurus_ R Forearm/Dimaxillosaurus_ R Hand/Dimaxillosaurus_
+      R Finger2
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Spine/Dimaxillosaurus_
+      Spine1/Dimaxillosaurus_ Spine2/Dimaxillosaurus_ R Clavicle/Dimaxillosaurus_
+      R UpperArm/Dimaxillosaurus_ R Forearm/Dimaxillosaurus_ R Hand/Dimaxillosaurus_
+      R Finger2/Dimaxillosaurus_ R Finger21
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1/Dimaxillosaurus_ Tail2
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1/Dimaxillosaurus_ Tail2/Dimaxillosaurus_ Tail3
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1/Dimaxillosaurus_ Tail2/Dimaxillosaurus_ Tail3/Dimaxillosaurus_ Tail4
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1/Dimaxillosaurus_ Tail2/Dimaxillosaurus_ Tail3/Dimaxillosaurus_ Tail4/Dimaxillosaurus_
+      Tail5
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1/Dimaxillosaurus_ Tail2/Dimaxillosaurus_ Tail3/Dimaxillosaurus_ Tail4/Dimaxillosaurus_
+      Tail5/Dimaxillosaurus_ Tail6
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1/Dimaxillosaurus_ Tail2/Dimaxillosaurus_ Tail3/Dimaxillosaurus_ Tail4/Dimaxillosaurus_
+      Tail5/Dimaxillosaurus_ Tail6/Dimaxillosaurus_ Tail7
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1/Dimaxillosaurus_ Tail2/Dimaxillosaurus_ Tail3/Dimaxillosaurus_ Tail4/Dimaxillosaurus_
+      Tail5/Dimaxillosaurus_ Tail6/Dimaxillosaurus_ Tail7/Dimaxillosaurus_ Tail8
+    m_Weight: 0
+  - m_Path: root/Dimaxillosaurus_/Dimaxillosaurus_ Pelvis/Dimaxillosaurus_ Tail/Dimaxillosaurus_
+      Tail1/Dimaxillosaurus_ Tail2/Dimaxillosaurus_ Tail3/Dimaxillosaurus_ Tail4/Dimaxillosaurus_
+      Tail5/Dimaxillosaurus_ Tail6/Dimaxillosaurus_ Tail7/Dimaxillosaurus_ Tail8/Dimaxillosaurus_
+      Tail9
+    m_Weight: 0
+  - m_Path: SK_Dimaxillosaurus
+    m_Weight: 1

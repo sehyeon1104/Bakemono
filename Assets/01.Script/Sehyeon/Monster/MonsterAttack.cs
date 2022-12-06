@@ -12,6 +12,7 @@ public class MonsterAttack : MonoBehaviour
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
+    readonly int RightAttack = Animator.StringToHash("RAttack");
     bool isLeft = true;
     void Start()
     {
@@ -31,6 +32,7 @@ public class MonsterAttack : MonoBehaviour
         {
             isClick = true;
         }
+
         if (Input.GetMouseButtonDown(0) && isClick && info.shortNameHash == IdleNameHash)
         {
             totalTime = 0;

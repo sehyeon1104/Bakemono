@@ -7,6 +7,7 @@ public class MonsterMovement : MonoBehaviour
 {
     float x;
     float z;
+    public Vector3 rotateValue; 
     CharacterController monstercontroller;
     Animator monsterAni;
     [SerializeField]
@@ -15,18 +16,32 @@ public class MonsterMovement : MonoBehaviour
     [SerializeField]
     float animatoinSpeed = 10;
     [SerializeField]
+    float rotateAniSpeed = 0.1f;
+    [SerializeField]
     float jumpSpeed = 2;
     [SerializeField]
     float gravity = 10f;
     readonly int jump = Animator.StringToHash("Jump");
     readonly int horizontal = Animator.StringToHash("Horizontal");
     readonly int vertical = Animator.StringToHash("Vertical");
-
+    readonly int headValue = Animator.StringToHash("Head");
     public Vector3 cashed_move = Vector3.zero;
     private void Awake()
     {
+        rotateValue = new Vector3(0,0.3f,0);
         monstercontroller = GetComponent<CharacterController>();
         monsterAni = GetComponent<Animator>();
+    }
+    public void RotateMonster(float rotateInput) 
+    {
+        print(rotateInput);
+        float rotateLerp = Mathf.MoveTowards(monsterAni.GetFloat(headValue), rotateInput, Time.deltaTime * rotateAniSpeed);
+        if(Mathf.Abs(rotateLerp)<0.1f)
+        {
+            rotateLerp = 0;
+        }
+        transform.rotation *= Quaternion.Euler(rotateInput * rotateValue); 
+        monsterAni.SetFloat(headValue, rotateLerp);
     }
     public void MoveMonster(Vector3 moveInput)
     { 
