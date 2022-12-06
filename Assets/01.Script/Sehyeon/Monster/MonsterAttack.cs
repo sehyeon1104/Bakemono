@@ -6,13 +6,12 @@ public class MonsterAttack : MonoBehaviour
 {
     [SerializeField]
     bool isRight = false;
-    bool isClick = true;
-    bool once = true;
+    public bool isClick = true;
     float totalTime = 0;
-    float animTime = 0;
     Animator monsterAni;
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
+    readonly int IdleNameHash = Animator.StringToHash("Idle");
     bool isLeft = true;
     void Start()
     {
@@ -26,10 +25,16 @@ public class MonsterAttack : MonoBehaviour
     void Attack()
     {
         totalTime += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && isClick == true)
+        AnimatorStateInfo info = monsterAni.GetCurrentAnimatorStateInfo(1);
+
+        if (totalTime > 1f)
         {
-            isClick = false;
+            isClick = true;
+        }
+        if (Input.GetMouseButtonDown(0) && isClick && (info.shortNameHash == IdleNameHash || info.normalizedTime >= 1))
+        {
             totalTime = 0;
+            isClick = false;
             if (isLeft) //¿ÞÂÊ °ø°Ý
             {
                 monsterAni.SetTrigger(leftAttack);
@@ -41,10 +46,7 @@ public class MonsterAttack : MonoBehaviour
                 isLeft = true;
             }
         }
-        if (monsterAni.GetCurrentAnimatorStateInfo(1).normalizedTime >= 0.99f)
-        {
-            isClick = true;
-        }
+
         if (totalTime > 15f)
         {
             isLeft = true;

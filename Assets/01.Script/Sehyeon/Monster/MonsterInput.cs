@@ -15,7 +15,7 @@ public class MonsterInput : MonoBehaviour
     }
    public void MonsterMove()
     {
-        moveKeyPress?.Invoke(new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized);
+        moveKeyPress?.Invoke(transform.rotation * (new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"))).normalized);
     }
     
     
