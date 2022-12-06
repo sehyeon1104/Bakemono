@@ -27,11 +27,11 @@ public class MonsterAttack : MonoBehaviour
         totalTime += Time.deltaTime;
         AnimatorStateInfo info = monsterAni.GetCurrentAnimatorStateInfo(1);
 
-        if (totalTime > 1f)
+        if (totalTime > 0.5f)
         {
             isClick = true;
         }
-        if (Input.GetMouseButtonDown(0) && isClick && (info.shortNameHash == IdleNameHash || info.normalizedTime >= 1))
+        if (Input.GetMouseButtonDown(0) && isClick && info.shortNameHash == IdleNameHash)
         {
             totalTime = 0;
             isClick = false;
