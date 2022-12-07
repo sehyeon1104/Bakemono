@@ -36,7 +36,7 @@ public class PlayerBase
 
     void CallPlayerInfo()
     {
-        maxHp = 10;
+        maxHp = SaveManager.Instance.CurrentUser.maxHp;
         hp = maxHp;
     }
 

@@ -16,7 +16,7 @@ public class MonsterMovement : MonoBehaviour
     [SerializeField]
     float animatoinSpeed = 10;
     [SerializeField]
-    float rotateAniSpeed = 0.5f;
+    float rotateAniSpeed = 0.1f;
     [SerializeField]
     float jumpSpeed = 2;
     [SerializeField]
@@ -24,22 +24,24 @@ public class MonsterMovement : MonoBehaviour
     readonly int jump = Animator.StringToHash("Jump");
     readonly int horizontal = Animator.StringToHash("Horizontal");
     readonly int vertical = Animator.StringToHash("Vertical");
-    readonly int turnValue = Animator.StringToHash("TurnValue");
-    readonly int isTurn = Animator.StringToHash("IsTurn");
+    readonly int headValue = Animator.StringToHash("Head");
     public Vector3 cashed_move = Vector3.zero;
     private void Awake()
     {
-        rotateValue = new Vector3(0,1,0);
+        rotateValue = new Vector3(0,0.3f,0);
         monstercontroller = GetComponent<CharacterController>();
         monsterAni = GetComponent<Animator>();
     }
-    public void RotateMonster(float rotateInput)     
+    public void RotateMonster(float rotateInput) 
     {
-       rotateInput =Mathf.Clamp(rotateInput,-7,7); 
-        monsterAni.SetBool(isTurn, Mathf.Abs(rotateInput) >= float.Epsilon && cashed_move.x==0&&cashed_move.z==0);   
-        monsterAni.SetFloat(turnValue, rotateInput/0.9f);
+        //print(rotateInput);
+        float rotateLerp = Mathf.MoveTowards(monsterAni.GetFloat(headValue), rotateInput, Time.deltaTime * rotateAniSpeed);
+        if(Mathf.Abs(rotateLerp)<0.1f)
+        {
+            rotateLerp = 0;
+        }
         transform.rotation *= Quaternion.Euler(rotateInput * rotateValue); 
-       
+        monsterAni.SetFloat(headValue, rotateLerp);
     }
     public void MoveMonster(Vector3 moveInput)
     { 
