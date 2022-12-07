@@ -34,7 +34,7 @@ public class MonsterMovement : MonoBehaviour
     }
     public void RotateMonster(float rotateInput) 
     {
-        print(rotateInput);
+        //print(rotateInput);
         float rotateLerp = Mathf.MoveTowards(monsterAni.GetFloat(headValue), rotateInput, Time.deltaTime * rotateAniSpeed);
         if(Mathf.Abs(rotateLerp)<0.1f)
         {
