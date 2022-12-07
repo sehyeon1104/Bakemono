@@ -24,7 +24,8 @@ public class MonsterMovement : MonoBehaviour
     readonly int jump = Animator.StringToHash("Jump");
     readonly int horizontal = Animator.StringToHash("Horizontal");
     readonly int vertical = Animator.StringToHash("Vertical");
-    readonly int headValue = Animator.StringToHash("Head");
+    readonly int headValue = Animator.StringToHash("TurnValue");
+    readonly int isTurn = Animator.StringToHash("IsTurn");
     public Vector3 cashed_move = Vector3.zero;
     private void Awake()
     {
@@ -35,13 +36,10 @@ public class MonsterMovement : MonoBehaviour
     public void RotateMonster(float rotateInput) 
     {
         //print(rotateInput);
-        float rotateLerp = Mathf.MoveTowards(monsterAni.GetFloat(headValue), rotateInput, Time.deltaTime * rotateAniSpeed);
-        if(Mathf.Abs(rotateLerp)<0.1f)
-        {
-            rotateLerp = 0;
-        }
+        rotateInput = Mathf.Clamp(rotateInput, -10, 10);
+        monsterAni.SetBool(isTurn, cashed_move.x == 0 && cashed_move.z == 0 && Mathf.Abs(rotateInput) >= float.Epsilon);
         transform.rotation *= Quaternion.Euler(rotateInput * rotateValue); 
-        monsterAni.SetFloat(headValue, rotateLerp);
+        monsterAni.SetFloat(headValue, rotateInput);
     }
     public void MoveMonster(Vector3 moveInput)
     { 
