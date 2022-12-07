@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class User : MonoBehaviour
+[System.Serializable]
+public class User
 {
+    public int maxHp = 10;
+    public int hp = 10;
     public float experience = 0f;
     public int level = 0;
     public int[] maxExperience = { 1, 2, 3, 4, 5 };
