@@ -18,7 +18,7 @@ public class MonsterMovement : MonoBehaviour
     [SerializeField]
     float rotateAniSpeed = 0.1f;
     [SerializeField]
-    float jumpSpeed = 2;
+    float jumpSpeed = 2f;
     [SerializeField]
     float gravity = 10f;
     readonly int jump = Animator.StringToHash("Jump");
@@ -68,7 +68,7 @@ public class MonsterMovement : MonoBehaviour
         {
            cashed_move.y -= gravity * Time.deltaTime;
         }
-        monstercontroller.Move(cashed_move * speed*Time.deltaTime);
+        monstercontroller.Move(transform.rotation*(cashed_move * speed*Time.deltaTime));
 
     }
 

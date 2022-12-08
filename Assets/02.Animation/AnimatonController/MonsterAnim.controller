@@ -423,7 +423,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump
-  m_Speed: 1
+  m_Speed: 1.31
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 6341992671544452098}
@@ -568,7 +568,7 @@ AnimatorStateMachine:
     m_Position: {x: 530, y: 220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3673559470547018569}
-    m_Position: {x: 630, y: -80, z: 0}
+    m_Position: {x: 780, y: -280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6807022795821878121}
     m_Position: {x: 690, y: 80, z: 0}
@@ -615,7 +615,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WalkLeft
-  m_Speed: 0.2
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8738823857973445859}
@@ -626,7 +626,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_SpeedParameterActive: 1
+  m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
@@ -827,7 +827,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WalkRight
-  m_Speed: 0.2
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 5598161442063234582}
@@ -838,7 +838,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_SpeedParameterActive: 1
+  m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0

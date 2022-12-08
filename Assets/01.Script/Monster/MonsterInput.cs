@@ -9,8 +9,6 @@ public class MonsterInput : MonoBehaviour
     [SerializeField] UnityEvent<Vector3> moveKeyPress;
 
     [SerializeField] UnityEvent<float> rotateMouse;
-    
-    
     void Update()
     {
         MonsterMove();
@@ -21,8 +19,8 @@ public class MonsterInput : MonoBehaviour
         rotateMouse?.Invoke(Input.GetAxisRaw("Mouse X"));
     }
    public void MonsterMove()
-    {
-        moveKeyPress?.Invoke(transform.rotation * (new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"))).normalized);
+    {   
+        moveKeyPress?.Invoke((new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"))).normalized);
     }
     
     

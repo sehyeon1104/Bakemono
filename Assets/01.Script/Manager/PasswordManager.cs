@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.TextCore.Text;
 
 public class PasswordManager : MonoBehaviour
 {
+    public TMP_FontAsset fontAsset;
     private string password = "";
     [SerializeField]
     private TextMeshProUGUI[] inputPasswords;
@@ -108,6 +110,7 @@ public class PasswordManager : MonoBehaviour
         {
             passwordRoom[i].SetActive(true);
             passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().text = (i + 1) + password[i].ToString();
+            passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().font = fontAsset;
         }
 
     }
