@@ -42,7 +42,7 @@ Material:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _DissolveAmount: 2
-    - _Scale: 36.4
+    - _Scale: 41.6
     - _Speed: 0.15
     - _TwirlStrength: 29.4
     m_Colors:

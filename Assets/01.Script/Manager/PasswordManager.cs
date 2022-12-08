@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.TextCore.Text;
 
 public class PasswordManager : MonoBehaviour
 {
+    public Texture faceTexture;
+    public TMP_FontAsset fontAsset;
     private string password = "";
     [SerializeField]
-    private TextMeshProUGUI[] inputPasswords = new TextMeshProUGUI[4];
+    private TextMeshProUGUI[] inputPasswords;
     int pivot = -1;
 
     [Header("SetPasswordRoom")]
     [SerializeField]
     private List<GameObject> passwordRoom = new List<GameObject>();     // 암호가 생성될 수 있는 모든 방
     [SerializeField]
-    private GameObject[] passwordRoomLocation = new GameObject[4];      // 암호가 생성될 방 4개
-    [SerializeField]
-    private TextMeshProUGUI[] passwordHint = new TextMeshProUGUI[4];
+    private GameObject[] passwordRoomLocation;      // 암호가 생성될 방 4개
 
     private void Awake()
     {
@@ -100,15 +101,21 @@ public class PasswordManager : MonoBehaviour
             passwordRoom.Add(temp);
         }
 
-        // 암호가 생성될 방 설정
-        for(int i = 0; i < 4; ++i)
+        for(int i = 0; i < passwordRoom.Count; ++i)
         {
-            passwordRoomLocation[i] = passwordRoom[i];
+            passwordRoom[i].SetActive(false);
         }
 
-        for(int i = 0; i < 4; ++i)
+        // 암호가 생성될 방 설정
+        for (int i = 0; i < 4; ++i)
         {
-            passwordHint[i].text = (i + 1) + password[i].ToString();
+            passwordRoom[i].SetActive(true);
+            passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().text = (i + 1) + password[i].ToString();
+            passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().font = fontAsset;
+            passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
+            //passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().fontMaterial.SetColor("_FaceColor", Color.red);
+
         }
+
     }
 }

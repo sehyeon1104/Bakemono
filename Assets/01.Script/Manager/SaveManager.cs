@@ -8,9 +8,9 @@ public class SaveManager : MonoSingleton<SaveManager>
     private string SAVE_PATH = "";
     private string SAVE_FILENAME = "/SaveFile.json";
 
-    [SerializeField] private PlayerBase playerData = null;
+    [SerializeField] private User user = null;
 
-    public PlayerBase CurrentUser { get { return playerData; } }
+    public User CurrentUser { get { return user; } }
 
     private void Awake()
     {
@@ -25,7 +25,8 @@ public class SaveManager : MonoSingleton<SaveManager>
 
     private void Start()
     {
-        InvokeRepeating("SaveToJson", 1f, 60f);
+        SaveToJson();
+        //InvokeRepeating("SaveToJson", 1f, 60f);
     }
 
     private void LoadFromJson()
@@ -34,13 +35,13 @@ public class SaveManager : MonoSingleton<SaveManager>
         {
             string json = File.ReadAllText(SAVE_PATH + SAVE_FILENAME);
             json = Crypto.AESDecrypt128(json);
-            playerData = JsonUtility.FromJson<PlayerBase>(json);
+            user = JsonUtility.FromJson<User>(json);
         }
     }
 
     public void SaveToJson()
     {
-        string json = JsonUtility.ToJson(playerData, true);
+        string json = JsonUtility.ToJson(user, true);
         json = Crypto.AESEncrypt128(json);
         File.WriteAllText(SAVE_PATH + SAVE_FILENAME, json, System.Text.Encoding.UTF8);
     }

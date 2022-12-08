@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 531e69bf2b5407345b4baafd03c9ba8b
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
@@ -17,6 +17,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -26,7 +27,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 0
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -46,6 +47,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -57,6 +59,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -80,7 +83,352 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Dimaxillosaurus@WalkBackwards_RM(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -0.26302373, y: 0.066598155, z: -0.009152322, w: 0.96244454}
+      scale: {x: 1, y: 1, z: 1}
+    - name: root
+      parentName: Dimaxillosaurus@WalkBackwards_RM(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Dimaxillosaurus_
+      parentName: root
+      position: {x: -0, y: 0.08997294, z: 1.10426}
+      rotation: {x: 0.1957088, y: -0.21369, z: 0.6279316, w: 0.72231334}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Dimaxillosaurus_ Pelvis
+      parentName: Dimaxillosaurus_
+      position: {x: -0.6171832, y: -0.03241527, z: 0.37731832}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ Spine
+      parentName: Dimaxillosaurus_ Pelvis
+      position: {x: -0.20458892, y: -0.07018654, z: -0.003970692}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ Spine1
+      parentName: Dimaxillosaurus_ Spine
+      position: {x: -0.31320265, y: -0.00024673462, z: 0.0000015974044}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ Spine2
+      parentName: Dimaxillosaurus_ Spine1
+      position: {x: -0.3132026, y: -0.00024673462, z: 0.0000015926361}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 1}
+    - name: Dimaxillosaurus_ Neck
+      parentName: Dimaxillosaurus_ Spine2
+      position: {x: -0.31327194, y: -0.00012153625, z: 0.000016479491}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ Head
+      parentName: Dimaxillosaurus_ Neck
+      position: {x: -0.20305431, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Dimaxillosaurus_JawRight
+      parentName: Dimaxillosaurus_ Head
+      position: {x: -0.18666595, y: 0.10111465, z: -0.17126566}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueRight1
+      parentName: Dimaxillosaurus_JawRight
+      position: {x: 0.049458884, y: 0.11630417, z: 0.027591057}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueRight2
+      parentName: Dimaxillosaurus_TongueRight1
+      position: {x: -0.108055726, y: -0.00000015258789, z: 0.00000019073485}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.223365, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueRight3
+      parentName: Dimaxillosaurus_TongueRight2
+      position: {x: -0.123863064, y: 0, z: -0.00000034332274}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueRight4
+      parentName: Dimaxillosaurus_TongueRight3
+      position: {x: -0.13233337, y: 0.00000030517577, z: 0.00000030517577}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueRight5
+      parentName: Dimaxillosaurus_TongueRight4
+      position: {x: -0.16030441, y: 0.00000015258789, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueRight6
+      parentName: Dimaxillosaurus_TongueRight5
+      position: {x: -0.14389114, y: -0.00000030517577, z: -0.00000030517577}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueRight7
+      parentName: Dimaxillosaurus_TongueRight6
+      position: {x: -0.13603622, y: -0.00000030517577, z: 0.0000004959106}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueRight8
+      parentName: Dimaxillosaurus_TongueRight7
+      position: {x: -0.1174765, y: 0.0000024414062, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_JawLeft
+      parentName: Dimaxillosaurus_ Head
+      position: {x: -0.19810256, y: 0.10650741, z: 0.1661759}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueLeft1
+      parentName: Dimaxillosaurus_JawLeft
+      position: {x: 0.050008085, y: -0.116400756, z: 0.028155651}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueLeft2
+      parentName: Dimaxillosaurus_TongueLeft1
+      position: {x: -0.10805561, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.223366, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueLeft3
+      parentName: Dimaxillosaurus_TongueLeft2
+      position: {x: -0.123862915, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueLeft4
+      parentName: Dimaxillosaurus_TongueLeft3
+      position: {x: -0.13233398, y: -0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueLeft5
+      parentName: Dimaxillosaurus_TongueLeft4
+      position: {x: -0.16030426, y: -0.00000015258789, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueLeft6
+      parentName: Dimaxillosaurus_TongueLeft5
+      position: {x: -0.14389099, y: 0.00000015258789, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueLeft7
+      parentName: Dimaxillosaurus_TongueLeft6
+      position: {x: -0.13603607, y: 0.00000015258789, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_TongueLeft8
+      parentName: Dimaxillosaurus_TongueLeft7
+      position: {x: -0.117476195, y: -0.000002746582, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ L Clavicle
+      parentName: Dimaxillosaurus_ Spine2
+      position: {x: -0.28568968, y: 0.008685303, z: 0.094616696}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: Dimaxillosaurus_ L UpperArm
+      parentName: Dimaxillosaurus_ L Clavicle
+      position: {x: -0.35751346, y: -0.000000076293944, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Dimaxillosaurus_ L Forearm
+      parentName: Dimaxillosaurus_ L UpperArm
+      position: {x: -0.9025154, y: 0, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Dimaxillosaurus_ L Hand
+      parentName: Dimaxillosaurus_ L Forearm
+      position: {x: -0.7948846, y: 0.000000076293944, z: 0.00000015258789}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Dimaxillosaurus_ L Finger0
+      parentName: Dimaxillosaurus_ L Hand
+      position: {x: -0.09880943, y: 0.023907013, z: -0.0944783}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Dimaxillosaurus_ L Finger01
+      parentName: Dimaxillosaurus_ L Finger0
+      position: {x: -0.119812466, y: 0.00000015258789, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Dimaxillosaurus_ L Finger1
+      parentName: Dimaxillosaurus_ L Hand
+      position: {x: -0.24698074, y: -0.00003326416, z: -0.041695688}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Dimaxillosaurus_ L Finger11
+      parentName: Dimaxillosaurus_ L Finger1
+      position: {x: -0.09787288, y: 0.00000015258789, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ L Finger2
+      parentName: Dimaxillosaurus_ L Hand
+      position: {x: -0.24807549, y: 0.00005065918, z: 0.06362808}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Dimaxillosaurus_ L Finger21
+      parentName: Dimaxillosaurus_ L Finger2
+      position: {x: -0.09422386, y: 0, z: -0.000000114440915}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Dimaxillosaurus_ R Clavicle
+      parentName: Dimaxillosaurus_ Spine2
+      position: {x: -0.28568983, y: 0.00868576, z: -0.09461666}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Dimaxillosaurus_ R UpperArm
+      parentName: Dimaxillosaurus_ R Clavicle
+      position: {x: -0.35751343, y: 0.000000076293944, z: 0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Dimaxillosaurus_ R Forearm
+      parentName: Dimaxillosaurus_ R UpperArm
+      position: {x: -0.90251523, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Dimaxillosaurus_ R Hand
+      parentName: Dimaxillosaurus_ R Forearm
+      position: {x: -0.7948846, y: 0.000000038146972, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ R Finger0
+      parentName: Dimaxillosaurus_ R Hand
+      position: {x: -0.09880951, y: 0.023907164, z: 0.094478264}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: Dimaxillosaurus_ R Finger01
+      parentName: Dimaxillosaurus_ R Finger0
+      position: {x: -0.119812466, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999998}
+    - name: Dimaxillosaurus_ R Finger1
+      parentName: Dimaxillosaurus_ R Hand
+      position: {x: -0.24698074, y: -0.00003311157, z: 0.041695785}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Dimaxillosaurus_ R Finger11
+      parentName: Dimaxillosaurus_ R Finger1
+      position: {x: -0.09787288, y: 0, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Dimaxillosaurus_ R Finger2
+      parentName: Dimaxillosaurus_ R Hand
+      position: {x: -0.24807556, y: 0.00005065918, z: -0.06362804}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Dimaxillosaurus_ R Finger21
+      parentName: Dimaxillosaurus_ R Finger2
+      position: {x: -0.09422378, y: 0, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Dimaxillosaurus_ Tail
+      parentName: Dimaxillosaurus_ Pelvis
+      position: {x: 0.040869977, y: -0.17826606, z: 0.007300169}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Dimaxillosaurus_ Tail1
+      parentName: Dimaxillosaurus_ Tail
+      position: {x: -0.22658752, y: -0.0001612091, z: -0.000000047683713}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Dimaxillosaurus_ Tail2
+      parentName: Dimaxillosaurus_ Tail1
+      position: {x: -0.2036383, y: -0.00014282226, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Dimaxillosaurus_ Tail3
+      parentName: Dimaxillosaurus_ Tail2
+      position: {x: -0.1793296, y: -0.00013877869, z: 0.0000002336502}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Dimaxillosaurus_ Tail4
+      parentName: Dimaxillosaurus_ Tail3
+      position: {x: -0.17496608, y: -0.00013084411, z: 0.00000019550323}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.99999994}
+    - name: Dimaxillosaurus_ Tail5
+      parentName: Dimaxillosaurus_ Tail4
+      position: {x: -0.16449375, y: -0.00012298583, z: -0.00000034332274}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: Dimaxillosaurus_ Tail6
+      parentName: Dimaxillosaurus_ Tail5
+      position: {x: -0.1553043, y: -0.00008827209, z: -0.0000008392334}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Dimaxillosaurus_ Tail7
+      parentName: Dimaxillosaurus_ Tail6
+      position: {x: -0.110682026, y: -0.0000881958, z: -0.0000004005432}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Dimaxillosaurus_ Tail8
+      parentName: Dimaxillosaurus_ Tail7
+      position: {x: -0.11107731, y: -0.00006721496, z: 0.00000085830686}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+    - name: Dimaxillosaurus_ Tail9
+      parentName: Dimaxillosaurus_ Tail8
+      position: {x: -0.085212976, y: -0.00007476807, z: 0.000004301071}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Dimaxillosaurus_ L Thigh
+      parentName: Dimaxillosaurus_ Pelvis
+      position: {x: 0.00000022888183, y: 0.00000030517577, z: 0.21040504}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Dimaxillosaurus_ L Calf
+      parentName: Dimaxillosaurus_ L Thigh
+      position: {x: -0.5807732, y: 0.0000000047683715, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Dimaxillosaurus_ L Foot
+      parentName: Dimaxillosaurus_ L Calf
+      position: {x: -0.46287245, y: 0, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Dimaxillosaurus_ L Toe0
+      parentName: Dimaxillosaurus_ L Foot
+      position: {x: -0.154773, y: 0.2805476, z: -0.10182056}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ L Toe1
+      parentName: Dimaxillosaurus_ L Foot
+      position: {x: -0.154773, y: 0.29211113, z: -0.018218536}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Dimaxillosaurus_ L Toe2
+      parentName: Dimaxillosaurus_ L Foot
+      position: {x: -0.15477304, y: 0.2786502, z: 0.11385574}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Dimaxillosaurus_ R Thigh
+      parentName: Dimaxillosaurus_ Pelvis
+      position: {x: -0.00000030517577, y: -0.00000030517577, z: -0.21040504}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: Dimaxillosaurus_ R Calf
+      parentName: Dimaxillosaurus_ R Thigh
+      position: {x: -0.58077306, y: 0.000000038146972, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Dimaxillosaurus_ R Foot
+      parentName: Dimaxillosaurus_ R Calf
+      position: {x: -0.4628723, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Dimaxillosaurus_ R Toe0
+      parentName: Dimaxillosaurus_ R Foot
+      position: {x: -0.15477304, y: 0.2805476, z: 0.10182058}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Dimaxillosaurus_ R Toe1
+      parentName: Dimaxillosaurus_ R Foot
+      position: {x: -0.15477303, y: 0.2921111, z: 0.018218536}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dimaxillosaurus_ R Toe2
+      parentName: Dimaxillosaurus_ R Foot
+      position: {x: -0.15477301, y: 0.27865016, z: -0.11385577}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -90,15 +438,16 @@ ModelImporter:
     feetSpacing: 0
     globalScale: 1
     rootMotionBoneName: root
-    hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d755375b7a366964abe562dd07e146b2, type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 2
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -8,10 +8,14 @@ public class PlayerBase
     {
         CallPlayerInfo();
     }
-
+    int level;
     int hp;
-    int maxHp;
-
+    int maxHp=100;
+    public int Level
+    {
+        get => level;
+        set => level = value;
+    }
     public int HP
     {
         get
@@ -36,7 +40,7 @@ public class PlayerBase
 
     void CallPlayerInfo()
     {
-        maxHp = 10;
+        maxHp = SaveManager.Instance.CurrentUser.maxHp;
         hp = maxHp;
     }
 
