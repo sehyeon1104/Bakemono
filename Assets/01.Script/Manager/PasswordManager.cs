@@ -7,6 +7,7 @@ using UnityEngine.TextCore.Text;
 
 public class PasswordManager : MonoBehaviour
 {
+    public Texture faceTexture;
     public TMP_FontAsset fontAsset;
     private string password = "";
     [SerializeField]
@@ -111,6 +112,9 @@ public class PasswordManager : MonoBehaviour
             passwordRoom[i].SetActive(true);
             passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().text = (i + 1) + password[i].ToString();
             passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().font = fontAsset;
+            passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
+            //passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().fontMaterial.SetColor("_FaceColor", Color.red);
+
         }
 
     }

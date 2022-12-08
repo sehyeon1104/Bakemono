@@ -35,7 +35,6 @@ public class MonsterMovement : MonoBehaviour
     }
     public void RotateMonster(float rotateInput) 
     {
-        //print(rotateInput);
         rotateInput = Mathf.Clamp(rotateInput, -10, 10);
         monsterAni.SetBool(isTurn, cashed_move.x == 0 && cashed_move.z == 0 && Mathf.Abs(rotateInput) >= float.Epsilon);
         transform.rotation *= Quaternion.Euler(rotateInput * rotateValue); 

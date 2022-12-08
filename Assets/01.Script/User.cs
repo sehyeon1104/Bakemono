@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class User
+public class User 
 {
     public int maxHp = 10;
     public int hp = 10;
