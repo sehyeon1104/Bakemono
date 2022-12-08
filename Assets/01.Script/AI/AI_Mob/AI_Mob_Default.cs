@@ -9,6 +9,8 @@ public abstract class AI_Mob_Default : MonoBehaviour
     [SerializeField] private float actionDistance;
     [Header("Player 인식 거리")]
     [SerializeField] private float scanDistance;
+    [Header("Enemy SO")]
+    [SerializeField] protected EnemySO enemySO;
 
     protected NavMeshAgent agent;
     protected Animator anim;
@@ -20,6 +22,9 @@ public abstract class AI_Mob_Default : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+
+        agent.speed = enemySO.Speed;
+
     }
     private void Update()
     {
