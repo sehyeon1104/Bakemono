@@ -1462,6 +1462,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4150387420925946792}
   - component: {fileID: 8032468496408883666}
+  - component: {fileID: 1840650029718841114}
+  - component: {fileID: 4547400954627771040}
   m_Layer: 0
   m_Name: Nurse
   m_TagString: Untagged
@@ -1506,7 +1508,7 @@ Animator:
   m_GameObject: {fileID: 3662257668690161938}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 108c68274ce034a46bbc414aebe52f45, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a0c87d0ce767514caaff152901861b4, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1516,6 +1518,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1840650029718841114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662257668690161938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6de4cbbba0cdb46b22e355698c3ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionDistance: 2
+  scanDistance: 7
+  enemySO: {fileID: 11400000, guid: 94ccaec2abd41c74dab16966790a18de, type: 2}
+--- !u!195 &4547400954627771040
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662257668690161938}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3697083393543830826
 GameObject:
   m_ObjectHideFlags: 0
