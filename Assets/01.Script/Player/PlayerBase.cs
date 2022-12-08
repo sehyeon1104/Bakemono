@@ -8,9 +8,15 @@ public class PlayerBase
     {
         CallPlayerInfo();
     }
+    int exp;
     int level;
     int hp;
-    int maxHp=100;
+    int maxHp = 100;
+    public int Exp
+    {
+        get => exp;
+        set => exp = value;
+    }
     public int Level
     {
         get => level;
