@@ -1511,7 +1511,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 4a0c87d0ce767514caaff152901861b4, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -1531,7 +1531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionDistance: 2
-  scanDistance: 7
+  scanDistance: 0.76
   enemySO: {fileID: 11400000, guid: 94ccaec2abd41c74dab16966790a18de, type: 2}
 --- !u!195 &4547400954627771040
 NavMeshAgent:

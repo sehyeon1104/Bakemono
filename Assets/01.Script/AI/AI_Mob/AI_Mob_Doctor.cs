@@ -10,6 +10,12 @@ public class AI_Mob_Doctor : AI_Mob_Default
         agent.isStopped = true;
         agent.SetDestination(target.position);
     }
+
+    public override void Idle()
+    {
+
+    }
+
     public override void Move(Vector3 targetPos)
     {
         agent.isStopped = false;

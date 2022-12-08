@@ -17,6 +17,7 @@ public abstract class AI_Mob_Default : MonoBehaviour
 
     public abstract void Action(Transform target);
     public abstract void Move(Vector3 targetPos);
+    public abstract void Idle();
 
     private void Awake()
     {
@@ -48,6 +49,7 @@ public abstract class AI_Mob_Default : MonoBehaviour
                 break;
 
             default:
+                Idle();
                 break;
         }
 
