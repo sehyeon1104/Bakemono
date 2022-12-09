@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using Unity.RuntimeSceneSerialization;
+using UnityEngine.SceneManagement;
 
 public class SaveManager : MonoSingleton<SaveManager>
 {
     private string SAVE_PATH = "";
     private string SAVE_FILENAME = "/SaveFile.json";
+    private string SAVE_SCENE = "";
 
     [SerializeField] private User user = null;
 
@@ -36,6 +39,7 @@ public class SaveManager : MonoSingleton<SaveManager>
             string json = File.ReadAllText(SAVE_PATH + SAVE_FILENAME);
             json = Crypto.AESDecrypt128(json);
             user = JsonUtility.FromJson<User>(json);
+            SceneSerialization.ImportScene(SAVE_SCENE);
         }
     }
 
@@ -44,6 +48,7 @@ public class SaveManager : MonoSingleton<SaveManager>
         string json = JsonUtility.ToJson(user, true);
         json = Crypto.AESEncrypt128(json);
         File.WriteAllText(SAVE_PATH + SAVE_FILENAME, json, System.Text.Encoding.UTF8);
+        SAVE_SCENE = SceneSerialization.SerializeScene(SceneManager.GetActiveScene());
     }
 
     private void OnApplicationQuit()
