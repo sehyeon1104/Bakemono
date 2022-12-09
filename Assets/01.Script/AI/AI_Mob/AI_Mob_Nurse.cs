@@ -38,7 +38,7 @@ public class AI_Mob_Nurse : AI_Mob_Default
     {
         while (true)
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(10f);
             anim.SetTrigger(hashTrigger);
         }
     }
