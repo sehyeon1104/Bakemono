@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestManager : MonoBehaviour
+public class QuestManager : MonoSingleton<QuestManager>
 {
     public bool doQuest { private set; get; } = false;
     public bool isClear { private set; get; } = false;

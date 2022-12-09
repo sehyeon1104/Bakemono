@@ -59,7 +59,7 @@ public class Monster : MonoBehaviour, IHittable
     {
         if (other.CompareTag("Quest"))
         {
-            SendMessage(other.gameObject.name);
+            QuestManager.Instance.SendMessage(other.name);
         }
     }
 
