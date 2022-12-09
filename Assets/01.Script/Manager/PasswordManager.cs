@@ -7,6 +7,7 @@ using UnityEngine.TextCore.Text;
 
 public class PasswordManager : MonoBehaviour
 {
+    [Header("InputPassword")]
     public Texture faceTexture;
     public TMP_FontAsset fontAsset;
     private string password = "";
