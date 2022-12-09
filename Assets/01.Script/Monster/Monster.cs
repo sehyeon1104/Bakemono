@@ -37,6 +37,7 @@ public class Monster : MonoBehaviour, IHittable
     private void Start()
     {
     }
+
     void LateUpdate()
     {
         if(currentExp>=levelPerExp)
@@ -54,5 +55,12 @@ public class Monster : MonoBehaviour, IHittable
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Quest"))
+        {
+            SendMessage(other.gameObject.name);
+        }
+    }
 
 }
