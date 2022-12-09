@@ -31,7 +31,7 @@ public class AI_Mob_Nurse : AI_Mob_Default
         Debug.Log("µµ¸Á!");
         agent.isStopped = false;
         anim.SetBool(hashMove, true);
-        agent.SetDestination(new Vector3(transform.position.x - targetPos.x , 0f, transform.position.z - targetPos.z));
+        agent.SetDestination((transform.position-targetPos) * agent.speed);
     }
 
     private IEnumerator Motion()
