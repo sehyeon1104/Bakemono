@@ -15,5 +15,3 @@ MonoBehaviour:
   type: 1
   hp: 50
   speed: 7.5
-  power: 0
-  exp: 3

@@ -40,8 +40,4 @@ public class Monster : MonoBehaviour, IHittable
             playerBase.HP = currentHp; 
         }
     }
-    void LevelUp()
-    {
-        
-    }
 }

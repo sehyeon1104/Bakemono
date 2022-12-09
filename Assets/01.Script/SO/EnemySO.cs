@@ -11,16 +11,10 @@ public class EnemySO : ScriptableObject
     [SerializeField] private float hp;
     [Header("적 이동속도")]
     [SerializeField] private float speed;
-    [Header("적 공격력")]
-    [SerializeField] private float power;
-    [Header("경험치")]
-    [SerializeField] private float exp;
 
     public EnemyType Type => type;
     public float Hp => hp;
     public float Speed => speed;
-    public float Powrer => power;
-    public float Exp => exp;
 
 }
 
