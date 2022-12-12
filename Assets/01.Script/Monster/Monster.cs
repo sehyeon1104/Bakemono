@@ -57,10 +57,10 @@ public class Monster : MonoBehaviour, IHittable
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Quest"))
+        if (other.CompareTag("Quest") && !QuestManager.Instance.doQuest)
         {
             QuestManager.Instance.SendMessage(other.name);
+            Destroy(other.gameObject);
         }
     }
-
 }

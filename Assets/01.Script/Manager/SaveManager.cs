@@ -39,7 +39,7 @@ public class SaveManager : MonoSingleton<SaveManager>
             string json = File.ReadAllText(SAVE_PATH + SAVE_FILENAME);
             json = Crypto.AESDecrypt128(json);
             user = JsonUtility.FromJson<User>(json);
-            SceneSerialization.ImportScene(SAVE_SCENE);
+            //SceneSerialization.ImportScene(SAVE_SCENE);
         }
     }
 
@@ -48,7 +48,7 @@ public class SaveManager : MonoSingleton<SaveManager>
         string json = JsonUtility.ToJson(user, true);
         json = Crypto.AESEncrypt128(json);
         File.WriteAllText(SAVE_PATH + SAVE_FILENAME, json, System.Text.Encoding.UTF8);
-        SAVE_SCENE = SceneSerialization.SerializeScene(SceneManager.GetActiveScene());
+        //SAVE_SCENE = SceneSerialization.SerializeScene(SceneManager.GetActiveScene());
     }
 
     private void OnApplicationQuit()

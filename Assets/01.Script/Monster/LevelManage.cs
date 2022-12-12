@@ -15,6 +15,7 @@ public class LevelManage : MonoBehaviour
         {
             case 1:
                 monster.LevelPerExp = 10;
+                break;
 
         }
         
