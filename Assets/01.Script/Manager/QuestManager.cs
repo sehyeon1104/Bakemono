@@ -18,7 +18,6 @@ public class QuestManager : MonoSingleton<QuestManager>
     void EnterKitchen()
     {
         Debug.Log("Enter Kitchen");
-        // 군인 6명 소환
         StartCoroutine(KitchenQuest());
     }
 
@@ -41,6 +40,11 @@ public class QuestManager : MonoSingleton<QuestManager>
     void EnterLaborator()
     {
         Debug.Log("Enter Laborator");
+    }
+
+    void ServerRoomQuest()
+    {
+        Debug.Log("Interfere Communication");
     }
 
 }
