@@ -31,6 +31,8 @@ public class QuestManager : MonoSingleton<QuestManager>
                 isClear = true;
                 doQuest = false;
             }
+
+            yield return null;
         }
 
         yield break;
