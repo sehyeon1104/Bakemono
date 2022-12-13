@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Monster : MonoBehaviour, IHittable
 {
-    int currentExp =10;
+    int currentExp = 10;
     int levelPerExp = 0;
     int level = 1;
     bool isDie = false;
@@ -22,16 +22,26 @@ public class Monster : MonoBehaviour, IHittable
     public int LevelPerExp
     {
         get => levelPerExp;
-        set => levelPerExp = value; 
+        set => levelPerExp = value;
     }
     public int CurrentExp
     {
         get => currentExp;
         set => currentExp = value;
     }
+    public int MaxHp
+    {
+        get => maxHp;
+        set => maxHp = value;
+    }
+    public int CurrentHp
+    {
+        get => currentHp;
+        set => currentHp = value;
+    }
     void Awake()
     {
-       playerBase = new PlayerBase();
+        playerBase = new PlayerBase();
 
     }
     private void Start()
@@ -40,18 +50,18 @@ public class Monster : MonoBehaviour, IHittable
 
     void LateUpdate()
     {
-        if(currentExp>=levelPerExp)
+        if (currentExp >= levelPerExp)
         {
             level++;
-            
+
             levelUp?.Invoke(level);
         }
-        if(!isDie)
+        if (!isDie)
         {
-            playerBase.LevelPerExp= levelPerExp;
+            playerBase.LevelPerExp = levelPerExp;
             playerBase.Exp = currentExp;
-            playerBase.Level= level;
-            playerBase.HP = currentHp; 
+            playerBase.Level = level;
+            playerBase.HP = currentHp;
         }
     }
 

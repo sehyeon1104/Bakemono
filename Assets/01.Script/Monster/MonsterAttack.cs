@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MonsterAttack : MonoBehaviour
 {
+    [SerializeField] UnityEvent monsterAttack;
     [SerializeField]
     bool isRight = false;
     public bool isClick = true;
@@ -12,8 +14,8 @@ public class MonsterAttack : MonoBehaviour
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
-    readonly int RightAttack = Animator.StringToHash("RAttack");
     bool isLeft = true;
+    AnimatorStateInfo info;
     void Start()
     {
         monsterAni = GetComponent<Animator>();
@@ -21,40 +23,34 @@ public class MonsterAttack : MonoBehaviour
 
     private void Update()
     {
-        Attack();
-    }
-    void Attack()
-    {
+        info = monsterAni.GetCurrentAnimatorStateInfo(1);
         totalTime += Time.deltaTime;
-        AnimatorStateInfo info = monsterAni.GetCurrentAnimatorStateInfo(1);
-
         if (totalTime > 0.5f)
         {
             isClick = true;
         }
-
-        if (Input.GetMouseButtonDown(0) && isClick && info.shortNameHash == IdleNameHash)
-        {
-            totalTime = 0;
-            isClick = false;
-            if (isLeft) //왼쪽 공격
-            {
-                monsterAni.SetTrigger(leftAttack);
-                isLeft = false;
-            }
-            else//오른쪽
-            {
-                monsterAni.SetTrigger(rightAttack);
-                isLeft = true;
-            }
-        }
-
         if (totalTime > 15f)
         {
             isLeft = true;
         }
-
+        if (Input.GetMouseButtonDown(0) && isClick && info.shortNameHash == IdleNameHash)
+        {
+            monsterAttack?.Invoke();
+        }
     }
-
-
+    public void Attack()
+    {
+        totalTime = 0;
+        isClick = false;
+        if (isLeft) //왼쪽 공격
+        {
+            monsterAni.SetTrigger(leftAttack);
+            isLeft = false;
+        }
+        else //오른쪽
+        {
+            monsterAni.SetTrigger(rightAttack);
+            isLeft = true;
+        }
+    }
 }
