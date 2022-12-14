@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Monster : MonoBehaviour, IHittable
+public class Monster : MonoSingleton<Monster>, IHittable
 {
     int currentExp = 10;
     int levelPerExp = 0;

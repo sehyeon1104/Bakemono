@@ -45,10 +45,18 @@ public class SaveManager : MonoSingleton<SaveManager>
 
     public void SaveToJson()
     {
+        SavePlayerStat();
+
         string json = JsonUtility.ToJson(user, true);
         json = Crypto.AESEncrypt128(json);
         File.WriteAllText(SAVE_PATH + SAVE_FILENAME, json, System.Text.Encoding.UTF8);
         //SAVE_SCENE = SceneSerialization.SerializeScene(SceneManager.GetActiveScene());
+    }
+
+    public void SavePlayerStat()
+    {
+        CurrentUser.hp = Monster.Instance.playerBase.HP;
+        CurrentUser.experience = Monster.Instance.playerBase.Exp;
     }
 
     private void OnApplicationQuit()

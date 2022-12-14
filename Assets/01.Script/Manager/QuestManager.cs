@@ -36,6 +36,8 @@ public class QuestManager : MonoSingleton<QuestManager>
                 continue;
             }
         }
+
+        SaveManager.Instance.SaveToJson();
     }
 
     void EnterLaborator()
@@ -59,6 +61,7 @@ public class QuestManager : MonoSingleton<QuestManager>
             }
         }
 
+        SaveManager.Instance.SaveToJson();
     }
 
     void ServerRoomQuest()
