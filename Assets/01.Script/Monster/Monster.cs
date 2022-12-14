@@ -11,6 +11,8 @@ public class Monster : MonoSingleton<Monster>, IHittable
     bool isDie = false;
     public PlayerBase playerBase;
     int maxHp = 100;
+    [SerializeField]
+    [Range(0,100)]
     int currentHp = 100;
     [SerializeField] UnityEvent onDie;
     [SerializeField] UnityEvent<int> levelUp;
@@ -46,6 +48,7 @@ public class Monster : MonoSingleton<Monster>, IHittable
     }
     private void Start()
     {
+
     }
 
     void LateUpdate()
