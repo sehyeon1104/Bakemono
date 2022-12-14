@@ -30,7 +30,7 @@ public class UIManager : MonoSingleton<UIManager>
 
     private void InputKey()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePausePanel();
         }
