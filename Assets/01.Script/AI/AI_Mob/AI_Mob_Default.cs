@@ -15,6 +15,10 @@ public abstract class AI_Mob_Default : MonoBehaviour ,IHittable
     protected NavMeshAgent agent;
     protected Animator anim;
 
+    protected int hashMove = Animator.StringToHash("Move");
+    protected int hashTrigger = Animator.StringToHash("Trigger");
+    protected int hashAttack = Animator.StringToHash("Attack");
+
     public abstract void GetHit(int damage, GameObject damgeDelear);
     public abstract void Action(Transform target);
     public abstract void Move(Vector3 targetPos);

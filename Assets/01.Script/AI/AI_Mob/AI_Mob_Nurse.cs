@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class AI_Mob_Nurse : AI_Mob_Default
 {
-    private int hashMove = Animator.StringToHash("Move");
-    private int hashTrigger = Animator.StringToHash("Trigger");
-
     Coroutine motionCoroutine = null;
 
     public override void Action(Transform target)
@@ -33,7 +30,7 @@ public class AI_Mob_Nurse : AI_Mob_Default
     {
         if (motionCoroutine != null)
             motionCoroutine = null;
-        Debug.Log("µµ¸Á!");
+
         agent.isStopped = false;
         anim.SetBool(hashMove, true);
         agent.SetDestination((transform.position-targetPos) * agent.speed);
