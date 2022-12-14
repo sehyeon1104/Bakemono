@@ -23,24 +23,30 @@ public class QuestManager : MonoSingleton<QuestManager>
         UIManager.Instance.questContent.text = "식당에있는 사람을 모두 죽이세요!";
 
         doQuest = true;
+        UIManager.Instance.ToggleQuestUI(doQuest);
 
-        //while (!isClear)
-        //{
-        //    if (killedNpcCount >= 20)
-        //    {
-        //        isClear = true;
-        //        doQuest = false;
-        //    }
-        //    else
-        //    {
-        //        continue;
-        //    }
-        //}
-
-        SaveManager.Instance.SaveToJson();
+        StartCoroutine(KitchenQuest());
     }
 
-    void EnterLaborator()
+    IEnumerator KitchenQuest()
+    {
+        while (!isClear)
+        {
+            if (killedNpcCount >= 20)
+            {
+                isClear = true;
+                doQuest = false;
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        SaveManager.Instance.SaveToJson();
+        UIManager.Instance.ToggleQuestUI(doQuest);
+        yield break;
+    }
+
+    private void EnterLaborator()
     {
         Debug.Log("Enter Laborator");
         UIManager.Instance.questTitle.text = "새로운 스킬";
@@ -48,20 +54,24 @@ public class QuestManager : MonoSingleton<QuestManager>
 
         doQuest = true;
 
-        //while (!isClear)
-        //{
-        //    if (killedNpcCount >= 20)
-        //    {
-        //        isClear = true;
-        //        doQuest = false;
-        //    }
-        //    else
-        //    {
-        //        continue;
-        //    }
-        //}
+        StartCoroutine(LaboratorQuest());
+    }
+
+    IEnumerator LaboratorQuest()
+    {
+        while (!isClear)
+        {
+            if (killedNpcCount >= 20)
+            {
+                isClear = true;
+                doQuest = false;
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
 
         SaveManager.Instance.SaveToJson();
+        yield break;
     }
 
     void ServerRoomQuest()

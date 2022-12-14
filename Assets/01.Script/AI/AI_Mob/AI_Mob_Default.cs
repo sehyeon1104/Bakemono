@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public abstract class AI_Mob_Default : MonoBehaviour ,IHittable
+public abstract class AI_Mob_Default : MonoBehaviour ,IHittable ,IAgentStat
 {
     [Header("Action을 취하는 거리")]
     [SerializeField] private float actionDistance;
@@ -15,9 +15,12 @@ public abstract class AI_Mob_Default : MonoBehaviour ,IHittable
     protected NavMeshAgent agent;
     protected Animator anim;
 
-    protected int hashMove = Animator.StringToHash("Move");
-    protected int hashTrigger = Animator.StringToHash("Trigger");
-    protected int hashAttack = Animator.StringToHash("Attack");
+   protected int currentHp;
+   protected int maxHp;
+   protected float speed;
+    public virtual int CurrentHp { get =>currentHp; set=>currentHp=value; }
+    public  virtual int MaxHp { get=>maxHp; set=> currentHp = value; }
+    public virtual float Speed { get => speed; set => speed=value; }
 
     public abstract void GetHit(int damage, GameObject damgeDelear);
     public abstract void Action(Transform target);
@@ -28,9 +31,10 @@ public abstract class AI_Mob_Default : MonoBehaviour ,IHittable
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-
+        speed = enemySO.Speed;
+        maxHp = enemySO.Hp;
         agent.speed = enemySO.Speed;
-
+        currentHp = enemySO.Hp;
     }
     private void Update()
     {

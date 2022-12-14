@@ -6,22 +6,26 @@ using UnityEngine.Events;
 public class MonsterAttack : MonoBehaviour
 {
     [SerializeField] UnityEvent monsterAttack;
-    [SerializeField] UnityEvent monsterBite;
-    [SerializeField] UnityEvent FindEnemy;
+    [SerializeField] UnityEvent findEnemy;
     public Transform Shootraytrans;
     public bool isAttackClick = true;
     public bool isBiteClick = true;
     float totalTime = 0;
     [SerializeField]
-    float eatDistance = 3f;
+    float deathRate = 0.2f;
+    [SerializeField]
+    float eatDistance = 1f;
     Animator monsterAni;
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
     readonly int BiteNameHash = Animator.StringToHash("Bite");
+    
     bool isLeft = true;
     AnimatorStateInfo info;
-    
+
+
+
     void Start()
     {
         monsterAni = GetComponent<Animator>();
@@ -30,22 +34,23 @@ public class MonsterAttack : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        if(Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance))
+        Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
+        if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
         {
-            print("ss");
-            if (hit.transform.gameObject.CompareTag("Enemy"))
+          IAgentStat agentStat = hit.transform.GetComponent<IAgentStat>(); 
+            if(deathRate> agentStat.CurrentHp/agentStat.MaxHp)
+            if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
             {
-                print("dd");
-                if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
-                {
-                    monsterBite?.Invoke();
-                }
+                isBiteClick = false;
+                monsterAni.SetTrigger(BiteNameHash);
             }
+
         }
         info = monsterAni.GetCurrentAnimatorStateInfo(1);
         totalTime += Time.deltaTime;
         if (totalTime > 0.5f)
         {
+            isBiteClick = true;
             isAttackClick = true;
         }
         if (totalTime > 15f)
@@ -74,6 +79,6 @@ public class MonsterAttack : MonoBehaviour
     }
     public void Bite()
     {
-        monsterAni.SetTrigger(BiteNameHash);
+
     }
 }

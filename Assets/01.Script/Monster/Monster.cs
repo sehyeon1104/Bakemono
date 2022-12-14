@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Monster : MonoSingleton<Monster>, IHittable
+public class Monster : MonoSingleton<Monster>, IHittable , IAgentStat
 {
     int currentExp = 10;
     int levelPerExp = 0;
@@ -39,8 +39,20 @@ public class Monster : MonoSingleton<Monster>, IHittable
     public int CurrentHp
     {
         get => currentHp;
-        set => currentHp = value;
+        set
+        {
+            currentHp = value;
+
+            if(currentHp > maxHp)
+            {
+                currentHp = maxHp;
+            }
+
+            MonsterUI.Instance.UpdateHpbar();
+        }
     }
+    public float Speed { get; set; }
+
     void Awake()
     {
         playerBase = new PlayerBase();
