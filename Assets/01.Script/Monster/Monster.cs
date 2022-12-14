@@ -39,7 +39,17 @@ public class Monster : MonoSingleton<Monster>, IHittable
     public int CurrentHp
     {
         get => currentHp;
-        set => currentHp = value;
+        set
+        {
+            currentHp = value;
+
+            if(currentHp > maxHp)
+            {
+                currentHp = maxHp;
+            }
+
+            MonsterUI.Instance.UpdateHpbar();
+        }
     }
     void Awake()
     {

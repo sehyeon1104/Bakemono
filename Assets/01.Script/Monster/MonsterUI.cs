@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MonsterUI : MonoBehaviour
+public class MonsterUI : MonoSingleton<MonsterUI>
 {
 
     Monster monster;
@@ -29,6 +29,10 @@ public class MonsterUI : MonoBehaviour
         {
             attackImg.fillAmount = 1-(info.normalizedTime*1.25f-0.25f);
         }
+    }
+
+    public void UpdateHpbar()
+    {
         hpBar.fillAmount = monster.CurrentHp / (float)monster.MaxHp;
     }
 
