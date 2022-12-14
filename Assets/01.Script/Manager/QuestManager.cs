@@ -24,18 +24,18 @@ public class QuestManager : MonoSingleton<QuestManager>
 
         doQuest = true;
 
-        while (!isClear)
-        {
-            if (killedNpcCount >= 20)
-            {
-                isClear = true;
-                doQuest = false;
-            }
-            else
-            {
-                continue;
-            }
-        }
+        //while (!isClear)
+        //{
+        //    if (killedNpcCount >= 20)
+        //    {
+        //        isClear = true;
+        //        doQuest = false;
+        //    }
+        //    else
+        //    {
+        //        continue;
+        //    }
+        //}
 
         SaveManager.Instance.SaveToJson();
     }
@@ -48,18 +48,18 @@ public class QuestManager : MonoSingleton<QuestManager>
 
         doQuest = true;
 
-        while (!isClear)
-        {
-            if (killedNpcCount >= 20)
-            {
-                isClear = true;
-                doQuest = false;
-            }
-            else
-            {
-                continue;
-            }
-        }
+        //while (!isClear)
+        //{
+        //    if (killedNpcCount >= 20)
+        //    {
+        //        isClear = true;
+        //        doQuest = false;
+        //    }
+        //    else
+        //    {
+        //        continue;
+        //    }
+        //}
 
         SaveManager.Instance.SaveToJson();
     }
