@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class MonsterMovement : MonoBehaviour
+public class MonsterMovement : MonoBehaviour ,IAgentStat
 {
     float x;
     float z;
@@ -27,6 +27,11 @@ public class MonsterMovement : MonoBehaviour
     readonly int headValue = Animator.StringToHash("TurnValue");
     readonly int isTurn = Animator.StringToHash("IsTurn");
     public Vector3 cashed_move = Vector3.zero;
+
+    public int CurrentHp { get ; set ; }
+    public int MaxHp { get ; set; }
+    public float Speed { get => speed; set => speed = value; }
+
     private void Awake()
     {
         rotateValue = new Vector3(0,0.3f,0);
@@ -57,6 +62,7 @@ public class MonsterMovement : MonoBehaviour
 
         cashed_move.x = moveInput.x;
         cashed_move.z = moveInput.z;
+        monstercontroller.Move(transform.rotation*(cashed_move * Speed*Time.deltaTime));
 
         if (Input.GetKeyDown(KeyCode.Space)&&monstercontroller.isGrounded)
         {
@@ -67,7 +73,6 @@ public class MonsterMovement : MonoBehaviour
         {
            cashed_move.y -= gravity * Time.deltaTime;
         }
-        monstercontroller.Move(transform.rotation*(cashed_move * speed*Time.deltaTime));
 
     }
 
