@@ -27,7 +27,7 @@ public class MonsterUI : MonoBehaviour
 
         if (info.shortNameHash != idle)
         {
-            attackImg.fillAmount = 1-(info.normalizedTime*info.length-0.25f);
+            attackImg.fillAmount = 1-(info.normalizedTime*1.25f-0.25f);
         }
         hpBar.fillAmount = monster.CurrentHp / (float)monster.MaxHp;
     }
