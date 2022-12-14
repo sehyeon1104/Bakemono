@@ -12,7 +12,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
         {
             agent.isStopped = false;
             anim.SetBool(hashMove, true);
-            agent.SetDestination((transform.position - target.position) * agent.speed);
+            agent.SetDestination(transform.position - target.position);
         }
         else
         {

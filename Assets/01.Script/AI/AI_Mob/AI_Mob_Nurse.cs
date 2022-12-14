@@ -33,7 +33,7 @@ public class AI_Mob_Nurse : AI_Mob_Default
 
         agent.isStopped = false;
         anim.SetBool(hashMove, true);
-        agent.SetDestination((transform.position-targetPos) * agent.speed);
+        agent.SetDestination(transform.position-targetPos);
     }
 
     private IEnumerator Motion()
