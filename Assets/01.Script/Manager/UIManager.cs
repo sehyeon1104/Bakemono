@@ -61,7 +61,7 @@ public class UIManager : MonoSingleton<UIManager>
         QuestPanel.SetActive(toggle);
     }
 
-    public void OnApplicationQuit()
+    public void GameQuit()
     {
         Debug.Log("게임 종료");
         Application.Quit();

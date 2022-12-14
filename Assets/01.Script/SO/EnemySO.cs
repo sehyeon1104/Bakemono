@@ -7,7 +7,9 @@ public class EnemySO : ScriptableObject
 {
     [Header("적 종류")]
     [SerializeField] private EnemyType type = EnemyType.Doctor;
-    [Header("적 HP")]
+    [Header("적 총 HP")]
+    [SerializeField] private float maxHp;
+    [Header("적 현재 HP")]
     [SerializeField] private float hp;
     [Header("적 이동속도")]
     [SerializeField] private float speed;
@@ -17,6 +19,7 @@ public class EnemySO : ScriptableObject
     [SerializeField] private float exp;
 
     public EnemyType Type => type;
+    public float MaxHp => maxHp;
     public float Hp => hp;
     public float Speed => speed;
     public float Powrer => power;

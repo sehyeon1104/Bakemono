@@ -6,16 +6,22 @@ using UnityEngine.Events;
 public class MonsterAttack : MonoBehaviour
 {
     [SerializeField] UnityEvent monsterAttack;
-    [SerializeField]
-    bool isRight = false;
-    public bool isClick = true;
+    [SerializeField] UnityEvent monsterBite;
+    [SerializeField] UnityEvent FindEnemy;
+    public Transform Shootraytrans;
+    public bool isAttackClick = true;
+    public bool isBiteClick = true;
     float totalTime = 0;
+    [SerializeField]
+    float eatDistance = 3f;
     Animator monsterAni;
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
+    readonly int BiteNameHash = Animator.StringToHash("Bite");
     bool isLeft = true;
     AnimatorStateInfo info;
+    
     void Start()
     {
         monsterAni = GetComponent<Animator>();
@@ -23,17 +29,30 @@ public class MonsterAttack : MonoBehaviour
 
     private void Update()
     {
+        RaycastHit hit;
+        if(Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance))
+        {
+            print("ss");
+            if (hit.transform.gameObject.CompareTag("Enemy"))
+            {
+                print("dd");
+                if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
+                {
+                    monsterBite?.Invoke();
+                }
+            }
+        }
         info = monsterAni.GetCurrentAnimatorStateInfo(1);
         totalTime += Time.deltaTime;
         if (totalTime > 0.5f)
         {
-            isClick = true;
+            isAttackClick = true;
         }
         if (totalTime > 15f)
         {
             isLeft = true;
         }
-        if (Input.GetMouseButtonDown(0) && isClick && info.shortNameHash == IdleNameHash)
+        if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash)
         {
             monsterAttack?.Invoke();
         }
@@ -41,7 +60,7 @@ public class MonsterAttack : MonoBehaviour
     public void Attack()
     {
         totalTime = 0;
-        isClick = false;
+        isAttackClick = false;
         if (isLeft) //¿ÞÂÊ °ø°Ý
         {
             monsterAni.SetTrigger(leftAttack);
@@ -52,5 +71,9 @@ public class MonsterAttack : MonoBehaviour
             monsterAni.SetTrigger(rightAttack);
             isLeft = true;
         }
+    }
+    public void Bite()
+    {
+        monsterAni.SetTrigger(BiteNameHash);
     }
 }

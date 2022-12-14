@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public abstract class AI_Mob_Default : MonoBehaviour
+public abstract class AI_Mob_Default : MonoBehaviour ,IHittable
 {
     [Header("Action을 취하는 거리")]
     [SerializeField] private float actionDistance;
@@ -15,6 +15,7 @@ public abstract class AI_Mob_Default : MonoBehaviour
     protected NavMeshAgent agent;
     protected Animator anim;
 
+    public abstract void GetHit(int damage, GameObject damgeDelear);
     public abstract void Action(Transform target);
     public abstract void Move(Vector3 targetPos);
     public abstract void Idle();
@@ -54,4 +55,5 @@ public abstract class AI_Mob_Default : MonoBehaviour
         }
 
     }
+
 }

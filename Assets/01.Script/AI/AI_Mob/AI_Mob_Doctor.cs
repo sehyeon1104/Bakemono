@@ -11,6 +11,11 @@ public class AI_Mob_Doctor : AI_Mob_Default
         agent.SetDestination(target.position);
     }
 
+    public override void GetHit(int damage, GameObject damgeDelear)
+    {
+        
+    }
+
     public override void Idle()
     {
 
