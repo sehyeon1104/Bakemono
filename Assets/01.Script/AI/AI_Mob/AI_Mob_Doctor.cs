@@ -5,11 +5,10 @@ using UnityEngine.AI;
 
 public class AI_Mob_Doctor : AI_Mob_Default
 {
-    
-    public override int CurrentHp { get => currentHp; set => currentHp =value; }
-    public override int MaxHp { get; set; }
-    public override float Speed { get; set; }
 
+    public override int CurrentHp { get => base.CurrentHp; set => base.CurrentHp = value; }
+    public override int MaxHp { get => base.MaxHp; set => base.MaxHp = value; }
+    public override float Speed { get => base.Speed; set => base.Speed = value; }
     public override void Action(Transform target)
     {
         agent.isStopped = true;

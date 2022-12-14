@@ -12,12 +12,15 @@ public class MonsterAttack : MonoBehaviour
     public bool isBiteClick = true;
     float totalTime = 0;
     [SerializeField]
+    float deathRate = 0.2f;
+    [SerializeField]
     float eatDistance = 1f;
     Animator monsterAni;
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
     readonly int BiteNameHash = Animator.StringToHash("Bite");
+    
     bool isLeft = true;
     AnimatorStateInfo info;
 
@@ -34,7 +37,8 @@ public class MonsterAttack : MonoBehaviour
         Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
         if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
         {
-
+          IAgentStat agentStat = hit.transform.GetComponent<IAgentStat>(); 
+            if(deathRate> agentStat.CurrentHp/agentStat.MaxHp)
             if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
             {
                 isBiteClick = false;
