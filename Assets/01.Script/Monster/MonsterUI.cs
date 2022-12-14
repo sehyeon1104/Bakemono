@@ -29,6 +29,10 @@ public class MonsterUI : MonoSingleton<MonsterUI>
         {
             attackImg.fillAmount = 1-(info.normalizedTime*1.25f-0.25f);
         }
+        else
+        {
+            attackImg.fillAmount = 0;
+        }
     }
 
     public void UpdateHpbar()
