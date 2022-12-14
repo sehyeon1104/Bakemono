@@ -11,7 +11,11 @@ public class MonsterInput : MonoBehaviour
     [SerializeField] UnityEvent<float> rotateMouse;
     void Update()
     {
-        
+        if (UIManager.Instance.isPause)
+        {
+            return;
+        }
+
         MonsterMove();
         MonsterRotate();
     }
