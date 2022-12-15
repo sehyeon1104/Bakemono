@@ -14,11 +14,6 @@ public  class AI_Mob_Nurse : AI_Mob_Default
         anim.SetBool(hashMove, false);
     }
 
-    public override void GetHit(int damage, GameObject damgeDelear)
-    {
-        
-    }
-
     public override void Idle()
     {
         anim.SetBool(hashMove, false);

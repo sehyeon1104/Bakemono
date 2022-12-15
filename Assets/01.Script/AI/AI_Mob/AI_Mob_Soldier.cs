@@ -12,20 +12,20 @@ public class AI_Mob_Soldier : AI_Mob_Default
         {
             agent.isStopped = false;
             anim.SetBool(hashMove, true);
+            anim.SetBool(hashAttack, false);
             agent.SetDestination(transform.position - target.position);
+           
+            if (attackCoroutine != null)
+               attackCoroutine = null;
         }
         else
         {
             agent.isStopped = true;
             anim.SetBool(hashMove, false);
+            anim.SetBool(hashAttack, true);
             if (attackCoroutine == null)
                 attackCoroutine = StartCoroutine(Attack(1f));
         }
-
-    }
-
-    public override void GetHit(int damage, GameObject damgeDelear)
-    {
 
     }
 
@@ -33,6 +33,9 @@ public class AI_Mob_Soldier : AI_Mob_Default
     {
         agent.isStopped = true;
         anim.SetBool(hashMove, false);
+
+        if (attackCoroutine != null)
+            attackCoroutine = null;
     }
 
     public override void Move(Vector3 targetPos)
@@ -40,13 +43,16 @@ public class AI_Mob_Soldier : AI_Mob_Default
         agent.isStopped = false;
         anim.SetBool(hashMove, true);
         agent.SetDestination(targetPos);
+
+        if (attackCoroutine != null)
+            attackCoroutine = null;
     }
 
     private IEnumerator Attack(float attackDelay)
     {
         while (true)
         {
-            anim.SetTrigger(hashAttack);
+            anim.SetTrigger(hashTrigger);
             yield return new WaitForSeconds(attackDelay);
         }
     }

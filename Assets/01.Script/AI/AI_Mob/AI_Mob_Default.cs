@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public abstract class AI_Mob_Default : MonoBehaviour ,IHittable ,IAgentStat
+public abstract class AI_Mob_Default : MonoBehaviour, IHittable
 {
     [Header("Action을 취하는 거리")]
     [SerializeField] private float actionDistance;
@@ -15,19 +15,15 @@ public abstract class AI_Mob_Default : MonoBehaviour ,IHittable ,IAgentStat
     protected NavMeshAgent agent;
     protected Animator anim;
 
-    protected int hashMove = Animator.StringToHash("Move");
-    protected int hashTrigger = Animator.StringToHash("Trigger");
-    protected int hashAttack = Animator.StringToHash("Attack");
+    protected readonly int hashMove = Animator.StringToHash("Move");
+    protected readonly int hashTrigger = Animator.StringToHash("Trigger");
+    protected readonly int hashAttack = Animator.StringToHash("Attack");
+    protected readonly int hashHit = Animator.StringToHash("Hit");
 
     protected int currentHp;
-    protected int maxHp;
-    protected float speed;
 
-    public int CurrentHp { get =>currentHp; set=>currentHp=value; }
-    public int MaxHp { get=>maxHp; set=> maxHp = value; }
-    public float Speed { get => speed; set => speed=value; }
+    public int CurrentHp => currentHp;
 
-    public abstract void GetHit(int damage, GameObject damgeDelear);
     public abstract void Action(Transform target);
     public abstract void Move(Vector3 targetPos);
     public abstract void Idle();
@@ -37,10 +33,8 @@ public abstract class AI_Mob_Default : MonoBehaviour ,IHittable ,IAgentStat
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
 
-        speed = enemySO.Speed;
-        maxHp = enemySO.Hp;
-        agent.speed = enemySO.Speed;
         currentHp = enemySO.Hp;
+        agent.speed = enemySO.Speed;
     }
     private void Update()
     {
@@ -68,6 +62,11 @@ public abstract class AI_Mob_Default : MonoBehaviour ,IHittable ,IAgentStat
                 break;
         }
 
+    }
+    public void GetHit(int damage, GameObject damgeDelear)
+    {
+        currentHp -= damage;
+        anim.SetTrigger(hashHit);
     }
 
 }
