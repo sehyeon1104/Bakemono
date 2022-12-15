@@ -23,9 +23,9 @@ public abstract class AI_Mob_Default : MonoBehaviour ,IHittable ,IAgentStat
     protected int maxHp;
     protected float speed;
 
-    public virtual int CurrentHp { get =>currentHp; set=>currentHp=value; }
-    public  virtual int MaxHp { get=>maxHp; set=> maxHp = value; }
-    public virtual float Speed { get => speed; set => speed=value; }
+    public int CurrentHp { get =>currentHp; set=>currentHp=value; }
+    public int MaxHp { get=>maxHp; set=> maxHp = value; }
+    public float Speed { get => speed; set => speed=value; }
 
     public abstract void GetHit(int damage, GameObject damgeDelear);
     public abstract void Action(Transform target);
