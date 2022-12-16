@@ -18,6 +18,7 @@ public class MonsterInput : MonoBehaviour
 
         MonsterMove();
         MonsterRotate();
+        InputKey();
     }
     public void MonsterRotate()
     {
@@ -27,6 +28,18 @@ public class MonsterInput : MonoBehaviour
     {   
         moveKeyPress?.Invoke((new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"))).normalized);
     }
-    
+    public void InputKey()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            // 문열고 닫기
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            // 치료실 회복
+            GameManager.Instance.HealMonster();
+        }
+
+    }
     
 }

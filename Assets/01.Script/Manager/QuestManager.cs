@@ -8,7 +8,13 @@ public class QuestManager : MonoSingleton<QuestManager>
     public bool isClear { private set; get; } = false;
 
     public int killedNpcCount = 0;
-    
+    [SerializeField]
+    private GameObject researcherPrefab = null;
+    [SerializeField]
+    private GameObject soldierPrefab = null;
+    [SerializeField]
+    private GameObject nursePrefab = null;
+
 
     private void Start()
     {
