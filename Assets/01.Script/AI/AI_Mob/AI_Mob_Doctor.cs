@@ -1,24 +1,57 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class AI_Mob_Doctor : AI_Mob_Default
 {
     public override void Action(Transform target)
     {
         agent.isStopped = true;
-        agent.SetDestination(target.position);
+
+        anim.SetBool(hashMove, false);
+        anim.SetBool(hashAttack, true);
+        
+        transform.LookAt(target.position);
+
+        if(actionCoroutine == null)
+            actionCoroutine = StartCoroutine(Attack(1f));
     }
 
     public override void Idle()
     {
+        agent.isStopped = true;
+        anim.SetBool(hashMove, false);
+        anim.SetBool(hashAttack, false);
 
+        if (actionCoroutine != null)
+        {
+            StopCoroutine(actionCoroutine);
+            actionCoroutine = null;
+        }
     }
 
     public override void Move(Vector3 targetPos)
     {
         agent.isStopped = false;
+
+        anim.SetBool(hashAttack, false);
+        anim.SetBool(hashMove, true);
+
         agent.SetDestination(targetPos);
+
+        if (actionCoroutine != null)
+        {
+            StopCoroutine(actionCoroutine);
+            actionCoroutine = null;
+        }
+    }
+
+    private IEnumerator Attack(float attackDelay)
+    {
+        while (true)
+        {
+            anim.SetTrigger(hashTrigger);
+            yield return new WaitForSeconds(attackDelay);
+        }
     }
 }

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public  class AI_Mob_Nurse : AI_Mob_Default
 {
-    Coroutine motionCoroutine = null;
-
     public override void Action(Transform target)
     {
-        if (motionCoroutine != null)
-            motionCoroutine = null;
+        if (actionCoroutine != null)
+        {
+            StopCoroutine(actionCoroutine);
+            actionCoroutine = null;
+        }
         agent.isStopped = true;
         anim.SetBool(hashMove, false);
     }
@@ -17,14 +18,17 @@ public  class AI_Mob_Nurse : AI_Mob_Default
     public override void Idle()
     {
         anim.SetBool(hashMove, false);
-        if (motionCoroutine == null)
-            motionCoroutine = StartCoroutine(Motion());
+        if (actionCoroutine == null)
+            actionCoroutine = StartCoroutine(Motion());
     }
 
     public override void Move(Vector3 targetPos)
     {
-        if (motionCoroutine != null)
-            motionCoroutine = null;
+        if (actionCoroutine != null)
+        {
+            StopCoroutine(actionCoroutine);
+            actionCoroutine = null;
+        }
 
         agent.isStopped = false;
         anim.SetBool(hashMove, true);

@@ -15,6 +15,8 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     protected NavMeshAgent agent;
     protected Animator anim;
 
+    protected Coroutine actionCoroutine = null;
+
     protected readonly int hashMove = Animator.StringToHash("Move");
     protected readonly int hashTrigger = Animator.StringToHash("Trigger");
     protected readonly int hashAttack = Animator.StringToHash("Attack");

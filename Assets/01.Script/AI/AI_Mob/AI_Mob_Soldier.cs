@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AI_Mob_Soldier : AI_Mob_Default
 {
-    Coroutine attackCoroutine = null;
 
     public override void Action(Transform target)
     {
@@ -14,9 +13,12 @@ public class AI_Mob_Soldier : AI_Mob_Default
             anim.SetBool(hashMove, true);
             anim.SetBool(hashAttack, false);
             agent.SetDestination(transform.position - target.position);
-           
-            if (attackCoroutine != null)
-               attackCoroutine = null;
+
+            if (actionCoroutine != null)
+            {
+                StopCoroutine(actionCoroutine);
+                actionCoroutine = null;
+            }
         }
         else
         {
@@ -26,8 +28,8 @@ public class AI_Mob_Soldier : AI_Mob_Default
 
             transform.LookAt(target.position);
 
-            if (attackCoroutine == null)
-                attackCoroutine = StartCoroutine(Attack(1f));
+            if (actionCoroutine == null)
+                actionCoroutine = StartCoroutine(Attack(2f));
         }
 
     }
@@ -37,8 +39,11 @@ public class AI_Mob_Soldier : AI_Mob_Default
         agent.isStopped = true;
         anim.SetBool(hashMove, false);
 
-        if (attackCoroutine != null)
-            attackCoroutine = null;
+        if (actionCoroutine != null)
+        {
+            StopCoroutine(actionCoroutine);
+            actionCoroutine = null;
+        }
     }
 
     public override void Move(Vector3 targetPos)
@@ -47,8 +52,11 @@ public class AI_Mob_Soldier : AI_Mob_Default
         anim.SetBool(hashMove, true);
         agent.SetDestination(targetPos);
 
-        if (attackCoroutine != null)
-            attackCoroutine = null;
+        if (actionCoroutine != null)
+        {
+            StopCoroutine(actionCoroutine);
+            actionCoroutine = null;
+        }
     }
 
     private IEnumerator Attack(float attackDelay)
