@@ -14,7 +14,12 @@ public class QuestManager : MonoSingleton<QuestManager>
     private GameObject soldierPrefab = null;
     [SerializeField]
     private GameObject nursePrefab = null;
-
+    [SerializeField]
+    private int summonResearcherCount = 0;
+    [SerializeField]
+    private int summonSoldierCount = 0;
+    [SerializeField]
+    private int summonNurseCount = 0;
 
     private void Start()
     {
@@ -36,6 +41,12 @@ public class QuestManager : MonoSingleton<QuestManager>
 
     IEnumerator KitchenQuest()
     {
+        summonResearcherCount = 12;
+        summonNurseCount = 8;
+
+        InstantiateResearcher(summonResearcherCount);
+        InstantiateNurse(summonNurseCount);
+
         while (!isClear)
         {
             if (killedNpcCount >= 20)
@@ -65,6 +76,12 @@ public class QuestManager : MonoSingleton<QuestManager>
 
     IEnumerator LaboratorQuest()
     {
+        summonResearcherCount = 15;
+        summonSoldierCount = 5;
+
+        InstantiateResearcher(summonResearcherCount);
+        InstantiateSoldier(summonSoldierCount);
+
         while (!isClear)
         {
             if (killedNpcCount >= 20)
@@ -85,6 +102,30 @@ public class QuestManager : MonoSingleton<QuestManager>
         Debug.Log("Interfere Communication");
         UIManager.Instance.questTitle.text = "외부로의 교신 방해";
         UIManager.Instance.questContent.text = "사람이 외부로 교신을 전하고 있습니다. 방해하세요!";
+    }
+
+    void InstantiateResearcher(int researcherCount)
+    {
+        for (int i = 0; i < researcherCount; ++i)
+        {
+            Instantiate(researcherPrefab);
+        }
+    }
+
+    void InstantiateSoldier(int soldierCount)
+    {
+        for (int i = 0; i < soldierCount; ++i)
+        {
+            Instantiate(soldierPrefab);
+        }
+    }
+
+    void InstantiateNurse(int nurseCount)
+    {
+        for (int i = 0; i < nurseCount; ++i)
+        {
+            Instantiate(nursePrefab);
+        }
     }
 
 }
