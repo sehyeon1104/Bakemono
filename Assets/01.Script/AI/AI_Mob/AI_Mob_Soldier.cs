@@ -24,6 +24,8 @@ public class AI_Mob_Soldier : AI_Mob_Default
             anim.SetBool(hashMove, false);
             anim.SetBool(hashAttack, true);
 
+            transform.LookAt(target.position);
+
             if (attackCoroutine == null)
                 attackCoroutine = StartCoroutine(Attack(1f));
         }
