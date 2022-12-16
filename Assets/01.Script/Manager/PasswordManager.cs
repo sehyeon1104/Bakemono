@@ -18,8 +18,6 @@ public class PasswordManager : MonoBehaviour
     [Header("SetPasswordRoom")]
     [SerializeField]
     private List<GameObject> passwordRoom = new List<GameObject>();     // 암호가 생성될 수 있는 모든 방
-    [SerializeField]
-    private GameObject[] passwordRoomLocation;      // 암호가 생성될 방 4개
 
     private void Awake()
     {
@@ -94,7 +92,7 @@ public class PasswordManager : MonoBehaviour
         }
 
         // 암호가 배치될 수 있는 모든 구역 셔플
-        for(int i = 0; i < 100; ++i)
+        for (int i = 0; i < 100; ++i)
         {
             int rand = Random.Range(0, passwordRoom.Count);
             GameObject temp = passwordRoom[rand];
@@ -102,7 +100,7 @@ public class PasswordManager : MonoBehaviour
             passwordRoom.Add(temp);
         }
 
-        for(int i = 0; i < passwordRoom.Count; ++i)
+        for (int i = 0; i < passwordRoom.Count; ++i)
         {
             passwordRoom[i].SetActive(false);
         }
