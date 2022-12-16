@@ -37,6 +37,7 @@ public class MonsterInput : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             // 치료실 회복
+            GameManager.Instance.HealMonster();
         }
 
     }
