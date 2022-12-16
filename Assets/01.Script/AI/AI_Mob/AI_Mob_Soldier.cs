@@ -23,6 +23,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
             agent.isStopped = true;
             anim.SetBool(hashMove, false);
             anim.SetBool(hashAttack, true);
+
             if (attackCoroutine == null)
                 attackCoroutine = StartCoroutine(Attack(1f));
         }
