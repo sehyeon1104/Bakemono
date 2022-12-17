@@ -6,16 +6,18 @@ using TMPro;
 
 public class UIManager : MonoSingleton<UIManager>
 {
+    public GameObject passwordPanel = null;
+
     [Header("QuestUI")]
     public TextMeshProUGUI questTitle;
     public TextMeshProUGUI questContent;
     [SerializeField]
     private GameObject questPanel;
 
-
     [Header("PauseUI")]
     [SerializeField]
     private GameObject pausePanel;
+
     public bool isPause { private set; get; } = false;
 
     private void Start()
@@ -33,7 +35,14 @@ public class UIManager : MonoSingleton<UIManager>
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePausePanel();
+            TogglePasswordPanel(false);
         }
+    }
+    public void DisableAllPanels()
+    {
+        questPanel.SetActive(false);
+        pausePanel.SetActive(false);
+        TogglePasswordPanel(false);
     }
 
     public void ToggleQuestUI(bool toggle)
@@ -41,10 +50,11 @@ public class UIManager : MonoSingleton<UIManager>
         questPanel.SetActive(toggle);
     }
 
-    public void DisableAllPanels()
+    public void TogglePasswordPanel(bool toggle)
     {
-        questPanel.SetActive(false);
-        pausePanel.SetActive(false);
+        passwordPanel.SetActive(toggle);
+        MouseManager.Lock(!toggle);
+        MouseManager.Visible(toggle);
     }
 
     public void TogglePausePanel()

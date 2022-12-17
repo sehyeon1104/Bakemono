@@ -20,7 +20,7 @@ public class MonsterMovement : MonoBehaviour ,IAgentStat
     [SerializeField]
     float jumpSpeed = 2f;
     [SerializeField]
-    float gravity = 10f;
+    float gravity = 5f;
     readonly int jump = Animator.StringToHash("Jump");
     readonly int horizontal = Animator.StringToHash("Horizontal");
     readonly int vertical = Animator.StringToHash("Vertical");
