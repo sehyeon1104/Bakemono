@@ -9,7 +9,8 @@ public class MonsterUI : MonoSingleton<MonsterUI>
      Image hpBar;
     [SerializeField]
      Image attackImg;
-    
+    [SerializeField]
+    Image expBar;
     public Image skillImage;
     Animator monsterAni;
     AnimatorStateInfo info;
@@ -42,6 +43,7 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     public void UIUpdate()
     {
         hpBar.fillAmount = monster.CurrentHp / (float)monster.MaxHp;
+        expBar.fillAmount = monster.CurrentExp / (float)monster.LevelPerExp;
     }
     public void FindEnemy()
     {

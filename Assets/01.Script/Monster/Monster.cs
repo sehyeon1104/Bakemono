@@ -3,30 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Monster : MonoSingleton<Monster>, IHittable , IAgentStat
+public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
 {
-    int currentExp = 10;
-    int levelPerExp = 0;
-    int level = 1;
+    float currentExp = 0;
+    float levelPerExp = 100;
+    int  level = 1;
     bool isDie = false;
     public PlayerBase playerBase;
     int maxHp = 100;
     [SerializeField]
-    [Range(0,100)]
+    [Range(0, 100)]
     int currentHp = 100;
+    public bool activeDoorOpen = true;
     [SerializeField] UnityEvent onDie;
     [SerializeField] UnityEvent<int> levelUp;
     [SerializeField] UnityEvent onGethit;
+    
     public void GetHit(int damage, GameObject damgeDelear)
     {
         //대충 적한테 맞았을 때 
     }
-    public int LevelPerExp
+    public float LevelPerExp
     {
         get => levelPerExp;
         set => levelPerExp = value;
     }
-    public int CurrentExp
+    public float CurrentExp
     {
         get => currentExp;
         set => currentExp = value;
@@ -43,11 +45,11 @@ public class Monster : MonoSingleton<Monster>, IHittable , IAgentStat
         {
             currentHp = value;
 
-            if(currentHp > maxHp)
+            if (currentHp > maxHp)
             {
                 currentHp = maxHp;
             }
-          
+
         }
 
     }
@@ -68,7 +70,6 @@ public class Monster : MonoSingleton<Monster>, IHittable , IAgentStat
         if (currentExp >= levelPerExp)
         {
             level++;
-
             levelUp?.Invoke(level);
         }
         if (!isDie)
@@ -87,5 +88,14 @@ public class Monster : MonoSingleton<Monster>, IHittable , IAgentStat
             QuestManager.Instance.SendMessage(other.name);
             Destroy(other.gameObject);
         }
+    }
+    public void Levelactive(int level)
+    {
+        levelPerExp *= 1.2f;
+        if(level == 5)
+        {
+            activeDoorOpen= true;
+        }    
+
     }
 }
