@@ -16,7 +16,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
 
             if (actionCoroutine != null)
             {
-                StopCoroutine(actionCoroutine);
+                StopCoroutine("Attack");
                 actionCoroutine = null;
             }
         }
@@ -38,10 +38,11 @@ public class AI_Mob_Soldier : AI_Mob_Default
     {
         agent.isStopped = true;
         anim.SetBool(hashMove, false);
+        anim.SetBool(hashAttack, false);
 
         if (actionCoroutine != null)
         {
-            StopCoroutine(actionCoroutine);
+            StopCoroutine("Attack");
             actionCoroutine = null;
         }
     }
@@ -49,12 +50,15 @@ public class AI_Mob_Soldier : AI_Mob_Default
     public override void Move(Vector3 targetPos)
     {
         agent.isStopped = false;
+
         anim.SetBool(hashMove, true);
+        anim.SetBool(hashAttack, false);
+
         agent.SetDestination(targetPos);
 
         if (actionCoroutine != null)
         {
-            StopCoroutine(actionCoroutine);
+            StopCoroutine("Attack");
             actionCoroutine = null;
         }
     }

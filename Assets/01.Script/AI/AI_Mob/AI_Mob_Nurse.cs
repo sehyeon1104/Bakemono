@@ -8,7 +8,7 @@ public  class AI_Mob_Nurse : AI_Mob_Default
     {
         if (actionCoroutine != null)
         {
-            StopCoroutine(actionCoroutine);
+            StopCoroutine("Motion");
             actionCoroutine = null;
         }
         agent.isStopped = true;
@@ -26,7 +26,7 @@ public  class AI_Mob_Nurse : AI_Mob_Default
     {
         if (actionCoroutine != null)
         {
-            StopCoroutine(actionCoroutine);
+            StopCoroutine("Motion");
             actionCoroutine = null;
         }
 
