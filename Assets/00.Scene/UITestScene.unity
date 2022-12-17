@@ -1601,18 +1601,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1959747076}
     m_Modifications:
-    - target: {fileID: 1755372206033604427, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_fontSize
-      value: 39.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 1755372206033604427, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 92db1675dd9a59540b24f411f2e960dc, type: 2}
-    - target: {fileID: 1755372206033604427, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 8335790564389648535, guid: 92db1675dd9a59540b24f411f2e960dc, type: 2}
     - target: {fileID: 1755372206059826394, guid: 366020d08353cde429588606bc0ec678, type: 3}
       propertyPath: m_Name
       value: SettingPanel
@@ -1701,14 +1689,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1755372206399544815, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 53a7278c934905f4cbc2184b3a2c64ad, type: 3}
-    - target: {fileID: 1755372206537150668, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b1a4c8fd3224d474e90345945e5ab1b5, type: 3}
     - target: {fileID: 1755372206537150671, guid: 366020d08353cde429588606bc0ec678, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1717,34 +1697,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1755372206658596675, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 92db1675dd9a59540b24f411f2e960dc, type: 2}
-    - target: {fileID: 1755372206658596675, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 8335790564389648535, guid: 92db1675dd9a59540b24f411f2e960dc, type: 2}
-    - target: {fileID: 1755372207341830832, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1755372207341830832, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 4bc71d0ad398bdf4bb2a9d8763434ff7, type: 3}
-    - target: {fileID: 1755372207341830832, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_UseSpriteMesh
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1755372207341830832, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1755372207568513514, guid: 366020d08353cde429588606bc0ec678, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b1a4c8fd3224d474e90345945e5ab1b5, type: 3}
     - target: {fileID: 1755372207568513525, guid: 366020d08353cde429588606bc0ec678, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

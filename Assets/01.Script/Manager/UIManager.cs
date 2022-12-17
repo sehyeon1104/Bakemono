@@ -6,16 +6,19 @@ using TMPro;
 
 public class UIManager : MonoSingleton<UIManager>
 {
+    [SerializeField]
+    private GameObject passwordPanel;
+
     [Header("QuestUI")]
     public TextMeshProUGUI questTitle;
     public TextMeshProUGUI questContent;
     [SerializeField]
     private GameObject questPanel;
 
-
     [Header("PauseUI")]
     [SerializeField]
     private GameObject pausePanel;
+
     public bool isPause { private set; get; } = false;
 
     private void Start()
@@ -35,16 +38,21 @@ public class UIManager : MonoSingleton<UIManager>
             TogglePausePanel();
         }
     }
+    public void DisableAllPanels()
+    {
+        questPanel.SetActive(false);
+        pausePanel.SetActive(false);
+        passwordPanel.SetActive(false);
+    }
 
     public void ToggleQuestUI(bool toggle)
     {
         questPanel.SetActive(toggle);
     }
 
-    public void DisableAllPanels()
+    public void TogglePasswordPanel(bool toggle)
     {
-        questPanel.SetActive(false);
-        pausePanel.SetActive(false);
+        passwordPanel.SetActive(toggle);
     }
 
     public void TogglePausePanel()
