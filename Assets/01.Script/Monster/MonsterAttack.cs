@@ -2,33 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+using DG.Tweening;
 public class MonsterAttack : MonoBehaviour
 {
     [SerializeField] UnityEvent monsterAttack;
     [SerializeField] UnityEvent findEnemy;
     public Transform Shootraytrans;
     public bool isAttackClick = true;
-    public bool isBiteClick = true;
     float totalTime = 0;
     [SerializeField]
     float deathRate = 0.2f;
     [SerializeField]
     float eatDistance = 1f;
     Animator monsterAni;
+    bool isFind = false;
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
     readonly int BiteNameHash = Animator.StringToHash("Bite");
-    
+    Sequence dotSequence;
     bool isLeft = true;
     AnimatorStateInfo info;
-
+    Transform imageTrans;
 
 
     void Start()
     {
+        dotSequence = DOTween.Sequence();
+
+
+    }
+    private void Awake()
+    {
         monsterAni = GetComponent<Animator>();
+        imageTrans = MonsterUI.Instance.skillImage.transform;
     }
 
     private void Update()
@@ -37,20 +44,25 @@ public class MonsterAttack : MonoBehaviour
         Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
         if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
         {
-          IAgentStat agentStat = hit.transform.GetComponent<IAgentStat>(); 
-            if(deathRate> agentStat.CurrentHp/agentStat.MaxHp)
+            isFind=true;
+            MonsterUI.Instance.skillImage.color = Color.red;
+
+            IAgentStat agentStat = hit.transform.GetComponent<IAgentStat>();
             if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
             {
-                isBiteClick = false;
                 monsterAni.SetTrigger(BiteNameHash);
             }
-
         }
+        else
+        {
+            isFind = false;
+            MonsterUI.Instance.skillImage.color = Color.white;
+        }
+
         info = monsterAni.GetCurrentAnimatorStateInfo(1);
         totalTime += Time.deltaTime;
         if (totalTime > 0.5f)
         {
-            isBiteClick = true;
             isAttackClick = true;
         }
         if (totalTime > 15f)
@@ -59,7 +71,11 @@ public class MonsterAttack : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash)
         {
-            monsterAttack?.Invoke();
+            monsterAttack?.Invoke();    
+        }
+        if(isFind)
+        {
+            imageTrans.DOScale(new Vector3(2, 2, 0), 1f).SetLoops(2, LoopType.Yoyo);
         }
     }
     public void Attack()
