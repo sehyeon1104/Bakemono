@@ -12,11 +12,20 @@ public class MonsterInput : MonoBehaviour
     [SerializeField] private GameObject doorLock = null;
     [SerializeField] private float doorLockDis = 5f;
 
-    void Update()
+    [SerializeField]
+    private void Update()
     {
         if (UIManager.Instance.isPause)
         {
             return;
+        }
+
+        if (UIManager.Instance.passwordPanel.activeSelf)
+        {
+            if (Vector3.Distance(doorLock.transform.position, transform.position) > doorLockDis)
+            {
+                UIManager.Instance.TogglePasswordPanel(false);
+            }
         }
 
         MonsterMove();
@@ -35,10 +44,11 @@ public class MonsterInput : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
+            Debug.Log(Vector3.Distance(doorLock.transform.position, transform.position));
             // ¹®¿­°í ´Ý±â
             if(Vector3.Distance(doorLock.transform.position, transform.position) < doorLockDis)
             {
-
+                UIManager.Instance.TogglePasswordPanel(!UIManager.Instance.passwordPanel.activeSelf);
             }
         }
         if (Input.GetKeyDown(KeyCode.E))
