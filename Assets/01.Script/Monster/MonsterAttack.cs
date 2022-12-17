@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using DG.Tweening;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class MonsterAttack : MonoBehaviour
 {
@@ -20,8 +21,6 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField]
     float eatDistance = 1f;
     Animator monsterAni;
-    [SerializeField]
-    bool doorOpenactive = false; 
     bool isFind = false;
     bool isComplete = true;
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
@@ -34,6 +33,7 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] TextMeshProUGUI doorTrueText;
     [SerializeField] TextMeshProUGUI doorFalseText;
     Image imageColor;
+    RaycastHit hit;
     void Start()
     {
     }
@@ -46,23 +46,29 @@ public class MonsterAttack : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit hit;
+       
         Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
         if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1<< LayerMask.NameToLayer("Door")))
         { 
             if(Monster.Instance.activeDoorOpen)
             {
-                doorTrueText.enabled = true;
+               doorTrueText.gameObject.SetActive(true);
+                if(Input.GetKeyDown(KeyCode.F))
+                {
+                    Animation doorAni = hit.transform.parent.GetComponent<Animation>();
+                    doorAni.Play();
+                    
+                }
             }
             else
             {
-                doorFalseText.enabled = true;
+                doorFalseText.gameObject.SetActive(true);
             }
         }
         else
         {
-            doorFalseText.enabled = false;
-            doorFalseText.enabled = false;
+            doorTrueText.gameObject.SetActive(false);
+            doorFalseText.gameObject.SetActive(false);
         }
         if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
         {

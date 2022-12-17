@@ -9,6 +9,7 @@ public class MonsterInput : MonoBehaviour
     [SerializeField] UnityEvent<Vector3> moveKeyPress;
     [SerializeField] UnityEvent monsterSkill;
     [SerializeField] UnityEvent<float> rotateMouse;
+    [SerializeField] UnityEvent OpenDoor;
     [SerializeField] private GameObject doorLock = null;
     [SerializeField] private float doorLockDis = 5f;
 
@@ -19,7 +20,6 @@ public class MonsterInput : MonoBehaviour
         {
             return;
         }
-
         if (UIManager.Instance.passwordPanel.activeSelf)
         {
             if (Vector3.Distance(doorLock.transform.position, transform.position) > doorLockDis)
