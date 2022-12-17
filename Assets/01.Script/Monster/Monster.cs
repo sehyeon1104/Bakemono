@@ -47,9 +47,9 @@ public class Monster : MonoSingleton<Monster>, IHittable , IAgentStat
             {
                 currentHp = maxHp;
             }
-
-            MonsterUI.Instance.UpdateHpbar();
+          
         }
+
     }
     public float Speed { get; set; }
 
