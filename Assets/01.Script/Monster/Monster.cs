@@ -14,7 +14,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     [SerializeField]
     [Range(0, 100)]
     int currentHp = 100;
-    public bool activeDoorOpen = true;
+    public bool activeDoorOpen = false;
     [SerializeField] UnityEvent onDie;
     [SerializeField] UnityEvent<int> levelUp;
     [SerializeField] UnityEvent onGethit;
