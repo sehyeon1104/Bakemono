@@ -8,17 +8,17 @@ public class PlayerBase
     {
         CallPlayerInfo();
     }
-    int levelPerExp = 0;
-    int currentExp;
+    float levelPerExp = 0;
+    float currentExp;
     int level;
     int hp;
     int maxHp = 100;
-    public int LevelPerExp
+    public float LevelPerExp
     {
         get => levelPerExp;
         set => levelPerExp = value;
     }
-    public int Exp
+    public float Exp
     {
         get => currentExp;
         set => currentExp = value;
