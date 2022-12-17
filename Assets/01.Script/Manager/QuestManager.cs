@@ -21,6 +21,11 @@ public class QuestManager : MonoSingleton<QuestManager>
     [SerializeField]
     private int summonNurseCount = 0;
 
+    [SerializeField]
+    private Transform[] kitchenMobSpawnPos;
+    [SerializeField]
+    private Transform[] LaboratorMobSpawnPos;
+
     private void Start()
     {
         doQuest = false;
@@ -44,8 +49,9 @@ public class QuestManager : MonoSingleton<QuestManager>
         summonResearcherCount = 12;
         summonNurseCount = 8;
 
-        InstantiateResearcher(summonResearcherCount);
-        InstantiateNurse(summonNurseCount);
+        InstantiateResearcher(summonResearcherCount, kitchenMobSpawnPos);
+        //yield return new WaitForSeconds(0.1f);
+        InstantiateNurse(summonNurseCount, kitchenMobSpawnPos);
 
         while (!isClear)
         {
@@ -79,8 +85,8 @@ public class QuestManager : MonoSingleton<QuestManager>
         summonResearcherCount = 15;
         summonSoldierCount = 5;
 
-        InstantiateResearcher(summonResearcherCount);
-        InstantiateSoldier(summonSoldierCount);
+        InstantiateResearcher(summonResearcherCount, LaboratorMobSpawnPos);
+        InstantiateSoldier(summonSoldierCount, LaboratorMobSpawnPos);
 
         while (!isClear)
         {
@@ -104,27 +110,52 @@ public class QuestManager : MonoSingleton<QuestManager>
         UIManager.Instance.questContent.text = "사람이 외부로 교신을 전하고 있습니다. 방해하세요!";
     }
 
-    void InstantiateResearcher(int researcherCount)
+    void InstantiateResearcher(int researcherCount, Transform[] spawnPos)
     {
-        for (int i = 0; i < researcherCount; ++i)
+        int pivot = 0;
+
+        while (spawnPos[pivot].childCount != 0)
         {
-            Instantiate(researcherPrefab);
+            pivot++;
+        }
+
+        for (int i = pivot; i < researcherCount; ++i)
+        {
+            Instantiate(researcherPrefab, spawnPos[i]);
         }
     }
 
-    void InstantiateSoldier(int soldierCount)
+    void InstantiateSoldier(int soldierCount, Transform[] spawnPos)
     {
-        for (int i = 0; i < soldierCount; ++i)
+        int pivot = 0;
+
+        while(spawnPos[pivot].childCount != 0)
         {
-            Instantiate(soldierPrefab);
+            pivot++;
+        }
+
+        for (int i = pivot; i < soldierCount; ++i)
+        {
+            Instantiate(soldierPrefab, spawnPos[i]);
         }
     }
 
-    void InstantiateNurse(int nurseCount)
+    void InstantiateNurse(int nurseCount, Transform[] spawnPos)
     {
-        for (int i = 0; i < nurseCount; ++i)
+        int pivot = 0;
+
+        Debug.Log("InstantiateNurse");
+
+        while (spawnPos[pivot].childCount != 0)
         {
-            Instantiate(nursePrefab);
+            Debug.Log(pivot);
+            pivot++;
+        }
+
+        for (int i = pivot; i < pivot + nurseCount; ++i)
+        {
+            Debug.Log("Instantiate");
+            Instantiate(nursePrefab, spawnPos[i]);
         }
     }
 
