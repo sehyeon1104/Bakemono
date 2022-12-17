@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
 using UnityEngine.UI;
+using TMPro;
+
 public class MonsterAttack : MonoBehaviour
 {
     [SerializeField] UnityEvent monsterAttack;
@@ -18,25 +20,22 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField]
     float eatDistance = 1f;
     Animator monsterAni;
+    [SerializeField]
+    bool doorOpenactive = false; 
     bool isFind = false;
     bool isComplete = true;
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
     readonly int BiteNameHash = Animator.StringToHash("Bite");
-    Sequence dotSequence;
     bool isLeft = true;
     AnimatorStateInfo info;
     Transform imageTrans;
-
-    Sequence sequence;
+    [SerializeField] TextMeshProUGUI doorTrueText;
+    [SerializeField] TextMeshProUGUI doorFalseText;
     Image imageColor;
     void Start()
     {
-        sequence = DOTween.Sequence();
-        dotSequence = DOTween.Sequence();
-        
-
     }
     private void Awake()
     {
@@ -49,6 +48,22 @@ public class MonsterAttack : MonoBehaviour
     {
         RaycastHit hit;
         Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
+        if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1<< LayerMask.NameToLayer("Door")))
+        { 
+            if(Monster.Instance.activeDoorOpen)
+            {
+                doorTrueText.enabled = true;
+            }
+            else
+            {
+                doorFalseText.enabled = true;
+            }
+        }
+        else
+        {
+            doorFalseText.enabled = false;
+            doorFalseText.enabled = false;
+        }
         if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
         {
             if(isComplete)
@@ -92,6 +107,7 @@ public class MonsterAttack : MonoBehaviour
             imageTrans.DOScale(new Vector3(1.2f, 1.2f, 0), changeTime).SetLoops(2, LoopType.Yoyo).OnComplete(() => isComplete = true) ;
        
         }
+  
     }
     public void Attack()
     {
