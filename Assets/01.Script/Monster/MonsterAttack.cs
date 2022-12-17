@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
+using UnityEngine.UI;
 public class MonsterAttack : MonoBehaviour
 {
     [SerializeField] UnityEvent monsterAttack;
     [SerializeField] UnityEvent findEnemy;
     public Transform Shootraytrans;
     public bool isAttackClick = true;
+    [SerializeField]
+    float changeTime = 0.7f; 
     float totalTime = 0;
     [SerializeField]
     float deathRate = 0.2f;
@@ -16,6 +19,7 @@ public class MonsterAttack : MonoBehaviour
     float eatDistance = 1f;
     Animator monsterAni;
     bool isFind = false;
+    bool isComplete = true;
     readonly int leftAttack = Animator.StringToHash("LeftAttack");
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
@@ -25,17 +29,20 @@ public class MonsterAttack : MonoBehaviour
     AnimatorStateInfo info;
     Transform imageTrans;
 
-
+    Sequence sequence;
+    Image imageColor;
     void Start()
     {
+        sequence = DOTween.Sequence();
         dotSequence = DOTween.Sequence();
-
+        
 
     }
     private void Awake()
     {
         monsterAni = GetComponent<Animator>();
         imageTrans = MonsterUI.Instance.skillImage.transform;
+        imageColor = MonsterUI.Instance.skillImage;
     }
 
     private void Update()
@@ -44,8 +51,13 @@ public class MonsterAttack : MonoBehaviour
         Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
         if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
         {
-            isFind=true;
-            MonsterUI.Instance.skillImage.color = Color.red;
+            if(isComplete)
+            {
+               
+                isComplete = false;
+                isFind = true;
+            }
+            imageColor.DOColor(new Color(0.7f, 0, 0), changeTime);
 
             IAgentStat agentStat = hit.transform.GetComponent<IAgentStat>();
             if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
@@ -57,6 +69,7 @@ public class MonsterAttack : MonoBehaviour
         {
             isFind = false;
             MonsterUI.Instance.skillImage.color = Color.white;
+            imageColor.DOColor(new Color(1, 1, 1), changeTime);
         }
 
         info = monsterAni.GetCurrentAnimatorStateInfo(1);
@@ -66,7 +79,7 @@ public class MonsterAttack : MonoBehaviour
             isAttackClick = true;
         }
         if (totalTime > 15f)
-        {
+        {   
             isLeft = true;
         }
         if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash)
@@ -75,7 +88,9 @@ public class MonsterAttack : MonoBehaviour
         }
         if(isFind)
         {
-            imageTrans.DOScale(new Vector3(2, 2, 0), 1f).SetLoops(2, LoopType.Yoyo);
+            isFind = false;
+            imageTrans.DOScale(new Vector3(1.2f, 1.2f, 0), changeTime).SetLoops(2, LoopType.Yoyo).OnComplete(() => isComplete = true) ;
+       
         }
     }
     public void Attack()
