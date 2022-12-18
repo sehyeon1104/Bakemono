@@ -52,7 +52,7 @@ public class PlayerBase
 
     void CallPlayerInfo()
     {
-        maxHp = SaveManager.Instance.CurrentUser.maxHp;
+        maxHp = Monster.Instance.MaxHp;
         hp = maxHp;
     }
 

@@ -9,7 +9,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     float levelPerExp = 100;
     int  level = 1;
     bool isDie = false;
-    public PlayerBase playerBase;
+    //public PlayerBase playerBase;
     int maxHp = 100;
     [SerializeField]
     [Range(0, 100)]
@@ -53,13 +53,22 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
         }
 
     }
+    public int CurrentLevel
+    {
+        get => level;
+        set
+        {
+            level = value;
+        }
+    }
+    
     public float Speed { get; set; }
 
-    void Awake()
-    {
-        playerBase = new PlayerBase();
+    //void Awake()
+    //{
+    //    playerBase = new PlayerBase();
+    //}
 
-    }
     private void Start()
     {
 
@@ -74,10 +83,10 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
         }
         if (!isDie)
         {
-            playerBase.LevelPerExp = levelPerExp;
-            playerBase.Exp = currentExp;
-            playerBase.Level = level;
-            playerBase.HP = currentHp;
+            //playerBase.LevelPerExp = levelPerExp;
+            //playerBase.Exp = currentExp;
+            //playerBase.Level = level;
+            //playerBase.HP = currentHp;
         }
     }
 
@@ -98,4 +107,11 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
         }    
 
     }
+
+    //public void SavePlayerStat()
+    //{
+    //    SaveManager.Instance.CurrentUser.hp = CurrentHp;
+    //    SaveManager.Instance.CurrentUser.experience = CurrentExp;
+    //    SaveManager.Instance.CurrentUser.level = level;
+    //}
 }

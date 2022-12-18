@@ -32,7 +32,7 @@ public class GameManager : MonoSingleton<GameManager>
         }
 
         curDelay = 0f;
-        Monster.Instance.CurrentHp = Monster.Instance.playerBase.MaxHP;
+        Monster.Instance.CurrentHp = Monster.Instance.MaxHp;
     }
 
 }

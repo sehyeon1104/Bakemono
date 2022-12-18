@@ -45,7 +45,7 @@ public class SaveManager : MonoSingleton<SaveManager>
 
     public void SaveToJson()
     {
-        SavePlayerStat();
+        /*Monster.Instance.*/SavePlayerStat();
 
         string json = JsonUtility.ToJson(user, true);
         json = Crypto.AESEncrypt128(json);
@@ -55,13 +55,14 @@ public class SaveManager : MonoSingleton<SaveManager>
 
     public void SavePlayerStat()
     {
-        CurrentUser.hp = Monster.Instance.playerBase.HP;
-        CurrentUser.experience = Monster.Instance.playerBase.Exp;
+        CurrentUser.hp = Monster.Instance.CurrentHp;
+        Instance.CurrentUser.experience = Monster.Instance.CurrentExp;
+        Instance.CurrentUser.level = Monster.Instance.CurrentLevel;
     }
 
-    private void OnApplicationQuit()
-    {
-        SaveToJson();
-    }
+    //private void OnApplicationQuit()
+    //{
+    //    SaveToJson();
+    //}
 
 }
