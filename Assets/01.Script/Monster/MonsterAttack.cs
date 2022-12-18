@@ -34,6 +34,7 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] TextMeshProUGUI doorFalseText;
     Image imageColor;
     RaycastHit hit;
+    [SerializeField] AudioClip doorOpen;
     void Start()
     {
     }
@@ -59,6 +60,7 @@ public class MonsterAttack : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.F))
                     {
                         hit.transform.parent.GetComponent<Animation>().Play();
+                        hit.transform.gameObject.AddComponent<AudioSource>().PlayOneShot(doorOpen);
                     }
                 }
                 else
