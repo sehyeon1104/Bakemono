@@ -44,9 +44,8 @@ public class MonsterInput : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log(Vector3.Distance(doorLock.transform.position, transform.position));
             // ¹®¿­°í ´Ý±â
-            if(Vector3.Distance(doorLock.transform.position, transform.position) < doorLockDis)
+            if(Vector3.Distance(doorLock.transform.position, transform.position) < doorLockDis && !PasswordManager.Instance.isSucceed)
             {
                 UIManager.Instance.TogglePasswordPanel(!UIManager.Instance.passwordPanel.activeSelf);
             }

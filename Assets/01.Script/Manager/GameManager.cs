@@ -8,6 +8,8 @@ public class GameManager : MonoSingleton<GameManager>
     readonly float healDelay = 180f;
     private float curDelay = 180f;
 
+    
+
     private void Awake()
     {
         MouseManager.Lock(true);
@@ -31,6 +33,7 @@ public class GameManager : MonoSingleton<GameManager>
             return;
         }
 
+        Debug.Log("Heal");
         curDelay = 0f;
         Monster.Instance.CurrentHp = Monster.Instance.MaxHp;
     }
