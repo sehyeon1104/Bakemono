@@ -20,7 +20,7 @@ public class EnemySO : ScriptableObject
 
     public int Hp => hp;
     public float Speed => speed;
-    public float Powrer => power;
+    public float Power => power;
     public float Exp => exp;
 
 }
