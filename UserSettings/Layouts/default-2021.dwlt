@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 217
+  controlID: 100
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 218
+  controlID: 101
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 137
+  controlID: 102
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -242,8 +242,8 @@ MonoBehaviour:
     y: 0
     width: 236
     height: 730.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimatorControllerTool
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -269,13 +269,13 @@ MonoBehaviour:
     y: 0
     width: 612
     height: 373.6
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
   - {fileID: 14}
-  m_Selected: 1
+  m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -296,8 +296,8 @@ MonoBehaviour:
     y: 373.6
     width: 612
     height: 357.19998
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -405,14 +405,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.3516
+    - e00: 0.5743683
       e01: 0
       e02: 0
-      e03: 15
+      e03: 17.231049
       e10: 0
-      e11: 0.3516
+      e11: 0.5743683
       e12: 0
-      e13: 130.43001
+      e13: 169.67401
       e20: 0
       e21: 0
       e22: 1
@@ -453,14 +453,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.4585263
+    - e00: 0.9044169
       e01: 0
       e02: 0
-      e03: -7.9263153
+      e03: -224.3593
       e10: 0
-      e11: 0.4585263
+      e11: 0.9044169
       e12: 0
-      e13: 143.27133
+      e13: 76.802536
       e20: 0
       e21: 0
       e22: 1
@@ -485,14 +485,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.6149505
+    - e00: 0.707193
       e01: 0
       e02: 0
-      e03: 18.448547
+      e03: 21.21582
       e10: 0
-      e11: 0.6149505
+      e11: 0.707193
       e12: 0
-      e13: 117.08785
+      e13: 97.27508
       e20: 0
       e21: 0
       e22: 1
@@ -596,23 +596,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: cea53c00
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8e8ff8ff1e14faff34e5fcff0098ffff86adffff8aadffff8eadffff92adffffdaadffffdeadffffe2adffffe6adffffeaadffffeeadfffff2adfffff6adfffffaadffff02aeffff06aeffff16aeffff40aeffffeaf9ffff6c9a0000eaa200005cc5000048f000000c46150076631500
+      m_ExpandedIDs: 70eaf6fffe13f9ff92cefcff12fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Soldier
-        m_OriginalName: Soldier
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -339366
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 3}
       m_SearchString: 
@@ -704,33 +704,33 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/02.Animation/Animaton/Enemy/Doctor
+    - Assets/04.Material
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/02.Animation/Animaton/Enemy/Doctor
+  - Assets/04.Material
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\USER\Documents\Bakemono
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 40ff3600
-    m_LastClickedID: 3604288
-    m_ExpandedIDs: 00000000182501001a2501001c2501001e2501000c2601000e2601001626010066410400aeb715003e5b31004c5b310000ca9a3b
+    m_SelectedIDs: 9c260100
+    m_LastClickedID: 75420
+    m_ExpandedIDs: 00000000882501008a2501008e250100962501009825010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Nurse
-      m_OriginalName: Nurse
+      m_Name: SO
+      m_OriginalName: SO
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 75300
+      m_UserData: 447638
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -747,7 +747,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000182501001a2501001c2501001e250100
+    m_ExpandedIDs: 00000000882501008a2501008c2501008e2501009025010092250100942501009625010098250100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -775,18 +775,18 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 963e05009e3e0500f4300100f83001007e26010046ff360046943900cea53c0032b31500
+    m_ExpandedInstanceIDs: 963e05009e3e0500f4300100f83001007e26010046ff360046943900cea53c0032b31500acd40600
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Punching (1)
-      m_OriginalName: Punching (1)
+      m_Name: Blood
+      m_OriginalName: Blood
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 3604294
+      m_UserData: 2815166
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -928,8 +928,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -100, y: -25.600006}
+      snapOffset: {x: -100, y: -25.600006}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -939,9 +939,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -141, y: 149}
+      snapOffset: {x: -141, y: -179}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 3
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -950,7 +950,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -1153,9 +1153,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.343774, y: -21.289738, z: -1.6306056}
+    m_Target: {x: 9.686592, y: -20.961695, z: -2.05356}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 9.686592, y: -20.961695, z: -2.05356}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1202,13 +1202,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.1900123, y: 0.10609357, z: -0.020716485, w: -0.97587556}
+    m_Target: {x: -0.23959894, y: 0.38459843, z: -0.104156844, w: -0.8854104}
     speed: 2
-    m_Value: {x: -0.19000064, y: 0.10608706, z: -0.020715212, w: -0.97581565}
+    m_Value: {x: -0.23974009, y: 0.38324615, z: -0.10379091, w: -0.8859315}
   m_Size:
-    m_Target: 1.6783924
+    m_Target: 0.589801
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 0.589801
   m_Ortho:
     m_Target: 0
     speed: 2
