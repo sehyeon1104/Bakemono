@@ -17,6 +17,8 @@ public class UIManager : MonoSingleton<UIManager>
     [Header("PauseUI")]
     [SerializeField]
     private GameObject pausePanel;
+    [SerializeField]
+    private GameObject settingPanel;
 
     public bool isPause { private set; get; } = false;
 
@@ -43,6 +45,7 @@ public class UIManager : MonoSingleton<UIManager>
         questPanel.SetActive(false);
         pausePanel.SetActive(false);
         TogglePasswordPanel(false);
+        ToggleSettingPanel();
     }
 
     public void ToggleQuestUI(bool toggle)
@@ -60,6 +63,7 @@ public class UIManager : MonoSingleton<UIManager>
     public void TogglePausePanel()
     {
         pausePanel.SetActive(!pausePanel.activeSelf);
+        settingPanel.SetActive(false);
         isPause = pausePanel.activeSelf;
         MouseManager.Lock(!isPause);
         MouseManager.Visible(isPause);
@@ -71,6 +75,11 @@ public class UIManager : MonoSingleton<UIManager>
         {
             Time.timeScale = 1f;
         }
+    }
+
+    public void ToggleSettingPanel()
+    {
+        settingPanel.SetActive(!settingPanel.activeSelf);
     }
 
     public void GameQuit()
