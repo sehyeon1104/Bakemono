@@ -9,17 +9,17 @@ public class QuestManager : MonoSingleton<QuestManager>
 
     public int killedNpcCount = 0;
     [SerializeField]
-    private GameObject researcherPrefab = null;
+    private GameObject researcherMalePrefab = null;
     [SerializeField]
     private GameObject soldierPrefab = null;
     [SerializeField]
-    private GameObject nursePrefab = null;
+    private GameObject researcherFemalePrefab = null;
     [SerializeField]
-    private int summonResearcherCount = 0;
+    private int summonResearcherMaleCount = 0;
     [SerializeField]
     private int summonSoldierCount = 0;
     [SerializeField]
-    private int summonNurseCount = 0;
+    private int summonResearcherFemaleCount = 0;
 
     [SerializeField]
     private Transform[] kitchenMobSpawnPos;
@@ -46,11 +46,11 @@ public class QuestManager : MonoSingleton<QuestManager>
 
     IEnumerator KitchenQuest()
     {
-        summonResearcherCount = 12;
-        summonNurseCount = 8;
+        summonResearcherMaleCount = 12;
+        summonResearcherFemaleCount = 8;
 
-        InstantiateResearcher(summonResearcherCount, kitchenMobSpawnPos);
-        InstantiateNurse(summonNurseCount, kitchenMobSpawnPos);
+        InstantiateResearcher(summonResearcherMaleCount, kitchenMobSpawnPos);
+        InstantiateNurse(summonResearcherFemaleCount, kitchenMobSpawnPos);
 
         while (!isClear)
         {
@@ -89,10 +89,10 @@ public class QuestManager : MonoSingleton<QuestManager>
 
     IEnumerator LaboratorQuest()
     {
-        summonResearcherCount = 15;
+        summonResearcherMaleCount = 15;
         summonSoldierCount = 5;
 
-        InstantiateResearcher(summonResearcherCount, LaboratorMobSpawnPos);
+        InstantiateResearcher(summonResearcherMaleCount, LaboratorMobSpawnPos);
         InstantiateSoldier(summonSoldierCount, LaboratorMobSpawnPos);
 
         for (int i = 0; i < LaboratorMobSpawnPos.Length; ++i)
@@ -132,7 +132,7 @@ public class QuestManager : MonoSingleton<QuestManager>
 
         for (int i = pivot; i < pivot + researcherCount; ++i)
         {
-            Instantiate(researcherPrefab, spawnPos[i]);
+            Instantiate(researcherMalePrefab, spawnPos[i]);
         }
     }
 
@@ -155,7 +155,7 @@ public class QuestManager : MonoSingleton<QuestManager>
     {
         int pivot = 0;
 
-        Debug.Log("InstantiateNurse");
+        Debug.Log("InstantiateFemaleResearcher");
 
         while (spawnPos[pivot].childCount != 0 && pivot < spawnPos.Length)
         {
@@ -166,7 +166,7 @@ public class QuestManager : MonoSingleton<QuestManager>
         for (int i = pivot; i < pivot + nurseCount; ++i)
         {
             Debug.Log("Instantiate");
-            Instantiate(nursePrefab, spawnPos[i]);
+            Instantiate(researcherFemalePrefab, spawnPos[i]);
         }
     }
 
