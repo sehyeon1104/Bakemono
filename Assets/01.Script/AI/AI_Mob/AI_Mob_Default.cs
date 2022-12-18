@@ -22,9 +22,9 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     protected readonly int hashAttack = Animator.StringToHash("Attack");
     protected readonly int hashHit = Animator.StringToHash("Hit");
 
-    protected int currentHp;
+    protected float currentHp;
 
-    public int CurrentHp => currentHp;
+    public float CurrentHp => currentHp;
 
     public abstract void Action(Transform target);
     public abstract void Move(Vector3 targetPos);
@@ -65,7 +65,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
         }
 
     }
-    public void GetHit(int damage, GameObject damgeDelear)
+    public void GetHit(float damage, GameObject damgeDelear)
     {
         currentHp -= damage;
         anim.SetTrigger(hashHit);
