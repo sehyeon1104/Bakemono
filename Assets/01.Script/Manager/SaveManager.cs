@@ -39,6 +39,7 @@ public class SaveManager : MonoSingleton<SaveManager>
             string json = File.ReadAllText(SAVE_PATH + SAVE_FILENAME);
             json = Crypto.AESDecrypt128(json);
             user = JsonUtility.FromJson<User>(json);
+            LoadSpawnPos();
             //SceneSerialization.ImportScene(SAVE_SCENE);
         }
     }
@@ -57,8 +58,8 @@ public class SaveManager : MonoSingleton<SaveManager>
     public void SavePlayerStat()
     {
         CurrentUser.hp = Monster.Instance.CurrentHp;
-        Instance.CurrentUser.experience = Monster.Instance.CurrentExp;
-        Instance.CurrentUser.level = Monster.Instance.CurrentLevel;
+        CurrentUser.experience = Monster.Instance.CurrentExp;
+        CurrentUser.level = Monster.Instance.CurrentLevel;
     }
 
     public void SaveSpawnPos()

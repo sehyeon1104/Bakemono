@@ -15,18 +15,9 @@ public class GameManager : MonoSingleton<GameManager>
     private GameObject soldierPrefab = null;
     [SerializeField]
     private GameObject researcherFemalePrefab = null;
-    [SerializeField]
-    private int summonResearcherMaleCount = 10;
-    [SerializeField]
-    private int summonSoldierCount = 3;
-    [SerializeField]
-    private int summonResearcherFemaleCount = 3;
 
-    // 10
     public List<Transform> researcherFemaleSpawnPos = new List<Transform>();
-    // 3
     public List<Transform> soldierSpawnPos = new List<Transform>();
-    // 3
     public List<Transform> researcherMaleSpawnPos = new List<Transform>();
 
     private void Awake()
@@ -37,9 +28,9 @@ public class GameManager : MonoSingleton<GameManager>
 
     private void Start()
     {
-        InstantiateResearcher(summonResearcherMaleCount, researcherMaleSpawnPos);
-        InstantiateNurse(summonResearcherFemaleCount, researcherFemaleSpawnPos);
-        InstantiateSoldier(summonSoldierCount, soldierSpawnPos);
+        InstantiateResearcher(researcherMaleSpawnPos);
+        InstantiateNurse(researcherFemaleSpawnPos);
+        InstantiateSoldier(soldierSpawnPos);
     }
 
     private void Update()
@@ -64,25 +55,25 @@ public class GameManager : MonoSingleton<GameManager>
         Monster.Instance.CurrentHp = Monster.Instance.MaxHp;
     }
 
-    void InstantiateResearcher(int researcherCount, List<Transform> spawnPos)
+    void InstantiateResearcher(List<Transform> spawnPos)
     {
-        for (int i = 0; i < researcherCount; ++i)
+        for (int i = 0; i < spawnPos.Count; ++i)
         {
             Instantiate(researcherMalePrefab, spawnPos[i]);
         }
     }
 
-    void InstantiateSoldier(int soldierCount, List<Transform> spawnPos)
+    void InstantiateSoldier(List<Transform> spawnPos)
     {
-        for (int i = 0; i < soldierCount; ++i)
+        for (int i = 0; i < spawnPos.Count; ++i)
         {
             Instantiate(soldierPrefab, spawnPos[i]);
         }
     }
 
-    void InstantiateNurse(int nurseCount, List<Transform> spawnPos)
+    void InstantiateNurse(List<Transform> spawnPos)
     {
-        for (int i = 0; i < nurseCount; ++i)
+        for (int i = 0; i < spawnPos.Count; ++i)
         {
             Instantiate(researcherFemalePrefab, spawnPos[i]);
         }
