@@ -55,9 +55,7 @@ public class MonsterAttack : MonoBehaviour
                doorTrueText.gameObject.SetActive(true);
                 if(Input.GetKeyDown(KeyCode.F))
                 {
-                    Animation doorAni = hit.transform.parent.GetComponent<Animation>();
-                    doorAni.Play();
-                    
+                    hit.transform.parent.GetComponent<Animation>().Play();
                 }
             }
             else
