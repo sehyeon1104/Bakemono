@@ -45,7 +45,8 @@ public class SaveManager : MonoSingleton<SaveManager>
 
     public void SaveToJson()
     {
-        /*Monster.Instance.*/SavePlayerStat();
+        SavePlayerStat();
+        SaveSpawnPos();
 
         string json = JsonUtility.ToJson(user, true);
         json = Crypto.AESEncrypt128(json);
@@ -58,6 +59,20 @@ public class SaveManager : MonoSingleton<SaveManager>
         CurrentUser.hp = Monster.Instance.CurrentHp;
         Instance.CurrentUser.experience = Monster.Instance.CurrentExp;
         Instance.CurrentUser.level = Monster.Instance.CurrentLevel;
+    }
+
+    public void SaveSpawnPos()
+    {
+        CurrentUser.researcherMaleSpawnPos = GameManager.Instance.researcherMaleSpawnPos;
+        CurrentUser.researcherFemaleSpawnPos = GameManager.Instance.researcherFemaleSpawnPos;
+        CurrentUser.soldierSpawnPos = GameManager.Instance.soldierSpawnPos;
+    }
+
+    public void LoadSpawnPos()
+    {
+        GameManager.Instance.researcherMaleSpawnPos = CurrentUser.researcherMaleSpawnPos;
+        GameManager.Instance.researcherFemaleSpawnPos = CurrentUser.researcherFemaleSpawnPos;
+        GameManager.Instance.soldierSpawnPos = CurrentUser.soldierSpawnPos;
     }
 
     //private void OnApplicationQuit()

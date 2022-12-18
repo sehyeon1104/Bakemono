@@ -2729,7 +2729,7 @@ GameObject:
   - component: {fileID: 6773805029679528649}
   - component: {fileID: 5735863408742308773}
   m_Layer: 7
-  m_Name: Nurse
+  m_Name: Researcher_female
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
