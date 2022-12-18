@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
 using UnityEngine.UI;
+using TMPro;
+using Unity.VisualScripting;
+
 public class MonsterAttack : MonoBehaviour
 {
     [SerializeField] UnityEvent monsterAttack;
@@ -24,19 +27,16 @@ public class MonsterAttack : MonoBehaviour
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
     readonly int BiteNameHash = Animator.StringToHash("Bite");
-    Sequence dotSequence;
     bool isLeft = true;
     AnimatorStateInfo info;
     Transform imageTrans;
-
-    Sequence sequence;
+    [SerializeField] TextMeshProUGUI doorTrueText;
+    [SerializeField] TextMeshProUGUI doorFalseText;
     Image imageColor;
+    RaycastHit hit;
+    [SerializeField] AudioClip doorOpen;
     void Start()
     {
-        sequence = DOTween.Sequence();
-        dotSequence = DOTween.Sequence();
-        
-
     }
     private void Awake()
     {
@@ -47,8 +47,33 @@ public class MonsterAttack : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit hit;
+       
         Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
+        if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1<< LayerMask.NameToLayer("Door")))
+        { 
+            Animation doorAni = hit.transform.parent.GetComponent<Animation>();
+            if (!doorAni.isPlaying)
+            {
+                if (Monster.Instance.activeDoorOpen)
+                {
+                    doorTrueText.gameObject.SetActive(true);
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        hit.transform.parent.GetComponent<Animation>().Play();
+                        hit.transform.gameObject.AddComponent<AudioSource>().PlayOneShot(doorOpen);
+                    }
+                }
+                else
+                {
+                    doorFalseText.gameObject.SetActive(true);
+                }
+            }
+        }
+        else
+        {
+            doorTrueText.gameObject.SetActive(false);
+            doorFalseText.gameObject.SetActive(false);
+        }
         if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
         {
             if(isComplete)
@@ -92,6 +117,7 @@ public class MonsterAttack : MonoBehaviour
             imageTrans.DOScale(new Vector3(1.2f, 1.2f, 0), changeTime).SetLoops(2, LoopType.Yoyo).OnComplete(() => isComplete = true) ;
        
         }
+  
     }
     public void Attack()
     {

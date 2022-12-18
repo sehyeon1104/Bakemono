@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine.TextCore.Text;
 
-public class PasswordManager : MonoBehaviour
+public class PasswordManager : MonoSingleton<PasswordManager>
 {
     [Header("InputPassword")]
     public Texture faceTexture;
@@ -14,6 +14,7 @@ public class PasswordManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI[] inputPasswords;
     int pivot = -1;
+    public bool isSucceed { private set; get; } = false;
 
     [Header("SetPasswordRoom")]
     [SerializeField]
@@ -82,6 +83,9 @@ public class PasswordManager : MonoBehaviour
         }
 
         Debug.Log("Succeed!");
+        isSucceed = true;
+        UIManager.Instance.TogglePasswordPanel(false);
+        
     }
 
     public void SetPasswordRoom()

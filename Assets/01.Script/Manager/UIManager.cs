@@ -34,8 +34,8 @@ public class UIManager : MonoSingleton<UIManager>
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            TogglePausePanel();
             TogglePasswordPanel(false);
+            TogglePausePanel();
         }
     }
     public void DisableAllPanels()
@@ -61,8 +61,8 @@ public class UIManager : MonoSingleton<UIManager>
     {
         pausePanel.SetActive(!pausePanel.activeSelf);
         isPause = pausePanel.activeSelf;
-        MouseManager.Lock(!pausePanel.activeSelf);
-        MouseManager.Visible(pausePanel.activeSelf);
+        MouseManager.Lock(!isPause);
+        MouseManager.Visible(isPause);
         if (pausePanel.activeSelf)
         {
             Time.timeScale = 0f;
