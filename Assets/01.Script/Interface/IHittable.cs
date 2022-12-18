@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IHittable
 {
-    public void GetHit(float damage, GameObject damgeDelear);
+    public void GetHit(float damage, GameObject damageDealer);
 }

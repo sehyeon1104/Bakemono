@@ -19,7 +19,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     [SerializeField] UnityEvent<int> levelUp;
     [SerializeField] UnityEvent onGethit;
     
-    public void GetHit(float damage, GameObject damgeDelear)
+    public void GetHit(float damage, GameObject damageDealer)
     {
         //대충 적한테 맞았을 때 
     }

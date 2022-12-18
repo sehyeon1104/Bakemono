@@ -3,7 +3,9 @@ guid: 025f9f5b55cde0b4fbf59cea4a324934
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - enemySO: {instanceID: 0}
+  - bloodParticle: {fileID: 6613161332155477312, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
