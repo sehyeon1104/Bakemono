@@ -71,7 +71,6 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     {
         currentHp -= damage;
 
-
         bloodParticle.transform.SetParent(gameObject.transform);
         bloodParticle.transform.localPosition = Vector3.zero;
         bloodParticle.transform.LookAt(damageDealer.transform);
