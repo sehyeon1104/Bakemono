@@ -50,17 +50,21 @@ public class MonsterAttack : MonoBehaviour
         Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
         if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1<< LayerMask.NameToLayer("Door")))
         { 
-            if(Monster.Instance.activeDoorOpen)
+            Animation doorAni = hit.transform.parent.GetComponent<Animation>();
+            if (!doorAni.isPlaying)
             {
-               doorTrueText.gameObject.SetActive(true);
-                if(Input.GetKeyDown(KeyCode.F))
+                if (Monster.Instance.activeDoorOpen)
                 {
-                    hit.transform.parent.GetComponent<Animation>().Play();
+                    doorTrueText.gameObject.SetActive(true);
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        hit.transform.parent.GetComponent<Animation>().Play();
+                    }
                 }
-            }
-            else
-            {
-                doorFalseText.gameObject.SetActive(true);
+                else
+                {
+                    doorFalseText.gameObject.SetActive(true);
+                }
             }
         }
         else
