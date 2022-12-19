@@ -1,24 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class UIManager : MonoSingleton<UIManager>
 {
     public GameObject passwordPanel = null;
 
-    [Header("QuestUI")]
+    [Header("Quest UI")]
     public TextMeshProUGUI questTitle;
     public TextMeshProUGUI questContent;
     [SerializeField]
     private GameObject questPanel;
 
-    [Header("PauseUI")]
+    [Header("Pause UI")]
     [SerializeField]
     private GameObject pausePanel;
     [SerializeField]
     private GameObject settingPanel;
+
+    [Header("GameOver UI")]
+    [SerializeField]
+    private GameObject gameoverPanel;
+    [SerializeField]
+    private TextMeshProUGUI diedTMP;
 
     public bool isPause { private set; get; } = false;
 
@@ -39,13 +47,18 @@ public class UIManager : MonoSingleton<UIManager>
             TogglePasswordPanel(false);
             TogglePausePanel();
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            ToggleGameOverPanel();
+        }
     }
     public void DisableAllPanels()
     {
         questPanel.SetActive(false);
         pausePanel.SetActive(false);
+        gameoverPanel.SetActive(false);
+        settingPanel.SetActive(false);
         TogglePasswordPanel(false);
-        ToggleSettingPanel();
     }
 
     public void ToggleQuestUI(bool toggle)
@@ -80,6 +93,21 @@ public class UIManager : MonoSingleton<UIManager>
     public void ToggleSettingPanel()
     {
         settingPanel.SetActive(!settingPanel.activeSelf);
+    }
+
+    public void ToggleGameOverPanel()
+    {
+        gameoverPanel.SetActive(!gameoverPanel.activeSelf);
+        diedTMP.DOFade(1f, 4f);
+
+        StartCoroutine(RestartScene());
+    }
+
+    private IEnumerator RestartScene()
+    {
+        yield return new WaitForSeconds(4f);
+
+        SceneManager.LoadScene(1);
     }
 
     public void GameQuit()
