@@ -17,6 +17,7 @@ public class TitleSceneManager : MonoBehaviour
     private void Start()
     {
         isQuitPanelActive = false;
+        DisableAllPanel();
     }
 
     private void Update()
@@ -26,8 +27,12 @@ public class TitleSceneManager : MonoBehaviour
 
     private void InputKey()
     {
-        if (Input.anyKeyDown && !isQuitPanelActive)
+        if (Input.anyKeyDown)
         {
+            if (Input.GetMouseButtonDown(0))
+            {
+                return;
+            }
             GameStart();
         }
     }
@@ -44,8 +49,8 @@ public class TitleSceneManager : MonoBehaviour
 
     public void ToggleQuitPanel()
     {
+        Debug.Log("GameStart");
         quitPanel.SetActive(!quitPanel.activeSelf);
-        isQuitPanelActive = quitPanel.activeSelf;
     }
 
     public void GameQuit()
