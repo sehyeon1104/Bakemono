@@ -1127,6 +1127,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OpenDoor:
+    m_PersistentCalls:
+      m_Calls: []
+  doorLock: {fileID: 0}
+  doorLockDis: 5
 --- !u!114 &8147116867712122028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,8 +1144,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1455675d6fbc5478c51c9f79b5bbf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRight: 0
-  isClick: 1
+  monsterAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  findEnemy:
+    m_PersistentCalls:
+      m_Calls: []
+  Shootraytrans: {fileID: 0}
+  isAttackClick: 1
+  changeTime: 0.7
+  deathRate: 0.2
+  eatDistance: 1
+  doorTrueText: {fileID: 0}
+  doorFalseText: {fileID: 0}
+  doorOpen: {fileID: 0}
 --- !u!114 &8147116867712122031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,6 +1170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ea255ddb1d3b547a79db884098d98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHp: 100
+  activeDoorOpen: 0
+  bloodParticle: {fileID: 6613161332155477312, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
   onDie:
     m_PersistentCalls:
       m_Calls: []

@@ -5,6 +5,7 @@ using UnityEngine;
 public class AI_Mob_Soldier : AI_Mob_Default
 {
     [SerializeField] private Transform handPos;
+    [SerializeField] private ParticleSystem muzzleFlash;
 
     public override void Action(Transform target)
     {
@@ -77,6 +78,8 @@ public class AI_Mob_Soldier : AI_Mob_Default
                     hit.transform.GetComponent<Monster>().GetHit(enemySO.Power, gameObject);
                 }
             }
+
+            muzzleFlash.Play();
             yield return new WaitForSeconds(attackDelay);
         }
     }

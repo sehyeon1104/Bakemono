@@ -1955,7 +1955,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5272806852410798602}
-  - {fileID: 5270038502107874043}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2800,77 +2799,3 @@ Transform:
   m_Father: {fileID: 5272806851224129696}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1176848126070001479
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5122039552830324304}
-    m_Modifications:
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.612
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.211
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.116
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6447546382522298410, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-      propertyPath: m_Name
-      value: BloodSprayEffect
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
---- !u!4 &5270038502107874043 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6446886623722933692, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
-  m_PrefabInstance: {fileID: 1176848126070001479}
-  m_PrefabAsset: {fileID: 0}
