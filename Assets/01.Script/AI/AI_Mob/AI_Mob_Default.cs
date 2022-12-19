@@ -69,6 +69,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     }
     public void GetHit(float damage, GameObject damageDealer)
     {
+        Debug.Log("s");
         currentHp -= damage;
 
         bloodParticle.transform.SetParent(gameObject.transform);
