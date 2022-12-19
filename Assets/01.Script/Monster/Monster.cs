@@ -15,9 +15,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     [Range(0, 100)]
     float currentHp = 100;
     public bool activeDoorOpen = false;
-
-    public float damage = 30;
-    [SerializeField] private ParticleSystem bloodParticle;
+    public float damage = 30f;
 
     [SerializeField] UnityEvent onDie;
     [SerializeField] UnityEvent<int> levelUp;
@@ -28,11 +26,11 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
         currentHp -= damage;
         Debug.Log($"{damage}만큼 아프다");
 
-        bloodParticle.transform.SetParent(gameObject.transform);
-        bloodParticle.transform.localPosition = Vector3.up * 2;
-        bloodParticle.transform.LookAt(damageDealer.transform);
+        BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
+        BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 2;
+        BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
 
-        bloodParticle.Play();
+        BloodSprayEffect.Instance.BloodEffect.Play();
 
         //대충 적한테 맞았을 때 
     }
@@ -86,10 +84,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     {
 
     }
-    private void Update()
-    {
-        print(currentHp);
-    }
+
     void LateUpdate()
     {
         if (currentExp >= levelPerExp)
