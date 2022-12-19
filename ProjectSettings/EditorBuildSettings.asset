@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/00.Scene/TitleScene.unity
-    guid: 7680f8fcf3e52eb4cae415575047e2a6
-  - enabled: 1
-    path: Assets/00.Scene/Main.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Knife/Real Blood/Scenes/RealBloodShowcase.unity
+    guid: 4b9487a5c63b9984c94ffd23e3b20c88
   m_configObjects: {}
