@@ -44,9 +44,17 @@ public class UIManager : MonoSingleton<UIManager>
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            TogglePasswordPanel(false);
-            TogglePausePanel();
+            if (settingPanel.activeSelf)
+            {
+                ToggleSettingPanel();
+            }
+            else
+            {
+                TogglePasswordPanel(false);
+                TogglePausePanel();
+            }
         }
+
         if (Input.GetKeyDown(KeyCode.C))
         {
             ToggleGameOverPanel();
