@@ -12,8 +12,6 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     [Header("Enemy SO")]
     [SerializeField] protected EnemySO enemySO;
 
-    [SerializeField] private ParticleSystem bloodParticle;
-
     protected NavMeshAgent agent;
     protected Animator anim;
 
@@ -71,11 +69,11 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     {
         currentHp -= damage;
 
-        bloodParticle.transform.SetParent(gameObject.transform);
-        bloodParticle.transform.localPosition = Vector3.up * 2;
-        bloodParticle.transform.LookAt(damageDealer.transform);
-
-        bloodParticle.Play();
+        BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
+        BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 2;
+        BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
+                                  
+        BloodSprayEffect.Instance.BloodEffect.Play();
         
         anim.SetTrigger(hashHit);
     }
