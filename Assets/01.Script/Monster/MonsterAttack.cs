@@ -6,6 +6,7 @@ using DG.Tweening;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEngine.Audio;
 
 public class MonsterAttack : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class MonsterAttack : MonoBehaviour
     Image imageColor;
     RaycastHit hit;
     [SerializeField] AudioClip doorOpen;
+    [SerializeField] AudioMixerGroup audioMix;
     void Start()
     {
     }
@@ -61,6 +63,7 @@ public class MonsterAttack : MonoBehaviour
                     {
                         hit.transform.parent.GetComponent<Animation>().Play();
                         hit.transform.gameObject.AddComponent<AudioSource>().PlayOneShot(doorOpen);
+                        hit.transform.gameObject.AddComponent<AudioSource>().outputAudioMixerGroup = audioMix;
                     }
                 }
                 else
