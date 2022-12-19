@@ -16,9 +16,9 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField]
     private GameObject researcherFemalePrefab = null;
 
-    public List<Transform> researcherFemaleSpawnPos = new List<Transform>();
-    public List<Transform> soldierSpawnPos = new List<Transform>();
-    public List<Transform> researcherMaleSpawnPos = new List<Transform>();
+    public List<GameObject> researcherFemaleSpawnPos = new List<GameObject>();
+    public List<GameObject> soldierSpawnPos = new List<GameObject>();
+    public List<GameObject> researcherMaleSpawnPos = new List<GameObject>();
 
     private void Awake()
     {
@@ -56,27 +56,33 @@ public class GameManager : MonoSingleton<GameManager>
         Monster.Instance.CurrentHp = Monster.Instance.MaxHp;
     }
 
-    void InstantiateResearcher(List<Transform> spawnPos)
+    void InstantiateResearcher(List<GameObject> spawnPos)
     {
         for (int i = 0; i < spawnPos.Count; ++i)
         {
-            Instantiate(researcherMalePrefab, spawnPos[i]);
+            GameObject rMale = Instantiate(researcherMalePrefab, spawnPos[i].transform);
+            rMale.transform.SetParent(spawnPos[i].transform);
+            Debug.Log(rMale.transform.parent.position);
         }
     }
 
-    void InstantiateSoldier(List<Transform> spawnPos)
+    void InstantiateSoldier(List<GameObject> spawnPos)
     {
         for (int i = 0; i < spawnPos.Count; ++i)
         {
-            Instantiate(soldierPrefab, spawnPos[i]);
+            GameObject rFemale = Instantiate(soldierPrefab, spawnPos[i].transform);
+            rFemale.transform.SetParent(spawnPos[i].transform);
+            Debug.Log(rFemale.transform.parent.position);
         }
     }
 
-    void InstantiateNurse(List<Transform> spawnPos)
+    void InstantiateNurse(List<GameObject> spawnPos)
     {
         for (int i = 0; i < spawnPos.Count; ++i)
         {
-            Instantiate(researcherFemalePrefab, spawnPos[i]);
+            GameObject soldier = Instantiate(researcherFemalePrefab, spawnPos[i].transform);
+            soldier.transform.SetParent(spawnPos[i].transform);
+            Debug.Log(soldier.transform.parent.position);
         }
     }
 
