@@ -28,8 +28,8 @@ public class MonsterMovement : MonoBehaviour ,IAgentStat
     readonly int isTurn = Animator.StringToHash("IsTurn");
     public Vector3 cashed_move = Vector3.zero;
 
-    public int CurrentHp { get ; set ; }
-    public int MaxHp { get ; set; }
+    public float CurrentHp { get ; set ; }
+    public float MaxHp { get ; set; }
     public float Speed { get => speed; set => speed = value; }
 
     private void Awake()

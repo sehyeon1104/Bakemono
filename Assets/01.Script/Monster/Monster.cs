@@ -10,10 +10,10 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     int  level = 1;
     bool isDie = false;
     //public PlayerBase playerBase;
-    int maxHp = 100;
+    float maxHp = 100;
     [SerializeField]
     [Range(0, 100)]
-    int currentHp = 100;
+    float currentHp = 100;
     public bool activeDoorOpen = false;
     [SerializeField] UnityEvent onDie;
     [SerializeField] UnityEvent<int> levelUp;
@@ -21,6 +21,8 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     
     public void GetHit(float damage, GameObject damageDealer)
     {
+        currentHp -= damage;
+        Debug.Log($"{damage}만큼 아프다");
         //대충 적한테 맞았을 때 
     }
     public float LevelPerExp
@@ -33,12 +35,12 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
         get => currentExp;
         set => currentExp = value;
     }
-    public int MaxHp
+    public float MaxHp
     {
         get => maxHp;
         set => maxHp = value;
     }
-    public int CurrentHp
+    public float CurrentHp
     {
         get => currentHp;
         set

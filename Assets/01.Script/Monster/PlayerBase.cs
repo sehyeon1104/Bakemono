@@ -11,8 +11,8 @@ public class PlayerBase
     float levelPerExp = 0;
     float currentExp;
     int level;
-    int hp;
-    int maxHp = 100;
+    float hp;
+    float maxHp = 100;
     public float LevelPerExp
     {
         get => levelPerExp;
@@ -28,7 +28,7 @@ public class PlayerBase
         get => level;
         set => level = value;
     }
-    public int HP
+    public float HP
     {
         get
         {
@@ -48,7 +48,7 @@ public class PlayerBase
         }
     }
 
-    public int MaxHP { get { return maxHp; } }
+    public float MaxHP { get { return maxHp; } }
 
     void CallPlayerInfo()
     {

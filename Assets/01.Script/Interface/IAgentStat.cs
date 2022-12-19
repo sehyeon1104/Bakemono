@@ -4,8 +4,8 @@ using UnityEngine;
 
 public interface IAgentStat
 {
-    int CurrentHp { get;  set; }
-    int MaxHp { get;  set; }
+    float CurrentHp { get;  set; }
+    float MaxHp { get;  set; }
     float Speed { get; set; }
 
 }

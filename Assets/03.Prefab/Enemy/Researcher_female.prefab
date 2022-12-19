@@ -1808,7 +1808,7 @@ GameObject:
   - component: {fileID: 899728398741800785}
   - component: {fileID: 899728398741800784}
   m_Layer: 7
-  m_Name: Nurse
+  m_Name: Researcher_female
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1822,7 +1822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899728398741800787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.833984, y: -22.015, z: -1.8190079}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:

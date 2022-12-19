@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class User 
 {
-    public int maxHp;
-    public int hp;
+    public float maxHp;
+    public float hp;
     public float experience;
     public int level;
     public List<Transform> researcherFemaleSpawnPos;

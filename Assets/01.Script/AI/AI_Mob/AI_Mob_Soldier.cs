@@ -69,7 +69,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
         while (true)
         {
             anim.SetTrigger(hashTrigger);
-            var hits = Physics.SphereCastAll(handPos.position, 0.2f, transform.forward, 3f);
+            var hits = Physics.SphereCastAll(handPos.position, 0.2f, transform.forward, 6f);
             foreach(var hit in hits)
             {
                 if(hit.transform.CompareTag("Monster"))
