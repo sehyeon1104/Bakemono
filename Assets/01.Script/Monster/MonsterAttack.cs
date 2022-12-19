@@ -95,33 +95,7 @@ public class MonsterAttack : MonoBehaviour
             {
  
                 monsterAni.SetTrigger(BiteNameHash);
-                 if(isLeft)
-                 {
-                    BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
-                    Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
-                    if(attackCol!=null)
-                    {
-                        foreach(Collider coll in attackCol)
-                        {
-                            IHittable enemyHit = coll.GetComponent<IHittable>();
-                            enemyHit.GetHit(Monster.Instance.damage,gameObject);
-                        }
-                    }
-                        
-                 }
-                 else
-                 {
-                    BoxCollider righthandbox = rightHand.GetComponent<BoxCollider>();
-                    Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, righthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
-                    if (attackCol != null)
-                    {
-                        foreach (Collider coll in attackCol)
-                        {
-                            IHittable enemyHit = coll.GetComponent<IHittable>();
-                            enemyHit.GetHit(Monster.Instance.damage, gameObject);
-                        }
-                    }
-                 }
+                
             }
         }
         else
@@ -152,6 +126,36 @@ public class MonsterAttack : MonoBehaviour
        
         }
   
+    }
+    public void Bite()
+    {
+        if (!isLeft)
+        {
+            BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
+            Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
+            if (attackCol != null)
+            {
+                foreach (Collider coll in attackCol)
+                {
+                    IHittable enemyHit = coll.GetComponent<IHittable>();
+                    enemyHit.GetHit(Monster.Instance.damage, gameObject);
+                }
+            }
+
+        }
+        else
+        {
+            BoxCollider righthandbox = rightHand.GetComponent<BoxCollider>();
+            Collider[] attackCol = Physics.OverlapBox(rightHand.transform.position, righthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
+            if (attackCol != null)
+            {
+                foreach (Collider coll in attackCol)
+                {
+                    IHittable enemyHit = coll.GetComponent<IHittable>();
+                    enemyHit.GetHit(Monster.Instance.damage, gameObject);
+                }
+            }
+        }
     }
     public void Attack()
     {
