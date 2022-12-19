@@ -31,6 +31,7 @@ public class GameManager : MonoSingleton<GameManager>
         InstantiateResearcher(researcherMaleSpawnPos);
         InstantiateNurse(researcherFemaleSpawnPos);
         InstantiateSoldier(soldierSpawnPos);
+        Fade.Instance.FadeOut();
     }
 
     private void Update()

@@ -39,6 +39,13 @@ public class TitleSceneManager : MonoBehaviour
 
     public void GameStart()
     {
+        Fade.Instance.FadeIn();
+        StartCoroutine(GameStartCoroutine());
+    }
+
+    private IEnumerator GameStartCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(1);
     }
 
