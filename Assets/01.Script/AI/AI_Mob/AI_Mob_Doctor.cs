@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AI_Mob_Doctor : AI_Mob_Default
 {
+    [SerializeField] private Transform punchTransform;
     public override void Action(Transform target)
     {
         agent.isStopped = true;
@@ -51,6 +52,14 @@ public class AI_Mob_Doctor : AI_Mob_Default
         while (true)
         {
             anim.SetTrigger(hashTrigger);
+            Collider[] cols = Physics.OverlapSphere(punchTransform.position,1f);
+            foreach(var col in cols)
+            {
+                if(col.CompareTag("Monster"))
+                {
+                    col.GetComponent<Monster>().GetHit(5f, gameObject);
+                }
+            }
             yield return new WaitForSeconds(attackDelay);
         }
     }
