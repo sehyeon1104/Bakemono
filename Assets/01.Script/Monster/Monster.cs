@@ -16,6 +16,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     float currentHp = 100;
     public bool activeDoorOpen = false;
 
+    public float damage = 30;
     [SerializeField] private ParticleSystem bloodParticle;
 
     [SerializeField] UnityEvent onDie;
@@ -85,7 +86,10 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     {
 
     }
-
+    private void Update()
+    {
+        print(currentHp);
+    }
     void LateUpdate()
     {
         if (currentExp >= levelPerExp)
