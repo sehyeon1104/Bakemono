@@ -17,6 +17,7 @@ public class TitleSceneManager : MonoBehaviour
     private void Start()
     {
         isQuitPanelActive = false;
+        DisableAllPanel();
     }
 
     private void Update()
@@ -28,6 +29,10 @@ public class TitleSceneManager : MonoBehaviour
     {
         if (Input.anyKeyDown && !isQuitPanelActive)
         {
+            if (Input.GetMouseButtonDown(0))
+            {
+                return;
+            }
             GameStart();
         }
     }
