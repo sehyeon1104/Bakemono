@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class UIManager : MonoSingleton<UIManager>
 {
@@ -19,6 +21,12 @@ public class UIManager : MonoSingleton<UIManager>
     private GameObject pausePanel;
     [SerializeField]
     private GameObject settingPanel;
+
+    [Header("GameOver UI")]
+    [SerializeField]
+    private GameObject gameoverPanel;
+    [SerializeField]
+    private TextMeshProUGUI diedTMP;
 
     public bool isPause { private set; get; } = false;
 
@@ -56,8 +64,10 @@ public class UIManager : MonoSingleton<UIManager>
     {
         questPanel.SetActive(false);
         pausePanel.SetActive(false);
+        gameoverPanel.SetActive(false);
+        settingPanel.SetActive(false);
         TogglePasswordPanel(false);
-        ToggleSettingPanel();
+        //ToggleSettingPanel();
     }
 
     public void ToggleQuestUI(bool toggle)
@@ -93,6 +103,23 @@ public class UIManager : MonoSingleton<UIManager>
     {
         settingPanel.SetActive(!settingPanel.activeSelf);
     }
+
+    public void ToggleGameOverPanel()
+    {
+        DisableAllPanels();
+        gameoverPanel.SetActive(!gameoverPanel.activeSelf);
+        diedTMP.DOFade(1f, 4f);
+
+        StartCoroutine(RestartScene());
+    }
+
+    private IEnumerator RestartScene()
+    {
+        yield return new WaitForSeconds(4f);
+
+        SceneManager.LoadScene(1);
+    }
+
 
     public void GameQuit()
     {
