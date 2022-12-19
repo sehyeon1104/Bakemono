@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.Audio;
+using Unity.Mathematics;
 
 public class MonsterAttack : MonoBehaviour
 {
@@ -37,6 +38,8 @@ public class MonsterAttack : MonoBehaviour
     RaycastHit hit;
     [SerializeField] AudioClip doorOpen;
     [SerializeField] AudioMixerGroup audioMix;
+    [SerializeField] GameObject leftHand;
+    [SerializeField] GameObject rightHand;
     void Start()
     {
     }
@@ -90,7 +93,35 @@ public class MonsterAttack : MonoBehaviour
             IAgentStat agentStat = hit.transform.GetComponent<IAgentStat>();
             if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
             {
+ 
                 monsterAni.SetTrigger(BiteNameHash);
+                 if(isLeft)
+                 {
+                    BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
+                    Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
+                    if(attackCol!=null)
+                    {
+                        foreach(Collider coll in attackCol)
+                        {
+                            IHittable enemyHit = coll.GetComponent<IHittable>();
+                            enemyHit.GetHit(Monster.Instance.damage,gameObject);
+                        }
+                    }
+                        
+                 }
+                 else
+                 {
+                    BoxCollider righthandbox = rightHand.GetComponent<BoxCollider>();
+                    Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, righthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
+                    if (attackCol != null)
+                    {
+                        foreach (Collider coll in attackCol)
+                        {
+                            IHittable enemyHit = coll.GetComponent<IHittable>();
+                            enemyHit.GetHit(Monster.Instance.damage, gameObject);
+                        }
+                    }
+                 }
             }
         }
         else
@@ -137,8 +168,9 @@ public class MonsterAttack : MonoBehaviour
             isLeft = true;
         }
     }
-    public void Bite()
+    private void OnDrawGizmos()
     {
-
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(leftHand.transform.position, rightHand.GetComponent<BoxCollider>().size/2);
     }
 }
