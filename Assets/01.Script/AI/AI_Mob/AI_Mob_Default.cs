@@ -21,6 +21,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     protected readonly int hashTrigger = Animator.StringToHash("Trigger");
     protected readonly int hashAttack = Animator.StringToHash("Attack");
     protected readonly int hashHit = Animator.StringToHash("Hit");
+    protected readonly int hashDie = Animator.StringToHash("Die");
 
     protected float currentHp;
 
@@ -67,8 +68,17 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     }
     public void GetHit(float damage, GameObject damageDealer)
     {
-        Debug.Log("s");
         currentHp -= damage;
+
+        if(currentHp <= 0)
+        {
+            agent.isStopped = true;
+            agent.speed = 0;
+            agent.angularSpeed = 0;
+
+            anim.SetBool(hashDie, true);
+            Destroy(gameObject, 3f);
+        }
 
         BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
         BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 2;
