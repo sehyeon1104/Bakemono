@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Cinemachine;
 public class PortalMove : MonoBehaviour
 {
+    public CinemachineVirtualCamera camera;
     Transform monster;
     private void Update()
     {
@@ -20,9 +21,11 @@ public class PortalMove : MonoBehaviour
 
             var cc = monster.GetComponent<CharacterController>();
             cc.enabled= false;
+            camera.enabled = false;
             monster.position = new Vector3(90, -18, -3.75f);
             monster.eulerAngles = new Vector3(0,90,0);  
             cc.enabled = true;
+            camera.enabled = true;
         }
     }   
 }
