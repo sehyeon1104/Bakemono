@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Cinemachine;
 public class PortalMove : MonoBehaviour
 {
     Transform monster;
@@ -23,6 +23,7 @@ public class PortalMove : MonoBehaviour
             monster.position = new Vector3(90, -18, -3.75f);
             monster.eulerAngles = new Vector3(0,90,0);  
             cc.enabled = true;
+
         }
     }   
 }

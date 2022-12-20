@@ -8,7 +8,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     float currentExp = 0;
     float levelPerExp = 100;
     int  level = 1;
-    bool isDie = false;
+   public bool isDie = false;
     //public PlayerBase playerBase;
     float maxHp = 100;
     [SerializeField]
@@ -23,9 +23,12 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     
     public void GetHit(float damage, GameObject damageDealer)
     {
-        currentHp -= damage;
-        Debug.Log($"{damage}만큼 아프다");
-
+        if (!isDie)
+        {
+            onGethit?.Invoke();
+            currentHp -= damage;
+            Debug.Log($"{damage}만큼 아프다");
+        }
         BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
         BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 2;
         BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
@@ -44,11 +47,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
         get => currentExp;
         set => currentExp = value;
     }
-    public float MaxHp
-    {
-        get => maxHp;
-        set => maxHp = value;
-    }
+
     public float CurrentHp
     {
         get => currentHp;
@@ -74,30 +73,32 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     }
     
     public float Speed { get; set; }
+    public float MaxHp { get => maxHp;  set => maxHp =value; }
 
     //void Awake()
     //{
     //    playerBase = new PlayerBase();
     //}
 
-    private void Start()
+    private void Update()
     {
-
+        print(currentHp);
+        currentHp = Mathf.Clamp(currentHp, 0, MaxHp);
     }
 
     void LateUpdate()
     {
+
+        if(!isDie&&currentHp==0)
+        {
+            isDie = true;
+            onDie?.Invoke();
+        }
+
         if (currentExp >= levelPerExp)
         {
             level++;
             levelUp?.Invoke(level);
-        }
-        if (!isDie)
-        {
-            //playerBase.LevelPerExp = levelPerExp;
-            //playerBase.Exp = currentExp;
-            //playerBase.Level = level;
-            //playerBase.HP = currentHp;
         }
     }
 
@@ -112,13 +113,12 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     public void Levelactive(int level)
     {
         levelPerExp *= 1.2f;
-        if(level == 5)
+        if (level == 5)
         {
-            activeDoorOpen= true;
-        }    
+            activeDoorOpen = true;
+        }
 
     }
-
     //public void SavePlayerStat()
     //{
     //    SaveManager.Instance.CurrentUser.hp = CurrentHp;

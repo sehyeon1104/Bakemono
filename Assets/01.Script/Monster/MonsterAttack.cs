@@ -29,6 +29,8 @@ public class MonsterAttack : MonoBehaviour
     readonly int rightAttack = Animator.StringToHash("RightAttack");
     readonly int IdleNameHash = Animator.StringToHash("Idle");
     readonly int BiteNameHash = Animator.StringToHash("Bite");
+    readonly int dieAniHash = Animator.StringToHash("Die");
+    readonly int getHit = Animator.StringToHash("Damaged");
     bool isLeft = true;
     AnimatorStateInfo info;
     Transform imageTrans;
@@ -40,11 +42,16 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] AudioMixerGroup audioMix;
     [SerializeField] GameObject leftHand;
     [SerializeField] GameObject rightHand;
+    AudioSource audiosource;
+    [SerializeField]
+    AudioClip attackAudio;
     void Start()
     {
+
     }
     private void Awake()
     {
+        audiosource = GetComponent<AudioSource>();
         monsterAni = GetComponent<Animator>();
         imageTrans = MonsterUI.Instance.skillImage.transform;
         imageColor = MonsterUI.Instance.skillImage;
@@ -52,85 +59,101 @@ public class MonsterAttack : MonoBehaviour
 
     private void Update()
     {
-       
-        Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
-        if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1<< LayerMask.NameToLayer("Door")))
-        { 
-            Animation doorAni = hit.transform.parent.GetComponent<Animation>();
-            if (!doorAni.isPlaying)
+        if (!Monster.Instance.isDie)
+        {
+            Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
+            if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Door")))
             {
-                if (Monster.Instance.activeDoorOpen)
+                Animation doorAni = hit.transform.parent.GetComponent<Animation>();
+                if (!doorAni.isPlaying)
                 {
-                    doorTrueText.gameObject.SetActive(true);
-                    if (Input.GetKeyDown(KeyCode.F))
+                    if (Monster.Instance.activeDoorOpen)
                     {
-                        hit.transform.parent.GetComponent<Animation>().Play();
-                        hit.transform.gameObject.AddComponent<AudioSource>().PlayOneShot(doorOpen);
-                        hit.transform.gameObject.AddComponent<AudioSource>().outputAudioMixerGroup = audioMix;
+                        doorTrueText.gameObject.SetActive(true);
+                        if (Input.GetKeyDown(KeyCode.F))
+                        {
+                            hit.transform.parent.GetComponent<Animation>().Play();
+                            hit.transform.gameObject.AddComponent<AudioSource>().PlayOneShot(doorOpen);
+                            hit.transform.gameObject.AddComponent<AudioSource>().outputAudioMixerGroup = audioMix;
+                        }
+                    }
+                    else
+                    {
+                        doorFalseText.gameObject.SetActive(true);
                     }
                 }
-                else
+            }
+            else
+            {
+                doorTrueText.gameObject.SetActive(false);
+                doorFalseText.gameObject.SetActive(false);
+            }
+            if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
+            {
+                if (isComplete)
                 {
-                    doorFalseText.gameObject.SetActive(true);
+
+                    isComplete = false;
+                    isFind = true;
+                }
+                imageColor.DOColor(new Color(0.7f, 0, 0), changeTime);
+
+                IAgentStat agentStat = hit.transform.GetComponent<IAgentStat>();
+                if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
+                {
+
+                    monsterAni.SetTrigger(BiteNameHash);
+
                 }
             }
-        }
-        else
-        {
-            doorTrueText.gameObject.SetActive(false);
-            doorFalseText.gameObject.SetActive(false);
-        }
-        if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
-        {
-            if(isComplete)
+            else
             {
-               
-                isComplete = false;
-                isFind = true;
+                isFind = false;
+                MonsterUI.Instance.skillImage.color = Color.white;
+                imageColor.DOColor(new Color(1, 1, 1), changeTime);
             }
-            imageColor.DOColor(new Color(0.7f, 0, 0), changeTime);
 
-            IAgentStat agentStat = hit.transform.GetComponent<IAgentStat>();
-            if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
+            info = monsterAni.GetCurrentAnimatorStateInfo(1);
+            totalTime += Time.deltaTime;
+            if (totalTime > 0.5f)
             {
- 
-                monsterAni.SetTrigger(BiteNameHash);
-                
+                isAttackClick = true;
+            }
+            if (totalTime > 15f)
+            {
+                isLeft = true;
+            }
+            if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash)
+            {
+                monsterAttack?.Invoke();
+
+                audiosource.clip = attackAudio;
+                audiosource.Play();
+            }
+            if (isFind)
+            {
+                isFind = false;
+                imageTrans.DOScale(new Vector3(1.2f, 1.2f, 0), changeTime).SetLoops(2, LoopType.Yoyo).OnComplete(() => isComplete = true);
+
             }
         }
-        else
-        {
-            isFind = false;
-            MonsterUI.Instance.skillImage.color = Color.white;
-            imageColor.DOColor(new Color(1, 1, 1), changeTime);
-        }
-
-        info = monsterAni.GetCurrentAnimatorStateInfo(1);
-        totalTime += Time.deltaTime;
-        if (totalTime > 0.5f)
-        {
-            isAttackClick = true;
-        }
-        if (totalTime > 15f)
-        {   
-            isLeft = true;
-        }
-        if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash)
-        {
-            monsterAttack?.Invoke();    
-        }
-        if(isFind)
-        {
-            isFind = false;
-            imageTrans.DOScale(new Vector3(1.2f, 1.2f, 0), changeTime).SetLoops(2, LoopType.Yoyo).OnComplete(() => isComplete = true) ;
-       
-        }
-  
     }
     public void Bite()
     {
-        if (!isLeft)
+     
+    }
+    public void GetHitAni()
+    {
+        monsterAni.SetTrigger(getHit);
+    }
+    public void Attack()
+    {
+        totalTime = 0;
+        isAttackClick = false;
+        if (isLeft) //왼쪽 공격
         {
+            monsterAni.SetTrigger(leftAttack);
+            isLeft = false;
             BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
             Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
             if (attackCol != null)
@@ -141,10 +164,11 @@ public class MonsterAttack : MonoBehaviour
                     enemyHit.GetHit(Monster.Instance.damage, gameObject);
                 }
             }
-
         }
-        else
+        else //오른쪽
         {
+            monsterAni.SetTrigger(rightAttack);
+            isLeft = true;
             BoxCollider righthandbox = rightHand.GetComponent<BoxCollider>();
             Collider[] attackCol = Physics.OverlapBox(rightHand.transform.position, righthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
             if (attackCol != null)
@@ -157,20 +181,10 @@ public class MonsterAttack : MonoBehaviour
             }
         }
     }
-    public void Attack()
+
+    public void onDie()
     {
-        totalTime = 0;
-        isAttackClick = false;
-        if (isLeft) //왼쪽 공격
-        {
-            monsterAni.SetTrigger(leftAttack);
-            isLeft = false;
-        }
-        else //오른쪽
-        {
-            monsterAni.SetTrigger(rightAttack);
-            isLeft = true;
-        }
+        monsterAni.SetTrigger(dieAniHash);
     }
     private void OnDrawGizmos()
     {
