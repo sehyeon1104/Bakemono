@@ -9,7 +9,7 @@ public class User
     public float hp;
     public float experience;
     public int level;
-    public List<Transform> researcherFemaleSpawnPos;
-    public List<Transform> soldierSpawnPos;
-    public List<Transform> researcherMaleSpawnPos;
+    public List<GameObject> researcherFemaleSpawnPos;
+    public List<GameObject> soldierSpawnPos;
+    public List<GameObject> researcherMaleSpawnPos;
 }
