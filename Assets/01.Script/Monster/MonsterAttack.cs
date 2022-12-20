@@ -30,6 +30,7 @@ public class MonsterAttack : MonoBehaviour
     readonly int IdleNameHash = Animator.StringToHash("Idle");
     readonly int BiteNameHash = Animator.StringToHash("Bite");
     readonly int dieAniHash = Animator.StringToHash("Die");
+    readonly int getHit = Animator.StringToHash("Damaged");
     bool isLeft = true;
     AnimatorStateInfo info;
     Transform imageTrans;
@@ -158,6 +159,10 @@ public class MonsterAttack : MonoBehaviour
                 }
             }
         }
+    }
+    public void GetHitAni()
+    {
+        monsterAni.SetTrigger(getHit);
     }
     public void Attack()
     {
