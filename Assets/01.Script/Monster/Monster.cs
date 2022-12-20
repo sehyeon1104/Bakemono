@@ -23,9 +23,12 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     
     public void GetHit(float damage, GameObject damageDealer)
     {
-        currentHp -= damage;
-        Debug.Log($"{damage}만큼 아프다");
-
+        if (!isDie)
+        {
+            onGethit?.Invoke();
+            currentHp -= damage;
+            Debug.Log($"{damage}만큼 아프다");
+        }
         BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
         BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 2;
         BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
