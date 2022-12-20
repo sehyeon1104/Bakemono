@@ -9,7 +9,6 @@ public class User
     public float hp;
     public float experience;
     public int level;
-    public List<GameObject> researcherFemaleSpawnPos;
-    public List<GameObject> soldierSpawnPos;
-    public List<GameObject> researcherMaleSpawnPos;
+    public string password;
+    public List<string> passwordRoomsName;
 }

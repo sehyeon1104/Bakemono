@@ -10,7 +10,7 @@ public class PasswordManager : MonoSingleton<PasswordManager>
     [Header("InputPassword")]
     public Texture faceTexture;
     public TMP_FontAsset fontAsset;
-    private string password = "";
+    public string password { private set; get; } = "";
     [SerializeField]
     private TextMeshProUGUI[] inputPasswords;
     int pivot = -1;
@@ -20,14 +20,20 @@ public class PasswordManager : MonoSingleton<PasswordManager>
     [SerializeField]
     private List<GameObject> passwordRoom = new List<GameObject>();     // 암호가 생성될 수 있는 모든 방
 
-    private void Awake()
-    {
-        CreatePassword();
-    }
-
     private void Start()
     {
-        SetPasswordRoom();
+        if (SaveManager.Instance.CurrentUser.password == "")
+        {
+            Debug.Log("패스워드 없음");
+            CreatePassword();
+            SetPasswordRoom();
+        }
+        else
+        {
+            Debug.Log("패스워드 있음");
+            LoadPasswordRoom();
+        }
+
     }
 
     void CreatePassword()
@@ -42,6 +48,7 @@ public class PasswordManager : MonoSingleton<PasswordManager>
         }
 
         Debug.Log("Password : " + password);
+        SaveManager.Instance.CurrentUser.password = password;
     }
 
     public void InputPassword()
@@ -117,8 +124,32 @@ public class PasswordManager : MonoSingleton<PasswordManager>
             passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().font = fontAsset;
             passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
             //passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().fontMaterial.SetColor("_FaceColor", Color.red);
-
+            SaveManager.Instance.CurrentUser.passwordRoomsName.Add(passwordRoom[i].name);
         }
 
+    }
+
+    public void LoadPasswordRoom()
+    {
+        int n = 0;
+        for(int i = 0; i < passwordRoom.Count; ++i)
+        {
+            passwordRoom[i].SetActive(false);
+        }
+
+        foreach(var roomName in SaveManager.Instance.CurrentUser.passwordRoomsName)
+        {
+            for(int j = 0; j < passwordRoom.Count; ++j)
+            {
+                if(passwordRoom[j].name == roomName)
+                {
+                    passwordRoom[j].SetActive(true);
+                    passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().text = (n + 1) + SaveManager.Instance.CurrentUser.password[n].ToString();
+                    passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().font = fontAsset;
+                    passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
+                    ++n;
+                }
+            }
+        }
     }
 }

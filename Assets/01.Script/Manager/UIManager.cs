@@ -62,6 +62,7 @@ public class UIManager : MonoSingleton<UIManager>
         if (Input.GetKeyDown(KeyCode.C))
         {
             ToggleGameOverPanel();
+            SaveManager.Instance.SaveToJson();
         }
     }
     public void DisableAllPanels()

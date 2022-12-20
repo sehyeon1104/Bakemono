@@ -16,9 +16,9 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField]
     private GameObject researcherFemalePrefab = null;
 
-    public List<GameObject> researcherFemaleSpawnPos = new List<GameObject>();
-    public List<GameObject> soldierSpawnPos = new List<GameObject>();
-    public List<GameObject> researcherMaleSpawnPos = new List<GameObject>();
+    public List<Vector3> researcherFemaleSpawnPos = new List<Vector3>();
+    public List<Vector3> soldierSpawnPos = new List<Vector3>();
+    public List<Vector3> researcherMaleSpawnPos = new List<Vector3>();
 
     private void Awake()
     {
@@ -56,33 +56,36 @@ public class GameManager : MonoSingleton<GameManager>
         Monster.Instance.CurrentHp = Monster.Instance.MaxHp;
     }
 
-    void InstantiateResearcher(List<GameObject> spawnPos)
+    void InstantiateResearcher(List<Vector3> spawnPos)
     {
         for (int i = 0; i < spawnPos.Count; ++i)
         {
-            GameObject rMale = Instantiate(researcherMalePrefab, spawnPos[i].transform);
-            rMale.transform.SetParent(spawnPos[i].transform);
-            Debug.Log(rMale.transform.parent.position);
+            GameObject rMale = Instantiate(researcherMalePrefab);
+            rMale.transform.position = spawnPos[i];
+            //rMale.transform.SetParent(spawnPos[i].transform);
+            //Debug.Log(rMale.transform.parent.position);
         }
     }
 
-    void InstantiateSoldier(List<GameObject> spawnPos)
+    void InstantiateSoldier(List<Vector3> spawnPos)
     {
         for (int i = 0; i < spawnPos.Count; ++i)
         {
-            GameObject rFemale = Instantiate(soldierPrefab, spawnPos[i].transform);
-            rFemale.transform.SetParent(spawnPos[i].transform);
-            Debug.Log(rFemale.transform.parent.position);
+            GameObject rFemale = Instantiate(soldierPrefab);
+            rFemale.transform.position = spawnPos[i];
+            //rFemale.transform.SetParent(spawnPos[i].transform);
+            //Debug.Log(rFemale.transform.parent.position);
         }
     }
 
-    void InstantiateNurse(List<GameObject> spawnPos)
+    void InstantiateNurse(List<Vector3> spawnPos)
     {
         for (int i = 0; i < spawnPos.Count; ++i)
         {
-            GameObject soldier = Instantiate(researcherFemalePrefab, spawnPos[i].transform);
-            soldier.transform.SetParent(spawnPos[i].transform);
-            Debug.Log(soldier.transform.parent.position);
+            GameObject soldier = Instantiate(researcherFemalePrefab);
+            soldier.transform.position = spawnPos[i];
+            //soldier.transform.SetParent(spawnPos[i].transform);
+            //Debug.Log(soldier.transform.parent.position);
         }
     }
 
