@@ -42,11 +42,16 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] AudioMixerGroup audioMix;
     [SerializeField] GameObject leftHand;
     [SerializeField] GameObject rightHand;
+    AudioSource audiosource;
+    [SerializeField]
+    AudioClip attackAudio;
     void Start()
     {
+
     }
     private void Awake()
     {
+        audiosource = GetComponent<AudioSource>();
         monsterAni = GetComponent<Animator>();
         imageTrans = MonsterUI.Instance.skillImage.transform;
         imageColor = MonsterUI.Instance.skillImage;
@@ -121,6 +126,9 @@ public class MonsterAttack : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash)
             {
                 monsterAttack?.Invoke();
+
+                audiosource.clip = attackAudio;
+                audiosource.Play();
             }
             if (isFind)
             {
@@ -132,33 +140,7 @@ public class MonsterAttack : MonoBehaviour
     }
     public void Bite()
     {
-        if (!isLeft)
-        {
-            BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
-            Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
-            if (attackCol != null)
-            {
-                foreach (Collider coll in attackCol)
-                {
-                    IHittable enemyHit = coll.GetComponent<IHittable>();
-                    enemyHit.GetHit(Monster.Instance.damage, gameObject);
-                }
-            }
-
-        }
-        else
-        {
-            BoxCollider righthandbox = rightHand.GetComponent<BoxCollider>();
-            Collider[] attackCol = Physics.OverlapBox(rightHand.transform.position, righthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
-            if (attackCol != null)
-            {
-                foreach (Collider coll in attackCol)
-                {
-                    IHittable enemyHit = coll.GetComponent<IHittable>();
-                    enemyHit.GetHit(Monster.Instance.damage, gameObject);
-                }
-            }
-        }
+     
     }
     public void GetHitAni()
     {
@@ -172,13 +154,34 @@ public class MonsterAttack : MonoBehaviour
         {
             monsterAni.SetTrigger(leftAttack);
             isLeft = false;
+            BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
+            Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
+            if (attackCol != null)
+            {
+                foreach (Collider coll in attackCol)
+                {
+                    IHittable enemyHit = coll.GetComponent<IHittable>();
+                    enemyHit.GetHit(Monster.Instance.damage, gameObject);
+                }
+            }
         }
         else //¿À¸¥ÂÊ
         {
             monsterAni.SetTrigger(rightAttack);
             isLeft = true;
+            BoxCollider righthandbox = rightHand.GetComponent<BoxCollider>();
+            Collider[] attackCol = Physics.OverlapBox(rightHand.transform.position, righthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
+            if (attackCol != null)
+            {
+                foreach (Collider coll in attackCol)
+                {
+                    IHittable enemyHit = coll.GetComponent<IHittable>();
+                    enemyHit.GetHit(Monster.Instance.damage, gameObject);
+                }
+            }
         }
     }
+
     public void onDie()
     {
         monsterAni.SetTrigger(dieAniHash);

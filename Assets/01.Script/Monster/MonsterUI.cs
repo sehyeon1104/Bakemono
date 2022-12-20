@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class MonsterUI : MonoSingleton<MonsterUI>
 {
-
+    public Slider audioSlider;
+    [SerializeField]
+    AudioMixer AudioMixer;
     Monster monster;
     [SerializeField]
      Image hpBar;
@@ -39,7 +42,15 @@ public class MonsterUI : MonoSingleton<MonsterUI>
             attackImg.fillAmount = 0;
         }
     }
-
+    public void AudioAdjust()
+    {
+        audioSlider.value = Mathf.Clamp(audioSlider.value, -35, 0);
+        if (audioSlider.value == -35)
+        {
+            AudioMixer.SetFloat("MyExposedParam", 40);
+        }
+        else AudioMixer.SetFloat("MyExposedParam", audioSlider.value);
+    }
     public void UIUpdate()
     {
         hpBar.fillAmount = monster.CurrentHp / (float)monster.MaxHp;
