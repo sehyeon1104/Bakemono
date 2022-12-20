@@ -16,7 +16,7 @@ public class MonsterInput : MonoBehaviour
     [SerializeField]
     private void Update()
     {
-        if (UIManager.Instance.isPause)
+        if (UIManager.Instance.isPause || Monster.Instance.isDie)
         {
             return;
         }
