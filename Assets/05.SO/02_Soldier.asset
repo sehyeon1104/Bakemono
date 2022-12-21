@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   hp: 150
-  speed: 7.5
+  speed: 3.5
   power: 7
   exp: 20

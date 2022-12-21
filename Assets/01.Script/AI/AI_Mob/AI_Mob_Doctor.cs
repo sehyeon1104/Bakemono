@@ -70,7 +70,7 @@ public class AI_Mob_Doctor : AI_Mob_Default
         {
             anim.SetTrigger(hashTrigger);
 
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(0.1f);
             
             Collider[] cols = Physics.OverlapSphere(punchTransform.position,1f);
             foreach(var col in cols)
