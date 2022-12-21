@@ -22,10 +22,11 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     protected readonly int hashAttack = Animator.StringToHash("Attack");
     protected readonly int hashHit = Animator.StringToHash("Hit");
     protected readonly int hashDie = Animator.StringToHash("Die");
-    public float exp;
     
+    public float exp;
     protected float currentHp;
     protected float maxHp;
+    
     protected bool isDie = false;
 
     public float CurrentHp => currentHp;
@@ -38,6 +39,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        
         maxHp = enemySO.Hp;
         exp = enemySO.Exp;
         currentHp = enemySO.Hp;

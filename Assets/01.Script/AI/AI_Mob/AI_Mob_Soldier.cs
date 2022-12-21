@@ -37,6 +37,8 @@ public class AI_Mob_Soldier : AI_Mob_Default
         else
         {
             agent.isStopped = true;
+            agent.SetDestination(transform.position);
+
             anim.SetBool(hashMove, false);
             anim.SetBool(hashAttack, true);
 

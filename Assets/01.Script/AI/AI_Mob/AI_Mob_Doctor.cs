@@ -69,6 +69,9 @@ public class AI_Mob_Doctor : AI_Mob_Default
         while (true)
         {
             anim.SetTrigger(hashTrigger);
+
+            yield return new WaitForSeconds(0.25f);
+            
             Collider[] cols = Physics.OverlapSphere(punchTransform.position,1f);
             foreach(var col in cols)
             {
