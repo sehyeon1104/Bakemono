@@ -132,7 +132,8 @@ public class QuestManager : MonoSingleton<QuestManager>
 
         for (int i = pivot; i < pivot + researcherCount; ++i)
         {
-            Instantiate(researcherMalePrefab, spawnPos[i]);
+            EnemySpawnManager.Instance.InstantiateMaleResearcher(spawnPos[i]);
+            //Instantiate(researcherMalePrefab, spawnPos[i]);
         }
     }
 
@@ -147,7 +148,8 @@ public class QuestManager : MonoSingleton<QuestManager>
 
         for (int i = pivot; i < pivot + soldierCount; ++i)
         {
-            Instantiate(soldierPrefab, spawnPos[i]);
+            EnemySpawnManager.Instance.InstantiateSoldier(spawnPos[i]);
+            //Instantiate(soldierPrefab, spawnPos[i]);
         }
     }
 
@@ -165,8 +167,9 @@ public class QuestManager : MonoSingleton<QuestManager>
 
         for (int i = pivot; i < pivot + nurseCount; ++i)
         {
-            Debug.Log("Instantiate");
-            Instantiate(researcherFemalePrefab, spawnPos[i]);
+            EnemySpawnManager.Instance.InstantiateFemaleResearcher(spawnPos[i]);
+            //Debug.Log("Instantiate");
+            //Instantiate(researcherFemalePrefab, spawnPos[i]);
         }
     }
 

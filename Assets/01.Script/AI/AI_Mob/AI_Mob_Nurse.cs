@@ -1,9 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public  class AI_Mob_Nurse : AI_Mob_Default
 {
+
+    private IObjectPool<AI_Mob_Nurse> femaleResearcherPool;
+    public void SetPool(IObjectPool<AI_Mob_Nurse> pool)
+    {
+        EnemySpawnManager.Instance.femaleResearcherPool = pool;
+    }
+
+    private void OnBecameInvisible()
+    {
+        EnemySpawnManager.Instance.femaleResearcherPool.Release(this);
+    }
+
     public override void Action(Transform target)
     {
         if (actionCoroutine != null)
