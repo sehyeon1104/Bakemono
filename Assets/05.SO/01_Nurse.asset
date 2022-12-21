@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: 01_Nurse
   m_EditorClassIdentifier: 
   type: 1
-  maxHp: 50
-  hp: 50
+  hp: 40
   speed: 7.5
   power: 0
   exp: 3

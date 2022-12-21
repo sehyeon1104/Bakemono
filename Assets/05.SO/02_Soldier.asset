@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: 02_Soldier
   m_EditorClassIdentifier: 
   type: 2
-  maxHp: 150
   hp: 150
   speed: 7.5
-  power: 15
-  exp: 25
+  power: 7
+  exp: 20
