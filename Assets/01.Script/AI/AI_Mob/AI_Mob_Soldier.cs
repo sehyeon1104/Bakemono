@@ -1,11 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class AI_Mob_Soldier : AI_Mob_Default
 {
     [SerializeField] private Transform handPos;
     [SerializeField] private ParticleSystem muzzleFlash;
+
+    private IObjectPool<AI_Mob_Soldier> soldierPool;
+    public void SetPool(IObjectPool<AI_Mob_Soldier> pool)
+    {
+        EnemySpawnManager.Instance.soldierPool = pool;
+    }
+
+    private void OnBecameInvisible()
+    {
+        EnemySpawnManager.Instance.soldierPool.Release(this);
+    }
 
     public override void Action(Transform target)
     {

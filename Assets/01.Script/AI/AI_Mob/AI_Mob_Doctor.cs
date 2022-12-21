@@ -1,10 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class AI_Mob_Doctor : AI_Mob_Default
 {
     [SerializeField] private Transform punchTransform;
+
+    private IObjectPool<AI_Mob_Doctor> maleResearcherPool;
+    public void SetPool(IObjectPool<AI_Mob_Doctor> pool)
+    {
+        EnemySpawnManager.Instance.maleResearcherPool = pool;
+    }
+
+    private void OnBecameInvisible()
+    {
+        EnemySpawnManager.Instance.maleResearcherPool.Release(this);
+    }
+
+
     public override void Action(Transform target)
     {
         agent.isStopped = true;
