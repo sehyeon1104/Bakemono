@@ -23,7 +23,8 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     protected readonly int hashHit = Animator.StringToHash("Hit");
     protected readonly int hashDie = Animator.StringToHash("Die");
 
-    protected float currentHp;
+    [SerializeField]protected float currentHp;
+    protected bool isDie = false;
 
     public float CurrentHp => currentHp;
 
@@ -41,12 +42,17 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     }
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            GetHit(150, gameObject);
+        }
         DistanceCheck();
     }
 
     public void DistanceCheck()
     {
         if (MainModule.player == null) return;
+        if (isDie) return;
 
         Transform playerPos = MainModule.player.transform;
 
@@ -70,13 +76,21 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     {
         currentHp -= damage;
 
-        if(currentHp <= 0)
+        if(currentHp <= 0 && !isDie)
         {
+            isDie = true;
             agent.isStopped = true;
+
+            if (actionCoroutine != null)
+            {
+                StopCoroutine(actionCoroutine);
+                actionCoroutine = null;
+            }
             agent.speed = 0;
             agent.angularSpeed = 0;
 
             anim.SetBool(hashDie, true);
+            anim.SetTrigger(hashTrigger);
             Destroy(gameObject, 3f);
         }
 
