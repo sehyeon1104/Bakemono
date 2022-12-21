@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &390685199703692185
+--- !u!1 &31754559373826195
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685199703692184}
+  - component: {fileID: 3351178972230311535}
   m_Layer: 0
   m_Name: Dimaxillosaurus_ Tail6
   m_TagString: Untagged
@@ -16,23 +16,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685199703692184
+--- !u!4 &3351178972230311535
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685199703692185}
+  m_GameObject: {fileID: 31754559373826195}
   m_LocalRotation: {x: 2.2372763e-14, y: 0.00000021381317, z: -0.07708865, w: 0.99702424}
   m_LocalPosition: {x: -0.15531754, y: -0.000087127686, z: -2.4127075e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685201269458681}
-  m_Father: {fileID: 390685200537214411}
+  - {fileID: 966180708673671000}
+  m_Father: {fileID: 7559074000172413576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -14.009511, y: -12.772129, z: -2.6112566}
---- !u!1 &390685199732754519
+--- !u!1 &662075847593830059
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,71 +40,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685199732754518}
-  m_Layer: 0
-  m_Name: root
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685199732754518
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685199732754519}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200999149766}
-  m_Father: {fileID: 8227679447862172149}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!1 &390685199822959626
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685199822959629}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Tail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685199822959629
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685199822959626}
-  m_LocalRotation: {x: 0.00000025331968, y: -0.00000059604633, z: 0.9812579, w: 0.19269888}
-  m_LocalPosition: {x: 0.040946007, y: -0.1784171, z: 0.00000047311192}
-  m_LocalScale: {x: 1.0000004, y: 1.0000002, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200852069448}
-  m_Father: {fileID: 390685200144188812}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 3.1643953, y: 1.9799774, z: 168.02759}
---- !u!1 &390685199868640737
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685199868640736}
+  - component: {fileID: 5002564645634977476}
   m_Layer: 0
   m_Name: Dimaxillosaurus_ R Finger21
   m_TagString: Untagged
@@ -112,22 +48,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685199868640736
+--- !u!4 &5002564645634977476
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685199868640737}
+  m_GameObject: {fileID: 662075847593830059}
   m_LocalRotation: {x: -0.000000022933538, y: -0.000000032922287, z: -0.225963, w: 0.97413594}
   m_LocalPosition: {x: -0.09422409, y: 0, z: 0}
   m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 390685200827237019}
+  m_Father: {fileID: 4987686411765286047}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.0000026331352, y: 0.0000016814924, z: -40.415188}
---- !u!1 &390685199914669365
+--- !u!1 &740116419973103261
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,30 +71,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685199914669364}
+  - component: {fileID: 5187306274457779880}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Finger01
+  m_Name: Dimaxillosaurus_ Tail9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685199914669364
+--- !u!4 &5187306274457779880
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685199914669365}
-  m_LocalRotation: {x: 0.000000010908382, y: -0.0000000024305, z: -0.21747744, w: 0.9760654}
-  m_LocalPosition: {x: -0.11981239, y: 0, z: -0.000000076293944}
-  m_LocalScale: {x: 1.0000001, y: 0.99999994, z: 1}
+  m_GameObject: {fileID: 740116419973103261}
+  m_LocalRotation: {x: 1.1727457e-13, y: 0.000000058934514, z: -0.021248398, w: 0.9997742}
+  m_LocalPosition: {x: -0.08522728, y: -0.000075492855, z: -2.0903826e-10}
+  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 390685199941470627}
+  m_Father: {fileID: 6258946873870615561}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.0000016613703, y: 0.0000008447796, z: -39.417988}
---- !u!1 &390685199929659049
+  m_LocalEulerAnglesHint: {x: -10.147066, y: -16.286507, z: -2.786557}
+--- !u!1 &823635760241581949
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,126 +102,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685199929659048}
+  - component: {fileID: 6962194529745612867}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_ L UpperArm
+  m_Name: Dimaxillosaurus_TongueLeft6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685199929659048
+--- !u!4 &6962194529745612867
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685199929659049}
-  m_LocalRotation: {x: -0.099598594, y: -0.071390264, z: 0.1556561, w: 0.980181}
-  m_LocalPosition: {x: -0.3575135, y: 0, z: 0.00000015258789}
-  m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201219884728}
-  m_Father: {fileID: 390685200249671876}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -40.288803, y: -24.32789, z: -16.316711}
---- !u!1 &390685199941470624
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685199941470627}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Finger0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685199941470627
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685199941470624}
-  m_LocalRotation: {x: 0.66598296, y: -0.4907665, z: 0.24945672, w: 0.50337505}
-  m_LocalPosition: {x: -0.09880928, y: 0.023907013, z: -0.0944783}
-  m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685199914669364}
-  m_Father: {fileID: 390685200880083092}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 39.27637, y: -146.88168, z: -84.261406}
---- !u!1 &390685200016507019
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200016507018}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Toe1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200016507018
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200016507019}
-  m_LocalRotation: {x: -0.000000015454312, y: 0.000000015454312, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.15477303, y: 0.29211107, z: -0.018218499}
+  m_GameObject: {fileID: 823635760241581949}
+  m_LocalRotation: {x: -0.0026992455, y: 0.0008691293, z: 0.018176515, w: 0.9998308}
+  m_LocalPosition: {x: -0.14389081, y: -0.000000003930137, z: 4.993817e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200963496612}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -0.00021553384, y: -0.000027723827, z: -85.48467}
---- !u!1 &390685200029558234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200029558237}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Tail4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200029558237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200029558234}
-  m_LocalRotation: {x: -1.9737407e-16, y: 0.00000007054862, z: -0.025435809, w: 0.99967647}
-  m_LocalPosition: {x: -0.17496729, y: -0.00013069152, z: -3.6263373e-10}
-  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685200537214411}
-  m_Father: {fileID: 390685200821698745}
+  - {fileID: 6105368995428837308}
+  m_Father: {fileID: 8490555505817913369}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -8.344923, y: -6.272058, z: 1.7670071}
---- !u!1 &390685200062748500
+  m_LocalEulerAnglesHint: {x: -0.3110702, y: 0.09395726, z: 2.0827434}
+--- !u!1 &1049859709530167533
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,30 +134,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200062748503}
+  - component: {fileID: 5298354557363134930}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Toe0
+  m_Name: Dimaxillosaurus_ Tail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200062748503
+--- !u!4 &5298354557363134930
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200062748500}
-  m_LocalRotation: {x: -0.06183016, y: -0.06183013, z: -0.7043984, w: 0.7043984}
-  m_LocalPosition: {x: -0.15477303, y: 0.28054753, z: -0.10182052}
+  m_GameObject: {fileID: 1049859709530167533}
+  m_LocalRotation: {x: 1.8958287e-13, y: 0.000000058934575, z: -0.021248398, w: 0.9997742}
+  m_LocalPosition: {x: -0.22661224, y: -0.00016197204, z: -4.492176e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200963496612}
+  m_Children:
+  - {fileID: 2927485809502522658}
+  m_Father: {fileID: 6557023609814342062}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -10.001512, y: -0.79799163, z: -85.41484}
---- !u!1 &390685200079425440
+  m_LocalEulerAnglesHint: {x: -2.7464178, y: -2.7108386, z: 5.7564936}
+--- !u!1 &1073388100539650172
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -324,97 +166,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200079425443}
+  - component: {fileID: 8134254760104924245}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Finger11
+  m_Name: Dimaxillosaurus_TongueRight6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200079425443
+--- !u!4 &8134254760104924245
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200079425440}
-  m_LocalRotation: {x: 0.000000008070991, y: -0.000000023650781, z: -0.13437521, w: 0.99093056}
-  m_LocalPosition: {x: -0.09787292, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200427636164}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.0000004158256, y: -0.00000013115812, z: -29.74116}
---- !u!1 &390685200083359428
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200083359431}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Neck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200083359431
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200083359428}
-  m_LocalRotation: {x: -1.8462947e-14, y: 0.0000010188215, z: -0.3673282, w: 0.9300914}
-  m_LocalPosition: {x: -0.31327683, y: -0.000118103024, z: -3.2756362e-10}
-  m_LocalScale: {x: 1, y: 0.9999999, z: 0.99999994}
+  m_GameObject: {fileID: 1073388100539650172}
+  m_LocalRotation: {x: 0.002699402, y: 0.0008692302, z: -0.018176753, w: 0.9998308}
+  m_LocalPosition: {x: -0.1438908, y: -0.00000022888183, z: -0.00000030517577}
+  m_LocalScale: {x: 1.0000004, y: 1.0000004, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685200916408741}
-  m_Father: {fileID: 390685201550782430}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -7.687642, y: -18.19536, z: -47.02818}
---- !u!1 &390685200144188813
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200144188812}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Pelvis
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200144188812
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200144188813}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.49999934, w: 0.50000066}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201657303127}
-  - {fileID: 390685201563869726}
-  - {fileID: 390685200937276306}
-  - {fileID: 390685199822959629}
-  m_Father: {fileID: 390685200999149766}
+  - {fileID: 486840660547764401}
+  m_Father: {fileID: 267040045267144850}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 89.99991, z: 0}
---- !u!1 &390685200159527959
+  m_LocalEulerAnglesHint: {x: 0.31108835, y: 0.093968414, z: -2.0827703}
+--- !u!1 &1140704674840713680
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,38 +198,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200159527958}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Finger11
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200159527958
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200159527959}
-  m_LocalRotation: {x: -0.000000005380661, y: 0.000000015767188, z: -0.1343752, w: 0.99093056}
-  m_LocalPosition: {x: -0.09787292, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200345671404}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.000004447864, y: -0.0000025412533, z: -29.74116}
---- !u!1 &390685200163577298
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200163577301}
+  - component: {fileID: 7799854325479633315}
   m_Layer: 0
   m_Name: Dimaxillosaurus_ Spine1
   m_TagString: Untagged
@@ -461,23 +206,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200163577301
+--- !u!4 &7799854325479633315
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200163577298}
+  m_GameObject: {fileID: 1140704674840713680}
   m_LocalRotation: {x: -1.1938227e-13, y: 0.00000019875068, z: -0.071658, w: 0.99742925}
   m_LocalPosition: {x: -0.3132019, y: -0.0002468109, z: -6.8454026e-10}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685201550782430}
-  m_Father: {fileID: 390685200937276306}
+  - {fileID: 674327174271653023}
+  m_Father: {fileID: 7522616237437557648}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -11.147339, y: -1.3513718, z: -9.376231}
---- !u!1 &390685200164774585
+--- !u!1 &1269121184492032610
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -485,102 +230,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200164774584}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueRight2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200164774584
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200164774585}
-  m_LocalRotation: {x: -0.00020044242, y: -0.0048475056, z: -0.04730296, w: 0.9988688}
-  m_LocalPosition: {x: -0.10805576, y: -0.00000019073485, z: 0.00000015258789}
-  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201337722062}
-  m_Father: {fileID: 390685201530773991}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.049219035, y: -0.5537772, z: -5.4223695}
---- !u!1 &390685200176147715
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200176147714}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Toe2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200176147714
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200176147715}
-  m_LocalRotation: {x: -0.06930445, y: -0.06930449, z: -0.7037023, w: 0.7037023}
-  m_LocalPosition: {x: -0.15477303, y: 0.2786502, z: -0.11385578}
-  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200983693697}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -11.249247, y: -0.00003177316, z: -90.00002}
---- !u!1 &390685200225021512
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200225021515}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R UpperArm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200225021515
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200225021512}
-  m_LocalRotation: {x: 0.09959859, y: 0.07139028, z: 0.15565613, w: 0.980181}
-  m_LocalPosition: {x: -0.3575135, y: 0, z: -0.00000015258789}
-  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200762052547}
-  m_Father: {fileID: 390685201179268883}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 29.245346, y: 33.364197, z: 6.9181485}
---- !u!1 &390685200225922969
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200225922968}
+  - component: {fileID: 8225409661478559178}
   m_Layer: 0
   m_Name: Dimaxillosaurus_JawLeft
   m_TagString: Untagged
@@ -588,23 +238,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200225922968
+--- !u!4 &8225409661478559178
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200225922969}
+  m_GameObject: {fileID: 1269121184492032610}
   m_LocalRotation: {x: 0.9173873, y: -0.118504055, z: -0.37955433, w: 0.0172022}
   m_LocalPosition: {x: -0.18666624, y: 0.10111393, z: 0.18237655}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685201689432737}
-  m_Father: {fileID: 390685200916408741}
+  - {fileID: 3388229385121128459}
+  m_Father: {fileID: 1291565327194529584}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 3.7809124, y: 174.0511, z: -155.05713}
---- !u!1 &390685200249671877
+--- !u!1 &1296936536754965624
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -612,31 +262,62 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200249671876}
+  - component: {fileID: 3103783693608810504}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Clavicle
+  m_Name: Dimaxillosaurus_TongueRight8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200249671876
+--- !u!4 &3103783693608810504
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200249671877}
-  m_LocalRotation: {x: -0.55548984, y: -0.00022234509, z: 0.83152324, w: -0.00033032094}
-  m_LocalPosition: {x: -0.28568968, y: 0.008685379, z: 0.094616696}
+  m_GameObject: {fileID: 1296936536754965624}
+  m_LocalRotation: {x: 0.012153673, y: 0.016646791, z: -0.030440599, w: 0.9993241}
+  m_LocalPosition: {x: -0.117476426, y: 0.0000024414062, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 486840660547764401}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 1.4499894, y: 1.8648236, z: -3.4659157}
+--- !u!1 &1336358688178918149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7193889400350209124}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7193889400350209124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336358688178918149}
+  m_LocalRotation: {x: 0.55548984, y: 0.00022001962, z: 0.83152324, w: -0.00033183297}
+  m_LocalPosition: {x: -0.28568968, y: 0.008685913, z: -0.09461664}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685199929659048}
-  m_Father: {fileID: 390685201550782430}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 3.8387182, y: -67.7938, z: 170.80371}
---- !u!1 &390685200345671405
+  - {fileID: 4074520913492326671}
+  m_Father: {fileID: 674327174271653023}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -3.8385897, y: 67.79378, z: 170.804}
+--- !u!1 &1442298481682130475
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -644,62 +325,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200345671404}
+  - component: {fileID: 7429246506300098671}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Finger1
+  m_Name: Dimaxillosaurus_ R Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200345671404
+--- !u!4 &7429246506300098671
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200345671405}
-  m_LocalRotation: {x: 0.04215843, y: 0.079448916, z: -0.0025201018, w: 0.9959439}
-  m_LocalPosition: {x: -0.24698067, y: -0.00003326416, z: 0.041695707}
-  m_LocalScale: {x: 1.0000001, y: 1, z: 0.99999994}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200159527958}
-  m_Father: {fileID: 390685200391538647}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 4.8401027, y: 9.1260195, z: 3.684959}
---- !u!1 &390685200388215613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200388215612}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Finger21
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200388215612
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200388215613}
-  m_LocalRotation: {x: 0.0000000016835553, y: 0.0000000072578787, z: -0.22596297, w: 0.97413594}
-  m_LocalPosition: {x: -0.09422409, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_GameObject: {fileID: 1442298481682130475}
+  m_LocalRotation: {x: 0.000000015454313, y: -0.000000015454313, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.15477303, y: 0.29211107, z: 0.018218499}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 390685200866330127}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.00000019302892, y: -0.0000024071087, z: -40.415188}
---- !u!1 &390685200391538644
+  m_Father: {fileID: 2973788928491985213}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0.0001363393, y: -0.00003666652, z: -90.00002}
+--- !u!1 &1621843736407467889
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -707,47 +356,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200391538647}
-  - component: {fileID: 390685200391538646}
+  - component: {fileID: 7076781433059697664}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Hand
+  m_Name: Dimaxillosaurus_ R Finger11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200391538647
+--- !u!4 &7076781433059697664
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200391538644}
-  m_LocalRotation: {x: 0.42559496, y: -0.021076059, z: -0.009936206, w: 0.9046138}
-  m_LocalPosition: {x: -0.79488456, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_GameObject: {fileID: 1621843736407467889}
+  m_LocalRotation: {x: -0.000000005380661, y: 0.000000015767188, z: -0.1343752, w: 0.99093056}
+  m_LocalPosition: {x: -0.09787292, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201730059843}
-  - {fileID: 390685200345671404}
-  - {fileID: 390685200827237019}
-  m_Father: {fileID: 390685200762052547}
+  m_Children: []
+  m_Father: {fileID: 8706295120836160642}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 43.699623, y: -87.617096, z: -99.3885}
---- !u!135 &390685200391538646
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200391538644}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.62
-  m_Center: {x: -0.36, y: 0.18, z: 0}
---- !u!1 &390685200403371135
+  m_LocalEulerAnglesHint: {x: 0.000004447864, y: -0.0000025412533, z: -29.74116}
+--- !u!1 &1658875412344567062
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -755,8 +387,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200403371134}
-  - component: {fileID: 390685200403371009}
+  - component: {fileID: 5794515011387989150}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5794515011387989150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658875412344567062}
+  m_LocalRotation: {x: 0.000000004745912, y: 0.000000009407372, z: 0.31282526, w: 0.94981074}
+  m_LocalPosition: {x: -0.58077306, y: 0, z: 0.000000038146972}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7989980633620183971}
+  m_Father: {fileID: 9059644079707073644}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.0000028835175, y: 0.00000033701434, z: 47.306362}
+--- !u!1 &1661310682803861481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4133063290232434199}
+  - component: {fileID: 5053214111059645159}
   m_Layer: 0
   m_Name: SK_Dimaxillosaurus
   m_TagString: Untagged
@@ -764,28 +428,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200403371134
+--- !u!4 &4133063290232434199
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200403371135}
+  m_GameObject: {fileID: 1661310682803861481}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8227679447862172149}
+  m_Father: {fileID: 5165212925380703636}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &390685200403371009
+--- !u!137 &5053214111059645159
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200403371135}
+  m_GameObject: {fileID: 1661310682803861481}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -826,79 +490,79 @@ SkinnedMeshRenderer:
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: -4722709733662324327, guid: d755375b7a366964abe562dd07e146b2, type: 3}
   m_Bones:
-  - {fileID: 390685200225922968}
-  - {fileID: 390685201043617958}
-  - {fileID: 390685200607580564}
-  - {fileID: 390685201493344602}
-  - {fileID: 390685200516581149}
-  - {fileID: 390685201337722062}
-  - {fileID: 390685200164774584}
-  - {fileID: 390685201530773991}
-  - {fileID: 390685201667074903}
-  - {fileID: 390685201176458727}
-  - {fileID: 390685201115441999}
-  - {fileID: 390685201531191582}
-  - {fileID: 390685200580434940}
-  - {fileID: 390685200796014372}
-  - {fileID: 390685201694488440}
-  - {fileID: 390685201689432737}
-  - {fileID: 390685200967459489}
-  - {fileID: 390685201364607036}
-  - {fileID: 390685201689903314}
-  - {fileID: 390685201699915641}
-  - {fileID: 390685199929659048}
-  - {fileID: 390685200083359431}
-  - {fileID: 390685200163577301}
-  - {fileID: 390685200225021515}
-  - {fileID: 390685200916408741}
-  - {fileID: 390685201550782430}
-  - {fileID: 390685200249671876}
-  - {fileID: 390685201179268883}
-  - {fileID: 390685200937276306}
-  - {fileID: 390685201657303127}
-  - {fileID: 390685201563869726}
-  - {fileID: 390685199822959629}
-  - {fileID: 390685200144188812}
-  - {fileID: 390685200852069448}
-  - {fileID: 390685200722990751}
-  - {fileID: 390685200821698745}
-  - {fileID: 390685200029558237}
-  - {fileID: 390685200537214411}
-  - {fileID: 390685200628285672}
-  - {fileID: 390685201654760793}
-  - {fileID: 390685199914669364}
-  - {fileID: 390685201219884728}
-  - {fileID: 390685199941470627}
-  - {fileID: 390685200079425443}
-  - {fileID: 390685200880083092}
-  - {fileID: 390685200388215612}
-  - {fileID: 390685200866330127}
-  - {fileID: 390685200427636164}
-  - {fileID: 390685200762052547}
-  - {fileID: 390685199703692184}
-  - {fileID: 390685201269458681}
-  - {fileID: 390685201102901086}
-  - {fileID: 390685200016507018}
-  - {fileID: 390685200963496612}
-  - {fileID: 390685200062748503}
-  - {fileID: 390685201027163132}
-  - {fileID: 390685201730059843}
-  - {fileID: 390685200159527958}
-  - {fileID: 390685200391538647}
-  - {fileID: 390685199868640736}
-  - {fileID: 390685200827237019}
-  - {fileID: 390685200983693697}
-  - {fileID: 390685200176147714}
-  - {fileID: 390685201583098386}
-  - {fileID: 390685200570438629}
-  - {fileID: 390685200345671404}
+  - {fileID: 8225409661478559178}
+  - {fileID: 486840660547764401}
+  - {fileID: 8134254760104924245}
+  - {fileID: 267040045267144850}
+  - {fileID: 7998469769238965576}
+  - {fileID: 2893046151011931196}
+  - {fileID: 1060959031400519853}
+  - {fileID: 3296456756391017383}
+  - {fileID: 1705925759658064638}
+  - {fileID: 6105368995428837308}
+  - {fileID: 6962194529745612867}
+  - {fileID: 8490555505817913369}
+  - {fileID: 6788548434091452765}
+  - {fileID: 5123679972712122815}
+  - {fileID: 6616422553035726088}
+  - {fileID: 3388229385121128459}
+  - {fileID: 3991737503711707268}
+  - {fileID: 3103783693608810504}
+  - {fileID: 5187306274457779880}
+  - {fileID: 6258946873870615561}
+  - {fileID: 5009165427623724021}
+  - {fileID: 8241643497034711143}
+  - {fileID: 7799854325479633315}
+  - {fileID: 4074520913492326671}
+  - {fileID: 1291565327194529584}
+  - {fileID: 674327174271653023}
+  - {fileID: 5130586860638161860}
+  - {fileID: 7193889400350209124}
+  - {fileID: 7522616237437557648}
+  - {fileID: 9059644079707073644}
+  - {fileID: 4235453985348544276}
+  - {fileID: 6557023609814342062}
+  - {fileID: 6703132534057219460}
+  - {fileID: 5298354557363134930}
+  - {fileID: 2927485809502522658}
+  - {fileID: 8044027159403445470}
+  - {fileID: 924044742516551748}
+  - {fileID: 7559074000172413576}
+  - {fileID: 5794515011387989150}
+  - {fileID: 4256294283495062440}
+  - {fileID: 325048981038542835}
+  - {fileID: 6193875066931511406}
+  - {fileID: 6296263708143694281}
+  - {fileID: 5268839033716917813}
+  - {fileID: 1273237431887956377}
+  - {fileID: 4675232747542900891}
+  - {fileID: 6926245380862958626}
+  - {fileID: 8427347306599138019}
+  - {fileID: 91961042613941106}
+  - {fileID: 3351178972230311535}
+  - {fileID: 966180708673671000}
+  - {fileID: 9013512717021653579}
+  - {fileID: 1284969625165809184}
+  - {fileID: 7989980633620183971}
+  - {fileID: 6298671508841364080}
+  - {fileID: 9133954943009088660}
+  - {fileID: 510549954015359726}
+  - {fileID: 7076781433059697664}
+  - {fileID: 2230292210053939325}
+  - {fileID: 5002564645634977476}
+  - {fileID: 4987686411765286047}
+  - {fileID: 2973788928491985213}
+  - {fileID: 6451009869320239907}
+  - {fileID: 7429246506300098671}
+  - {fileID: 5925669744034436791}
+  - {fileID: 8706295120836160642}
   m_BlendShapeWeights: []
-  m_RootBone: {fileID: 390685200144188812}
+  m_RootBone: {fileID: 6703132534057219460}
   m_AABB:
     m_Center: {x: -0.27089828, y: 0.1679337, z: -0.00000333786}
     m_Extent: {x: 1.5792453, y: 1.3073888, z: 2.1644974}
   m_DirtyAABB: 0
---- !u!1 &390685200427636165
+--- !u!1 &1698081497488545868
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -906,358 +570,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200427636164}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Finger1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200427636164
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200427636165}
-  m_LocalRotation: {x: -0.04215843, y: -0.079448916, z: -0.0025201018, w: 0.9959439}
-  m_LocalPosition: {x: -0.2469806, y: -0.00003326416, z: -0.041695707}
-  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200079425443}
-  m_Father: {fileID: 390685200880083092}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -4.840102, y: -9.1260195, z: 3.6849594}
---- !u!1 &390685200516581146
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200516581149}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueRight4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200516581149
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200516581146}
-  m_LocalRotation: {x: -0.0001366198, y: 0.0049628573, z: -0.0013909194, w: 0.9999867}
-  m_LocalPosition: {x: -0.13233344, y: 0.00000045776366, z: 0.00000030517577}
-  m_LocalScale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201493344602}
-  m_Father: {fileID: 390685201337722062}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.014864248, y: 0.56872505, z: -0.1594634}
---- !u!1 &390685200537214408
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200537214411}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Tail5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200537214411
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200537214408}
-  m_LocalRotation: {x: -1.3147988e-13, y: 0.0000002395992, z: -0.086385615, w: 0.9962618}
-  m_LocalPosition: {x: -0.16450176, y: -0.00012191772, z: -3.381865e-10}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685199703692184}
-  m_Father: {fileID: 390685200029558237}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -13.110106, y: -9.649703, z: -4.381996}
---- !u!1 &390685200570438626
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200570438629}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Toe0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200570438629
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200570438626}
-  m_LocalRotation: {x: 0.061830167, y: 0.06183013, z: -0.7043984, w: 0.7043984}
-  m_LocalPosition: {x: -0.15477303, y: 0.2805476, z: 0.10182052}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200983693697}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 10.032877, y: -0.00004205107, z: -90.00002}
---- !u!1 &390685200580434941
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200580434940}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueLeft4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200580434940
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200580434941}
-  m_LocalRotation: {x: 0.0001361496, y: 0.004963065, z: 0.0013906833, w: 0.9999867}
-  m_LocalPosition: {x: -0.13233353, y: -0.0000000070780515, z: -9.546056e-11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201531191582}
-  m_Father: {fileID: 390685200796014372}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.014810471, y: 0.56874883, z: 0.15943608}
---- !u!1 &390685200607580565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200607580564}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueRight6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200607580564
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200607580565}
-  m_LocalRotation: {x: 0.002699402, y: 0.0008692302, z: -0.018176753, w: 0.9998308}
-  m_LocalPosition: {x: -0.1438908, y: -0.00000022888183, z: -0.00000030517577}
-  m_LocalScale: {x: 1.0000004, y: 1.0000004, z: 0.9999999}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201043617958}
-  m_Father: {fileID: 390685201493344602}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.31108835, y: 0.093968414, z: -2.0827703}
---- !u!1 &390685200628285673
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200628285672}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Calf
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200628285672
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200628285673}
-  m_LocalRotation: {x: 0.000000004745912, y: 0.000000009407372, z: 0.31282526, w: 0.94981074}
-  m_LocalPosition: {x: -0.58077306, y: 0, z: 0.000000038146972}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200963496612}
-  m_Father: {fileID: 390685201657303127}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.0000028835175, y: 0.00000033701434, z: 47.306362}
---- !u!1 &390685200722990748
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200722990751}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Tail2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200722990751
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200722990748}
-  m_LocalRotation: {x: 5.540622e-14, y: 0.00000006183583, z: -0.022294413, w: 0.99975145}
-  m_LocalPosition: {x: -0.20364772, y: -0.00014266967, z: -3.9552106e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200821698745}
-  m_Father: {fileID: 390685200852069448}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -3.1321409, y: -2.5500872, z: 3.188961}
---- !u!1 &390685200762052544
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200762052547}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Forearm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200762052547
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200762052544}
-  m_LocalRotation: {x: -0.000000019222258, y: 0.00000005642001, z: 0.322496, w: 0.9465708}
-  m_LocalPosition: {x: -0.9025152, y: -0.0000000047683715, z: 0}
-  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200391538647}
-  m_Father: {fileID: 390685200225021515}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.0000034986474, y: -0.000005497235, z: 115.918274}
---- !u!1 &390685200796014373
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200796014372}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueLeft3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200796014372
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200796014373}
-  m_LocalRotation: {x: -0.0011574104, y: -0.039422367, z: -0.014875626, w: 0.9991113}
-  m_LocalPosition: {x: -0.123863, y: 0.0000000016763806, z: -7.8580344e-11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200580434940}
-  m_Father: {fileID: 390685201694488440}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.19971219, y: -4.5161843, z: -1.6981363}
---- !u!1 &390685200821698742
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200821698745}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Tail3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200821698745
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200821698742}
-  m_LocalRotation: {x: -1.2580768e-13, y: 0.00000010030939, z: -0.03616574, w: 0.99934584}
-  m_LocalPosition: {x: -0.17932908, y: -0.00013885497, z: -3.8518919e-10}
-  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200029558237}
-  m_Father: {fileID: 390685200722990751}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -5.492322, y: -3.9830856, z: -0.31701866}
---- !u!1 &390685200827237016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200827237019}
+  - component: {fileID: 4987686411765286047}
   m_Layer: 0
   m_Name: Dimaxillosaurus_ R Finger2
   m_TagString: Untagged
@@ -1265,23 +578,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685200827237019
+--- !u!4 &4987686411765286047
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200827237016}
+  m_GameObject: {fileID: 1698081497488545868}
   m_LocalRotation: {x: 0.00039689953, y: -0.07948173, z: -0.000031645373, w: 0.99683625}
   m_LocalPosition: {x: -0.24807525, y: 0.00005050659, z: -0.063628234}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685199868640736}
-  m_Father: {fileID: 390685200391538647}
+  - {fileID: 5002564645634977476}
+  m_Father: {fileID: 2230292210053939325}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0.045049794, y: -9.11756, z: -17.166426}
---- !u!1 &390685200852069449
+--- !u!1 &1917450452749890754
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1289,936 +602,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685200852069448}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Tail1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200852069448
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200852069449}
-  m_LocalRotation: {x: 1.8958287e-13, y: 0.000000058934575, z: -0.021248398, w: 0.9997742}
-  m_LocalPosition: {x: -0.22661224, y: -0.00016197204, z: -4.492176e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200722990751}
-  m_Father: {fileID: 390685199822959629}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -2.7464178, y: -2.7108386, z: 5.7564936}
---- !u!1 &390685200866330124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200866330127}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Finger2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200866330127
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200866330124}
-  m_LocalRotation: {x: -0.0003968983, y: 0.07948174, z: -0.000031660406, w: 0.99683625}
-  m_LocalPosition: {x: -0.24807541, y: 0.00005065918, z: 0.06362808}
-  m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200388215612}
-  m_Father: {fileID: 390685200880083092}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -0.045050327, y: 9.117558, z: -17.166426}
---- !u!1 &390685200880083093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200880083092}
-  - component: {fileID: 390685200880083095}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Hand
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200880083092
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200880083093}
-  m_LocalRotation: {x: -0.42559496, y: 0.021076055, z: -0.009936203, w: 0.90461373}
-  m_LocalPosition: {x: -0.7948845, y: 0, z: 0.00000015258789}
-  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685199941470627}
-  - {fileID: 390685200427636164}
-  - {fileID: 390685200866330127}
-  m_Father: {fileID: 390685201219884728}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -53.10385, y: 18.272957, z: -52.35197}
---- !u!135 &390685200880083095
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200880083093}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.62
-  m_Center: {x: -0.36, y: 0.18, z: 0}
---- !u!1 &390685200916408738
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200916408741}
-  - component: {fileID: 390685200916408740}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Head
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200916408741
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200916408738}
-  m_LocalRotation: {x: 2.6052514e-13, y: 0.00000009939788, z: -0.035836466, w: 0.9993577}
-  m_LocalPosition: {x: -0.20305435, y: 0, z: 5.820766e-13}
-  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200225922968}
-  - {fileID: 390685200967459489}
-  - {fileID: 390685201368265675}
-  m_Father: {fileID: 390685200083359431}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 6.604067, y: 8.408256, z: -7.9880857}
---- !u!135 &390685200916408740
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200916408738}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.68
-  m_Center: {x: -0.42, y: 0, z: 0}
---- !u!1 &390685200937276307
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200937276306}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Spine
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200937276306
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200937276307}
-  m_LocalRotation: {x: -0.000002086792, y: 0.0000007000563, z: -0.00964602, w: 0.9999535}
-  m_LocalPosition: {x: -0.2046782, y: -0.07003636, z: 0.00000047664565}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200163577301}
-  m_Father: {fileID: 390685200144188812}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -10.919114, y: -2.7172797, z: -2.319146}
---- !u!1 &390685200963496613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200963496612}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Foot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200963496612
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200963496613}
-  m_LocalRotation: {x: 0.012691424, y: 0.11264994, z: -0.17495652, w: 0.97802824}
-  m_LocalPosition: {x: -0.4628723, y: 0.000000019073486, z: 0}
-  m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200062748503}
-  - {fileID: 390685200016507018}
-  - {fileID: 390685201102901086}
-  m_Father: {fileID: 390685200628285672}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -10.400918, y: 15.861098, z: -51.172127}
---- !u!1 &390685200967459486
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200967459489}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_JawRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200967459489
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200967459486}
-  m_LocalRotation: {x: 0.017204266, y: -0.37955517, z: -0.11850491, w: 0.9173868}
-  m_LocalPosition: {x: -0.18666594, y: 0.10111454, z: -0.18200043}
-  m_LocalScale: {x: 1.0000002, y: 1.0000001, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201530773991}
-  m_Father: {fileID: 390685200916408741}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 4.2151923, y: 5.8555937, z: -27.444908}
---- !u!1 &390685200983693822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200983693697}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Foot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200983693697
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200983693822}
-  m_LocalRotation: {x: -0.012691437, y: -0.11265001, z: -0.17495646, w: 0.97802824}
-  m_LocalPosition: {x: -0.4628724, y: -0.000000014305114, z: 0}
-  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200570438629}
-  - {fileID: 390685201583098386}
-  - {fileID: 390685200176147714}
-  m_Father: {fileID: 390685201654760793}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 5.849034, y: -4.456387, z: -15.117568}
---- !u!1 &390685200999149767
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685200999149766}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685200999149766
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685200999149767}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071063, w: 0.70710725}
-  m_LocalPosition: {x: -0, y: 0.06938737, z: 1.1373814}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200144188812}
-  m_Father: {fileID: 390685199732754518}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 25.686695, y: 19.353937, z: 124.78323}
---- !u!1 &390685201027163133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201027163132}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Finger01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201027163132
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201027163133}
-  m_LocalRotation: {x: -7.909208e-10, y: 0.00000003070935, z: -0.21747744, w: 0.97606534}
-  m_LocalPosition: {x: -0.119812466, y: 0.00000015258789, z: -0.000000076293944}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685201730059843}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.00000039978434, y: 0.0000025389168, z: -39.41799}
---- !u!1 &390685201043617959
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201043617958}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueRight7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201043617958
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201043617959}
-  m_LocalRotation: {x: -0.004736158, y: -0.0381076, z: 0.0031114647, w: 0.9992576}
-  m_LocalPosition: {x: -0.13603611, y: -0.00000015258789, z: 0.00000045776366}
-  m_LocalScale: {x: 0.99999976, y: 0.9999999, z: 0.9999998}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201364607036}
-  m_Father: {fileID: 390685200607580564}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.5287411, y: -4.3696766, z: 0.3769835}
---- !u!1 &390685201102901087
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201102901086}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Toe2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201102901086
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201102901087}
-  m_LocalRotation: {x: 0.06930444, y: 0.069304466, z: -0.7037023, w: 0.7037023}
-  m_LocalPosition: {x: -0.15477303, y: 0.2786502, z: 0.11385578}
-  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200963496612}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 11.213757, y: 0.8970609, z: -85.39661}
---- !u!1 &390685201115441996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201115441999}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueLeft6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201115441999
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201115441996}
-  m_LocalRotation: {x: -0.0026992455, y: 0.0008691293, z: 0.018176515, w: 0.9998308}
-  m_LocalPosition: {x: -0.14389081, y: -0.000000003930137, z: 4.993817e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201176458727}
-  m_Father: {fileID: 390685201531191582}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.3110702, y: 0.09395726, z: 2.0827434}
---- !u!1 &390685201176458724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201176458727}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueLeft7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201176458727
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201176458724}
-  m_LocalRotation: {x: 0.0047359783, y: -0.038107276, z: -0.0031113639, w: 0.9992576}
-  m_LocalPosition: {x: -0.13603617, y: -0.000000002143401, z: -6.838148e-10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201667074903}
-  m_Father: {fileID: 390685201115441999}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.52872115, y: -4.3696384, z: -0.37697098}
---- !u!1 &390685201179268880
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201179268883}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Clavicle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201179268883
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201179268880}
-  m_LocalRotation: {x: 0.55548984, y: 0.00022001962, z: 0.83152324, w: -0.00033183297}
-  m_LocalPosition: {x: -0.28568968, y: 0.008685913, z: -0.09461664}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200225021515}
-  m_Father: {fileID: 390685201550782430}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -3.8385897, y: 67.79378, z: 170.804}
---- !u!1 &390685201219884729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201219884728}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Forearm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201219884728
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201219884729}
-  m_LocalRotation: {x: 0.000000005117251, y: -0.00000006122558, z: 0.32249597, w: 0.9465708}
-  m_LocalPosition: {x: -0.9025153, y: -0.000000014305114, z: -0.00000015258789}
-  m_LocalScale: {x: 1.0000001, y: 0.99999994, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200880083092}
-  m_Father: {fileID: 390685199929659048}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.0000012289646, y: -0.0000036150013, z: 97.78895}
---- !u!1 &390685201269458678
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201269458681}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Tail7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201269458681
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201269458678}
-  m_LocalRotation: {x: 5.7019764e-14, y: 0.00000019998896, z: -0.07210446, w: 0.99739707}
-  m_LocalPosition: {x: -0.11070122, y: -0.00008750915, z: -2.4272595e-10}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201699915641}
-  m_Father: {fileID: 390685199703692184}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -13.160279, y: -14.023602, z: -3.3480613}
---- !u!1 &390685201337722063
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201337722062}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueRight3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201337722062
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201337722063}
-  m_LocalRotation: {x: 0.0011576465, y: -0.03942232, z: 0.0148756, w: 0.9991113}
-  m_LocalPosition: {x: -0.12386299, y: -0.00000015258789, z: -0.00000030517577}
-  m_LocalScale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200516581149}
-  m_Father: {fileID: 390685200164774584}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.199739, y: -4.5161786, z: 1.6981324}
---- !u!1 &390685201364607037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201364607036}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueRight8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201364607036
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201364607037}
-  m_LocalRotation: {x: 0.012153673, y: 0.016646791, z: -0.030440599, w: 0.9993241}
-  m_LocalPosition: {x: -0.117476426, y: 0.0000024414062, z: 0}
-  m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685201043617958}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1.4499894, y: 1.8648236, z: -3.4659157}
---- !u!1 &390685201368265672
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201368265675}
-  m_Layer: 0
-  m_Name: LookAt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201368265675
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201368265672}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200916408741}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &390685201493344603
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201493344602}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueRight5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201493344602
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201493344603}
-  m_LocalRotation: {x: -0.00012292087, y: -0.0076229554, z: 0.000575032, w: 0.9999708}
-  m_LocalPosition: {x: -0.16030401, y: 0.000000076293944, z: -0.00000015258789}
-  m_LocalScale: {x: 0.99999976, y: 0.99999976, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200607580564}
-  m_Father: {fileID: 390685200516581149}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.013582976, y: -0.8735427, z: 0.06599928}
---- !u!1 &390685201530773988
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201530773991}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueRight1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201530773991
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201530773988}
-  m_LocalRotation: {x: -0.06167869, y: 0.3539801, z: 0.010943507, w: 0.93315274}
-  m_LocalPosition: {x: 0.04945897, y: 0.11630428, z: 0.027591094}
-  m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200164774584}
-  m_Father: {fileID: 390685200967459489}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -7.1627398, y: 26.513458, z: 0.53981405}
---- !u!1 &390685201531191583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201531191582}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueLeft5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201531191582
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201531191583}
-  m_LocalRotation: {x: 0.00012304996, y: -0.0076230075, z: -0.00057487685, w: 0.9999708}
-  m_LocalPosition: {x: -0.16030407, y: 5.9605326e-10, z: -0.0000000024789193}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201115441999}
-  m_Father: {fileID: 390685200580434940}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.013597901, y: -0.8735487, z: -0.06598161}
---- !u!1 &390685201550782431
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201550782430}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ Spine2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201550782430
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201550782431}
-  m_LocalRotation: {x: 6.201588e-15, y: 0.00000019875058, z: -0.071657985, w: 0.99742925}
-  m_LocalPosition: {x: -0.3132019, y: -0.0002468109, z: -6.845948e-10}
-  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200249671876}
-  - {fileID: 390685200083359431}
-  - {fileID: 390685201179268883}
-  m_Father: {fileID: 390685200163577301}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -11.122402, y: -1.3689218, z: -9.178444}
---- !u!1 &390685201563869727
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201563869726}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Thigh
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201563869726
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201563869727}
-  m_LocalRotation: {x: -0.13245061, y: 0.9831603, z: -0.039302714, w: -0.119615905}
-  m_LocalPosition: {x: -0.00000030517577, y: -0.0000002479553, z: -0.210405}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201654760793}
-  m_Father: {fileID: 390685200144188812}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 27.508003, y: 167.73251, z: -78.39481}
---- !u!1 &390685201583098387
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201583098386}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Toe1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201583098386
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201583098387}
-  m_LocalRotation: {x: 0.000000015454313, y: -0.000000015454313, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.15477303, y: 0.29211107, z: 0.018218499}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685200983693697}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0.0001363393, y: -0.00003666652, z: -90.00002}
---- !u!1 &390685201654760790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201654760793}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Calf
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201654760793
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201654760790}
-  m_LocalRotation: {x: 0.000000009407371, y: -0.0000000047459117, z: 0.3128252, w: 0.94981074}
-  m_LocalPosition: {x: -0.58077306, y: 0.000000019073486, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200983693697}
-  m_Father: {fileID: 390685201563869726}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.0000025356344, y: -0.0000075068274, z: 58.89111}
---- !u!1 &390685201657303124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201657303127}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ L Thigh
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201657303127
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201657303124}
-  m_LocalRotation: {x: -0.13245077, y: 0.98316056, z: 0.039301615, w: 0.119614325}
-  m_LocalPosition: {x: 0.00000030517577, y: 0.00000034332274, z: 0.210405}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685200628285672}
-  m_Father: {fileID: 390685200144188812}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -33.95859, y: -158.20134, z: -37.877647}
---- !u!1 &390685201667074900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201667074903}
+  - component: {fileID: 1705925759658064638}
   m_Layer: 0
   m_Name: Dimaxillosaurus_TongueLeft8
   m_TagString: Untagged
@@ -2226,22 +610,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685201667074903
+--- !u!4 &1705925759658064638
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201667074900}
+  m_GameObject: {fileID: 1917450452749890754}
   m_LocalRotation: {x: -0.012153699, y: 0.01664658, z: 0.030440597, w: 0.9993241}
   m_LocalPosition: {x: -0.11747624, y: -0.0000027994033, z: 0.0000000017445453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 390685201176458727}
+  m_Father: {fileID: 6105368995428837308}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1.4499917, y: 1.8647993, z: 3.465916}
---- !u!1 &390685201689432734
+--- !u!1 &1967305440160125823
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2249,31 +633,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685201689432737}
+  - component: {fileID: 91961042613941106}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueLeft1
+  m_Name: Dimaxillosaurus_ R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685201689432737
+--- !u!4 &91961042613941106
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201689432734}
-  m_LocalRotation: {x: 0.061678823, y: 0.3539801, z: -0.010943559, w: 0.93315274}
-  m_LocalPosition: {x: 0.050008018, y: -0.11640064, z: 0.02815567}
-  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+  m_GameObject: {fileID: 1967305440160125823}
+  m_LocalRotation: {x: -0.000000019222258, y: 0.00000005642001, z: 0.322496, w: 0.9465708}
+  m_LocalPosition: {x: -0.9025152, y: -0.0000000047683715, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685201694488440}
-  m_Father: {fileID: 390685200225922968}
+  - {fileID: 2230292210053939325}
+  m_Father: {fileID: 4074520913492326671}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 7.1627603, y: 26.513454, z: -0.5398389}
---- !u!1 &390685201689903315
+  m_LocalEulerAnglesHint: {x: -0.0000034986474, y: -0.000005497235, z: 115.918274}
+--- !u!1 &2010718045785409139
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2281,62 +665,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685201689903314}
+  - component: {fileID: 6788548434091452765}
   m_Layer: 0
-  m_Name: Dimaxillosaurus_ Tail9
+  m_Name: Dimaxillosaurus_TongueLeft4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685201689903314
+--- !u!4 &6788548434091452765
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201689903315}
-  m_LocalRotation: {x: 1.1727457e-13, y: 0.000000058934514, z: -0.021248398, w: 0.9997742}
-  m_LocalPosition: {x: -0.08522728, y: -0.000075492855, z: -2.0903826e-10}
-  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 390685201699915641}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -10.147066, y: -16.286507, z: -2.786557}
---- !u!1 &390685201694488441
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390685201694488440}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_TongueLeft2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201694488440
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201694488441}
-  m_LocalRotation: {x: 0.00020044242, y: -0.0048475056, z: 0.04730296, w: 0.9988688}
-  m_LocalPosition: {x: -0.10805566, y: 0, z: -0.000000028610229}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000001}
+  m_GameObject: {fileID: 2010718045785409139}
+  m_LocalRotation: {x: 0.0001361496, y: 0.004963065, z: 0.0013906833, w: 0.9999867}
+  m_LocalPosition: {x: -0.13233353, y: -0.0000000070780515, z: -9.546056e-11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685200796014372}
-  m_Father: {fileID: 390685201689432737}
+  - {fileID: 8490555505817913369}
+  m_Father: {fileID: 5123679972712122815}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.049219035, y: -0.5537772, z: 5.4223695}
---- !u!1 &390685201699915638
+  m_LocalEulerAnglesHint: {x: 0.014810471, y: 0.56874883, z: 0.15943608}
+--- !u!1 &2051716892505528312
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2344,7 +697,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685201699915641}
+  - component: {fileID: 966180708673671000}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Tail7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &966180708673671000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051716892505528312}
+  m_LocalRotation: {x: 5.7019764e-14, y: 0.00000019998896, z: -0.07210446, w: 0.99739707}
+  m_LocalPosition: {x: -0.11070122, y: -0.00008750915, z: -2.4272595e-10}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6258946873870615561}
+  m_Father: {fileID: 3351178972230311535}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -13.160279, y: -14.023602, z: -3.3480613}
+--- !u!1 &2068695804230284710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6258946873870615561}
   m_Layer: 0
   m_Name: Dimaxillosaurus_ Tail8
   m_TagString: Untagged
@@ -2352,23 +737,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &390685201699915641
+--- !u!4 &6258946873870615561
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201699915638}
+  m_GameObject: {fileID: 2068695804230284710}
   m_LocalRotation: {x: -6.0319676e-14, y: 0.00000018247079, z: -0.06578846, w: 0.9978336}
   m_LocalPosition: {x: -0.11109558, y: -0.00006729126, z: -1.868466e-10}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685201689903314}
-  m_Father: {fileID: 390685201269458681}
+  - {fileID: 5187306274457779880}
+  m_Father: {fileID: 966180708673671000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -11.915208, y: -15.158105, z: -4.6317167}
---- !u!1 &390685201730059840
+--- !u!1 &2174791923757728563
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2376,43 +761,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 390685201730059843}
-  m_Layer: 0
-  m_Name: Dimaxillosaurus_ R Finger0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &390685201730059843
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390685201730059840}
-  m_LocalRotation: {x: -0.66598296, y: 0.49076653, z: 0.24945666, w: 0.50337505}
-  m_LocalPosition: {x: -0.09880943, y: 0.023907013, z: 0.094478145}
-  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 390685201027163132}
-  m_Father: {fileID: 390685200391538647}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -39.27637, y: 146.88168, z: -84.26141}
---- !u!1 &3424260350740453678
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8227679447862172149}
-  - component: {fileID: 8227679447862172146}
-  - component: {fileID: 8227679447862172147}
-  - component: {fileID: 8227679447862172145}
-  - component: {fileID: 8227679447862172144}
+  - component: {fileID: 5165212925380703636}
+  - component: {fileID: 7718157438564159303}
+  - component: {fileID: 942551515883218879}
+  - component: {fileID: 1627916176070421825}
+  - component: {fileID: 4547415689392846458}
   m_Layer: 0
   m_Name: JobMob
   m_TagString: Monster
@@ -2420,31 +773,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8227679447862172149
+--- !u!4 &5165212925380703636
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3424260350740453678}
+  m_GameObject: {fileID: 2174791923757728563}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.596, y: -22.07, z: -2.867}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390685199732754518}
-  - {fileID: 390685200403371134}
+  - {fileID: 7139876454126692976}
+  - {fileID: 4133063290232434199}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8227679447862172146
+--- !u!95 &7718157438564159303
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3424260350740453678}
+  m_GameObject: {fileID: 2174791923757728563}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b2b099140ab02bc498b1920232ba8bc5, type: 2}
   m_Controller: {fileID: 9100000, guid: e9e06f1b1865ea24da236f031427b945, type: 2}
@@ -2457,13 +810,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8227679447862172147
+--- !u!114 &942551515883218879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3424260350740453678}
+  m_GameObject: {fileID: 2174791923757728563}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
@@ -2476,79 +829,79 @@ MonoBehaviour:
   tripodSize: 1
   boneColor: {r: 0, g: 0, b: 1, a: 0.5}
   m_Transforms:
-  - {fileID: 390685200225922968}
-  - {fileID: 390685201689432737}
-  - {fileID: 390685201043617958}
-  - {fileID: 390685201364607036}
-  - {fileID: 390685200607580564}
-  - {fileID: 390685201493344602}
-  - {fileID: 390685200516581149}
-  - {fileID: 390685201337722062}
-  - {fileID: 390685200164774584}
-  - {fileID: 390685201530773991}
-  - {fileID: 390685201667074903}
-  - {fileID: 390685201176458727}
-  - {fileID: 390685201115441999}
-  - {fileID: 390685201531191582}
-  - {fileID: 390685200580434940}
-  - {fileID: 390685200796014372}
-  - {fileID: 390685201694488440}
-  - {fileID: 390685200967459489}
-  - {fileID: 390685201689903314}
-  - {fileID: 390685201699915641}
-  - {fileID: 390685199929659048}
-  - {fileID: 390685201219884728}
-  - {fileID: 390685200083359431}
-  - {fileID: 390685200916408741}
-  - {fileID: 390685200163577301}
-  - {fileID: 390685201550782430}
-  - {fileID: 390685200225021515}
-  - {fileID: 390685200762052547}
-  - {fileID: 390685200249671876}
-  - {fileID: 390685201179268883}
-  - {fileID: 390685200937276306}
-  - {fileID: 390685201657303127}
-  - {fileID: 390685200628285672}
-  - {fileID: 390685201563869726}
-  - {fileID: 390685201654760793}
-  - {fileID: 390685199822959629}
-  - {fileID: 390685200852069448}
-  - {fileID: 390685200144188812}
-  - {fileID: 390685200722990751}
-  - {fileID: 390685200821698745}
-  - {fileID: 390685200029558237}
-  - {fileID: 390685200537214411}
-  - {fileID: 390685199914669364}
-  - {fileID: 390685199941470627}
-  - {fileID: 390685200079425443}
-  - {fileID: 390685200880083092}
-  - {fileID: 390685200427636164}
-  - {fileID: 390685200866330127}
-  - {fileID: 390685200388215612}
-  - {fileID: 390685199703692184}
-  - {fileID: 390685201269458681}
-  - {fileID: 390685201102901086}
-  - {fileID: 390685200016507018}
-  - {fileID: 390685200963496612}
-  - {fileID: 390685200062748503}
-  - {fileID: 390685201027163132}
-  - {fileID: 390685201730059843}
-  - {fileID: 390685200159527958}
-  - {fileID: 390685200391538647}
-  - {fileID: 390685200345671404}
-  - {fileID: 390685200827237019}
-  - {fileID: 390685199868640736}
-  - {fileID: 390685200983693697}
-  - {fileID: 390685200570438629}
-  - {fileID: 390685201583098386}
-  - {fileID: 390685200176147714}
---- !u!114 &8227679447862172145
+  - {fileID: 8225409661478559178}
+  - {fileID: 3388229385121128459}
+  - {fileID: 486840660547764401}
+  - {fileID: 3103783693608810504}
+  - {fileID: 8134254760104924245}
+  - {fileID: 267040045267144850}
+  - {fileID: 7998469769238965576}
+  - {fileID: 2893046151011931196}
+  - {fileID: 1060959031400519853}
+  - {fileID: 3296456756391017383}
+  - {fileID: 1705925759658064638}
+  - {fileID: 6105368995428837308}
+  - {fileID: 6962194529745612867}
+  - {fileID: 8490555505817913369}
+  - {fileID: 6788548434091452765}
+  - {fileID: 5123679972712122815}
+  - {fileID: 6616422553035726088}
+  - {fileID: 3991737503711707268}
+  - {fileID: 5187306274457779880}
+  - {fileID: 6258946873870615561}
+  - {fileID: 5009165427623724021}
+  - {fileID: 6193875066931511406}
+  - {fileID: 8241643497034711143}
+  - {fileID: 1291565327194529584}
+  - {fileID: 7799854325479633315}
+  - {fileID: 674327174271653023}
+  - {fileID: 4074520913492326671}
+  - {fileID: 91961042613941106}
+  - {fileID: 5130586860638161860}
+  - {fileID: 7193889400350209124}
+  - {fileID: 7522616237437557648}
+  - {fileID: 9059644079707073644}
+  - {fileID: 5794515011387989150}
+  - {fileID: 4235453985348544276}
+  - {fileID: 4256294283495062440}
+  - {fileID: 6557023609814342062}
+  - {fileID: 5298354557363134930}
+  - {fileID: 6703132534057219460}
+  - {fileID: 2927485809502522658}
+  - {fileID: 8044027159403445470}
+  - {fileID: 924044742516551748}
+  - {fileID: 7559074000172413576}
+  - {fileID: 325048981038542835}
+  - {fileID: 6296263708143694281}
+  - {fileID: 5268839033716917813}
+  - {fileID: 1273237431887956377}
+  - {fileID: 8427347306599138019}
+  - {fileID: 6926245380862958626}
+  - {fileID: 4675232747542900891}
+  - {fileID: 3351178972230311535}
+  - {fileID: 966180708673671000}
+  - {fileID: 9013512717021653579}
+  - {fileID: 1284969625165809184}
+  - {fileID: 7989980633620183971}
+  - {fileID: 6298671508841364080}
+  - {fileID: 9133954943009088660}
+  - {fileID: 510549954015359726}
+  - {fileID: 7076781433059697664}
+  - {fileID: 2230292210053939325}
+  - {fileID: 8706295120836160642}
+  - {fileID: 4987686411765286047}
+  - {fileID: 5002564645634977476}
+  - {fileID: 2973788928491985213}
+  - {fileID: 5925669744034436791}
+  - {fileID: 7429246506300098671}
+  - {fileID: 6451009869320239907}
+--- !u!114 &1627916176070421825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3424260350740453678}
+  m_GameObject: {fileID: 2174791923757728563}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb20bcd192632714bbd84feaf61aa549, type: 3}
@@ -2558,16 +911,16 @@ MonoBehaviour:
   scanDistance: 10
   enemySO: {fileID: 11400000, guid: e6a0f0e9da19b7049b6ae3dc482518a1, type: 2}
   attackCol:
-  - {fileID: 390685200880083095}
-  - {fileID: 390685200391538646}
-  - {fileID: 390685200916408740}
---- !u!195 &8227679447862172144
+  - {fileID: 3704661243709059294}
+  - {fileID: 8740117747868287508}
+  - {fileID: 4179710617642030012}
+--- !u!195 &4547415689392846458
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3424260350740453678}
+  m_GameObject: {fileID: 2174791923757728563}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
@@ -2583,3 +936,1650 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
+--- !u!1 &2414198208706337758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4675232747542900891}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Finger21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4675232747542900891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414198208706337758}
+  m_LocalRotation: {x: 0.0000000016835553, y: 0.0000000072578787, z: -0.22596297, w: 0.97413594}
+  m_LocalPosition: {x: -0.09422409, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6926245380862958626}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.00000019302892, y: -0.0000024071087, z: -40.415188}
+--- !u!1 &2437637355014020634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6926245380862958626}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Finger2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6926245380862958626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2437637355014020634}
+  m_LocalRotation: {x: -0.0003968983, y: 0.07948174, z: -0.000031660406, w: 0.99683625}
+  m_LocalPosition: {x: -0.24807541, y: 0.00005065918, z: 0.06362808}
+  m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4675232747542900891}
+  m_Father: {fileID: 1273237431887956377}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -0.045050327, y: 9.117558, z: -17.166426}
+--- !u!1 &2959296350101910641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4235453985348544276}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4235453985348544276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959296350101910641}
+  m_LocalRotation: {x: -0.13245061, y: 0.9831603, z: -0.039302714, w: -0.119615905}
+  m_LocalPosition: {x: -0.00000030517577, y: -0.0000002479553, z: -0.210405}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4256294283495062440}
+  m_Father: {fileID: 6703132534057219460}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 27.508003, y: 167.73251, z: -78.39481}
+--- !u!1 &3006332487334716166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674327174271653023}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Spine2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &674327174271653023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3006332487334716166}
+  m_LocalRotation: {x: 6.201588e-15, y: 0.00000019875058, z: -0.071657985, w: 0.99742925}
+  m_LocalPosition: {x: -0.3132019, y: -0.0002468109, z: -6.845948e-10}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5130586860638161860}
+  - {fileID: 8241643497034711143}
+  - {fileID: 7193889400350209124}
+  m_Father: {fileID: 7799854325479633315}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -11.122402, y: -1.3689218, z: -9.178444}
+--- !u!1 &3078905655082839768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1273237431887956377}
+  - component: {fileID: 3704661243709059294}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1273237431887956377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078905655082839768}
+  m_LocalRotation: {x: -0.42559496, y: 0.021076055, z: -0.009936203, w: 0.90461373}
+  m_LocalPosition: {x: -0.7948845, y: 0, z: 0.00000015258789}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6296263708143694281}
+  - {fileID: 8427347306599138019}
+  - {fileID: 6926245380862958626}
+  m_Father: {fileID: 6193875066931511406}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -53.10385, y: 18.272957, z: -52.35197}
+--- !u!135 &3704661243709059294
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078905655082839768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: -0.36, y: 0.18, z: 0}
+--- !u!1 &3196755050800215847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8706295120836160642}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Finger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8706295120836160642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3196755050800215847}
+  m_LocalRotation: {x: 0.04215843, y: 0.079448916, z: -0.0025201018, w: 0.9959439}
+  m_LocalPosition: {x: -0.24698067, y: -0.00003326416, z: 0.041695707}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7076781433059697664}
+  m_Father: {fileID: 2230292210053939325}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 4.8401027, y: 9.1260195, z: 3.684959}
+--- !u!1 &3358471476888523016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6296263708143694281}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Finger0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6296263708143694281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3358471476888523016}
+  m_LocalRotation: {x: 0.66598296, y: -0.4907665, z: 0.24945672, w: 0.50337505}
+  m_LocalPosition: {x: -0.09880928, y: 0.023907013, z: -0.0944783}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 325048981038542835}
+  m_Father: {fileID: 1273237431887956377}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 39.27637, y: -146.88168, z: -84.261406}
+--- !u!1 &3379711735000700034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6703132534057219460}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6703132534057219460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3379711735000700034}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.49999934, w: 0.50000066}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9059644079707073644}
+  - {fileID: 4235453985348544276}
+  - {fileID: 7522616237437557648}
+  - {fileID: 6557023609814342062}
+  m_Father: {fileID: 6607681265493877814}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 89.99991, z: 0}
+--- !u!1 &3383875036641391909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5925669744034436791}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Toe0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5925669744034436791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383875036641391909}
+  m_LocalRotation: {x: 0.061830167, y: 0.06183013, z: -0.7043984, w: 0.7043984}
+  m_LocalPosition: {x: -0.15477303, y: 0.2805476, z: 0.10182052}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2973788928491985213}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 10.032877, y: -0.00004205107, z: -90.00002}
+--- !u!1 &3384989044957811419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2973788928491985213}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2973788928491985213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3384989044957811419}
+  m_LocalRotation: {x: -0.012691437, y: -0.11265001, z: -0.17495646, w: 0.97802824}
+  m_LocalPosition: {x: -0.4628724, y: -0.000000014305114, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5925669744034436791}
+  - {fileID: 7429246506300098671}
+  - {fileID: 6451009869320239907}
+  m_Father: {fileID: 4256294283495062440}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 5.849034, y: -4.456387, z: -15.117568}
+--- !u!1 &3405222782317815990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6193875066931511406}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6193875066931511406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3405222782317815990}
+  m_LocalRotation: {x: 0.000000005117251, y: -0.00000006122558, z: 0.32249597, w: 0.9465708}
+  m_LocalPosition: {x: -0.9025153, y: -0.000000014305114, z: -0.00000015258789}
+  m_LocalScale: {x: 1.0000001, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1273237431887956377}
+  m_Father: {fileID: 5009165427623724021}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.0000012289646, y: -0.0000036150013, z: 97.78895}
+--- !u!1 &3549217515982900816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3296456756391017383}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueRight1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3296456756391017383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3549217515982900816}
+  m_LocalRotation: {x: -0.06167869, y: 0.3539801, z: 0.010943507, w: 0.93315274}
+  m_LocalPosition: {x: 0.04945897, y: 0.11630428, z: 0.027591094}
+  m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1060959031400519853}
+  m_Father: {fileID: 3991737503711707268}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -7.1627398, y: 26.513458, z: 0.53981405}
+--- !u!1 &3641616204777474430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8427347306599138019}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Finger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8427347306599138019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641616204777474430}
+  m_LocalRotation: {x: -0.04215843, y: -0.079448916, z: -0.0025201018, w: 0.9959439}
+  m_LocalPosition: {x: -0.2469806, y: -0.00003326416, z: -0.041695707}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5268839033716917813}
+  m_Father: {fileID: 1273237431887956377}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -4.840102, y: -9.1260195, z: 3.6849594}
+--- !u!1 &3909237087303467118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4256294283495062440}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4256294283495062440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909237087303467118}
+  m_LocalRotation: {x: 0.000000009407371, y: -0.0000000047459117, z: 0.3128252, w: 0.94981074}
+  m_LocalPosition: {x: -0.58077306, y: 0.000000019073486, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2973788928491985213}
+  m_Father: {fileID: 4235453985348544276}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.0000025356344, y: -0.0000075068274, z: 58.89111}
+--- !u!1 &4011857793640167733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9133954943009088660}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Finger01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9133954943009088660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4011857793640167733}
+  m_LocalRotation: {x: -7.909208e-10, y: 0.00000003070935, z: -0.21747744, w: 0.97606534}
+  m_LocalPosition: {x: -0.119812466, y: 0.00000015258789, z: -0.000000076293944}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 510549954015359726}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.00000039978434, y: 0.0000025389168, z: -39.41799}
+--- !u!1 &4088338797351995926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6298671508841364080}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Toe0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6298671508841364080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088338797351995926}
+  m_LocalRotation: {x: -0.06183016, y: -0.06183013, z: -0.7043984, w: 0.7043984}
+  m_LocalPosition: {x: -0.15477303, y: 0.28054753, z: -0.10182052}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7989980633620183971}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -10.001512, y: -0.79799163, z: -85.41484}
+--- !u!1 &4138167054607192583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6616422553035726088}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueLeft2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6616422553035726088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4138167054607192583}
+  m_LocalRotation: {x: 0.00020044242, y: -0.0048475056, z: 0.04730296, w: 0.9988688}
+  m_LocalPosition: {x: -0.10805566, y: 0, z: -0.000000028610229}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5123679972712122815}
+  m_Father: {fileID: 3388229385121128459}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.049219035, y: -0.5537772, z: 5.4223695}
+--- !u!1 &4219859040205893215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4074520913492326671}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4074520913492326671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4219859040205893215}
+  m_LocalRotation: {x: 0.09959859, y: 0.07139028, z: 0.15565613, w: 0.980181}
+  m_LocalPosition: {x: -0.3575135, y: 0, z: -0.00000015258789}
+  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 91961042613941106}
+  m_Father: {fileID: 7193889400350209124}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 29.245346, y: 33.364197, z: 6.9181485}
+--- !u!1 &4288251040510372233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3388229385121128459}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueLeft1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3388229385121128459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288251040510372233}
+  m_LocalRotation: {x: 0.061678823, y: 0.3539801, z: -0.010943559, w: 0.93315274}
+  m_LocalPosition: {x: 0.050008018, y: -0.11640064, z: 0.02815567}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6616422553035726088}
+  m_Father: {fileID: 8225409661478559178}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 7.1627603, y: 26.513454, z: -0.5398389}
+--- !u!1 &4322922792881241478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325048981038542835}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Finger01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &325048981038542835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322922792881241478}
+  m_LocalRotation: {x: 0.000000010908382, y: -0.0000000024305, z: -0.21747744, w: 0.9760654}
+  m_LocalPosition: {x: -0.11981239, y: 0, z: -0.000000076293944}
+  m_LocalScale: {x: 1.0000001, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6296263708143694281}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.0000016613703, y: 0.0000008447796, z: -39.417988}
+--- !u!1 &4826415768514032272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2893046151011931196}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueRight3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2893046151011931196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826415768514032272}
+  m_LocalRotation: {x: 0.0011576465, y: -0.03942232, z: 0.0148756, w: 0.9991113}
+  m_LocalPosition: {x: -0.12386299, y: -0.00000015258789, z: -0.00000030517577}
+  m_LocalScale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7998469769238965576}
+  m_Father: {fileID: 1060959031400519853}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.199739, y: -4.5161786, z: 1.6981324}
+--- !u!1 &5027434063887596592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8490555505817913369}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueLeft5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8490555505817913369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027434063887596592}
+  m_LocalRotation: {x: 0.00012304996, y: -0.0076230075, z: -0.00057487685, w: 0.9999708}
+  m_LocalPosition: {x: -0.16030407, y: 5.9605326e-10, z: -0.0000000024789193}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6962194529745612867}
+  m_Father: {fileID: 6788548434091452765}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.013597901, y: -0.8735487, z: -0.06598161}
+--- !u!1 &5068880876184520162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7139876454126692976}
+  m_Layer: 0
+  m_Name: root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7139876454126692976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5068880876184520162}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6607681265493877814}
+  m_Father: {fileID: 5165212925380703636}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &5262386493272274806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6861020376558628344}
+  m_Layer: 0
+  m_Name: LookAt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6861020376558628344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262386493272274806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1291565327194529584}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5489533183842243441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1284969625165809184}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Toe1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1284969625165809184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5489533183842243441}
+  m_LocalRotation: {x: -0.000000015454312, y: 0.000000015454312, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.15477303, y: 0.29211107, z: -0.018218499}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7989980633620183971}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -0.00021553384, y: -0.000027723827, z: -85.48467}
+--- !u!1 &5633183912350711022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5268839033716917813}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Finger11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5268839033716917813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5633183912350711022}
+  m_LocalRotation: {x: 0.000000008070991, y: -0.000000023650781, z: -0.13437521, w: 0.99093056}
+  m_LocalPosition: {x: -0.09787292, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8427347306599138019}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.0000004158256, y: -0.00000013115812, z: -29.74116}
+--- !u!1 &5710417910639453094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2230292210053939325}
+  - component: {fileID: 8740117747868287508}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2230292210053939325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710417910639453094}
+  m_LocalRotation: {x: 0.42559496, y: -0.021076059, z: -0.009936206, w: 0.9046138}
+  m_LocalPosition: {x: -0.79488456, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 510549954015359726}
+  - {fileID: 8706295120836160642}
+  - {fileID: 4987686411765286047}
+  m_Father: {fileID: 91961042613941106}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 43.699623, y: -87.617096, z: -99.3885}
+--- !u!135 &8740117747868287508
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710417910639453094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: -0.36, y: 0.18, z: 0}
+--- !u!1 &5842970744367645325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8044027159403445470}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Tail3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8044027159403445470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842970744367645325}
+  m_LocalRotation: {x: -1.2580768e-13, y: 0.00000010030939, z: -0.03616574, w: 0.99934584}
+  m_LocalPosition: {x: -0.17932908, y: -0.00013885497, z: -3.8518919e-10}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 924044742516551748}
+  m_Father: {fileID: 2927485809502522658}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -5.492322, y: -3.9830856, z: -0.31701866}
+--- !u!1 &6148497257154641035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486840660547764401}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueRight7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486840660547764401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148497257154641035}
+  m_LocalRotation: {x: -0.004736158, y: -0.0381076, z: 0.0031114647, w: 0.9992576}
+  m_LocalPosition: {x: -0.13603611, y: -0.00000015258789, z: 0.00000045776366}
+  m_LocalScale: {x: 0.99999976, y: 0.9999999, z: 0.9999998}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3103783693608810504}
+  m_Father: {fileID: 8134254760104924245}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.5287411, y: -4.3696766, z: 0.3769835}
+--- !u!1 &6190919534902252590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5009165427623724021}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5009165427623724021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6190919534902252590}
+  m_LocalRotation: {x: -0.099598594, y: -0.071390264, z: 0.1556561, w: 0.980181}
+  m_LocalPosition: {x: -0.3575135, y: 0, z: 0.00000015258789}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6193875066931511406}
+  m_Father: {fileID: 5130586860638161860}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -40.288803, y: -24.32789, z: -16.316711}
+--- !u!1 &6191223532081629079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6557023609814342062}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Tail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6557023609814342062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6191223532081629079}
+  m_LocalRotation: {x: 0.00000025331968, y: -0.00000059604633, z: 0.9812579, w: 0.19269888}
+  m_LocalPosition: {x: 0.040946007, y: -0.1784171, z: 0.00000047311192}
+  m_LocalScale: {x: 1.0000004, y: 1.0000002, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5298354557363134930}
+  m_Father: {fileID: 6703132534057219460}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 3.1643953, y: 1.9799774, z: 168.02759}
+--- !u!1 &6409270622732760679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6451009869320239907}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Toe2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6451009869320239907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409270622732760679}
+  m_LocalRotation: {x: -0.06930445, y: -0.06930449, z: -0.7037023, w: 0.7037023}
+  m_LocalPosition: {x: -0.15477303, y: 0.2786502, z: -0.11385578}
+  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2973788928491985213}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -11.249247, y: -0.00003177316, z: -90.00002}
+--- !u!1 &6485354953537285421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510549954015359726}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ R Finger0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &510549954015359726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6485354953537285421}
+  m_LocalRotation: {x: -0.66598296, y: 0.49076653, z: 0.24945666, w: 0.50337505}
+  m_LocalPosition: {x: -0.09880943, y: 0.023907013, z: 0.094478145}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9133954943009088660}
+  m_Father: {fileID: 2230292210053939325}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -39.27637, y: 146.88168, z: -84.26141}
+--- !u!1 &6704324141030602881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7522616237437557648}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Spine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7522616237437557648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704324141030602881}
+  m_LocalRotation: {x: -0.000002086792, y: 0.0000007000563, z: -0.00964602, w: 0.9999535}
+  m_LocalPosition: {x: -0.2046782, y: -0.07003636, z: 0.00000047664565}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7799854325479633315}
+  m_Father: {fileID: 6703132534057219460}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -10.919114, y: -2.7172797, z: -2.319146}
+--- !u!1 &6796323129723652608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9013512717021653579}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Toe2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9013512717021653579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796323129723652608}
+  m_LocalRotation: {x: 0.06930444, y: 0.069304466, z: -0.7037023, w: 0.7037023}
+  m_LocalPosition: {x: -0.15477303, y: 0.2786502, z: 0.11385578}
+  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7989980633620183971}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 11.213757, y: 0.8970609, z: -85.39661}
+--- !u!1 &6828817499361398251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3991737503711707268}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_JawRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3991737503711707268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6828817499361398251}
+  m_LocalRotation: {x: 0.017204266, y: -0.37955517, z: -0.11850491, w: 0.9173868}
+  m_LocalPosition: {x: -0.18666594, y: 0.10111454, z: -0.18200043}
+  m_LocalScale: {x: 1.0000002, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3296456756391017383}
+  m_Father: {fileID: 1291565327194529584}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 4.2151923, y: 5.8555937, z: -27.444908}
+--- !u!1 &6922361996520827143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6105368995428837308}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueLeft7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6105368995428837308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6922361996520827143}
+  m_LocalRotation: {x: 0.0047359783, y: -0.038107276, z: -0.0031113639, w: 0.9992576}
+  m_LocalPosition: {x: -0.13603617, y: -0.000000002143401, z: -6.838148e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1705925759658064638}
+  m_Father: {fileID: 6962194529745612867}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.52872115, y: -4.3696384, z: -0.37697098}
+--- !u!1 &7053418842479617792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5123679972712122815}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueLeft3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5123679972712122815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7053418842479617792}
+  m_LocalRotation: {x: -0.0011574104, y: -0.039422367, z: -0.014875626, w: 0.9991113}
+  m_LocalPosition: {x: -0.123863, y: 0.0000000016763806, z: -7.8580344e-11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6788548434091452765}
+  m_Father: {fileID: 6616422553035726088}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.19971219, y: -4.5161843, z: -1.6981363}
+--- !u!1 &7057927069546462746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7998469769238965576}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueRight4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7998469769238965576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7057927069546462746}
+  m_LocalRotation: {x: -0.0001366198, y: 0.0049628573, z: -0.0013909194, w: 0.9999867}
+  m_LocalPosition: {x: -0.13233344, y: 0.00000045776366, z: 0.00000030517577}
+  m_LocalScale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 267040045267144850}
+  m_Father: {fileID: 2893046151011931196}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.014864248, y: 0.56872505, z: -0.1594634}
+--- !u!1 &7308361236999697058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2927485809502522658}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Tail2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2927485809502522658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308361236999697058}
+  m_LocalRotation: {x: 5.540622e-14, y: 0.00000006183583, z: -0.022294413, w: 0.99975145}
+  m_LocalPosition: {x: -0.20364772, y: -0.00014266967, z: -3.9552106e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8044027159403445470}
+  m_Father: {fileID: 5298354557363134930}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -3.1321409, y: -2.5500872, z: 3.188961}
+--- !u!1 &7327795886640004768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1060959031400519853}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueRight2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1060959031400519853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327795886640004768}
+  m_LocalRotation: {x: -0.00020044242, y: -0.0048475056, z: -0.04730296, w: 0.9988688}
+  m_LocalPosition: {x: -0.10805576, y: -0.00000019073485, z: 0.00000015258789}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2893046151011931196}
+  m_Father: {fileID: 3296456756391017383}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.049219035, y: -0.5537772, z: -5.4223695}
+--- !u!1 &7499922878154612552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5130586860638161860}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5130586860638161860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499922878154612552}
+  m_LocalRotation: {x: -0.55548984, y: -0.00022234509, z: 0.83152324, w: -0.00033032094}
+  m_LocalPosition: {x: -0.28568968, y: 0.008685379, z: 0.094616696}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5009165427623724021}
+  m_Father: {fileID: 674327174271653023}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 3.8387182, y: -67.7938, z: 170.80371}
+--- !u!1 &7564813245590324665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6607681265493877814}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6607681265493877814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7564813245590324665}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071063, w: 0.70710725}
+  m_LocalPosition: {x: -0, y: 0.06938737, z: 1.1373814}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6703132534057219460}
+  m_Father: {fileID: 7139876454126692976}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 25.686695, y: 19.353937, z: 124.78323}
+--- !u!1 &7597340795317178602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267040045267144850}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_TongueRight5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &267040045267144850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597340795317178602}
+  m_LocalRotation: {x: -0.00012292087, y: -0.0076229554, z: 0.000575032, w: 0.9999708}
+  m_LocalPosition: {x: -0.16030401, y: 0.000000076293944, z: -0.00000015258789}
+  m_LocalScale: {x: 0.99999976, y: 0.99999976, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8134254760104924245}
+  m_Father: {fileID: 7998469769238965576}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.013582976, y: -0.8735427, z: 0.06599928}
+--- !u!1 &8144624413752378854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9059644079707073644}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9059644079707073644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144624413752378854}
+  m_LocalRotation: {x: -0.13245077, y: 0.98316056, z: 0.039301615, w: 0.119614325}
+  m_LocalPosition: {x: 0.00000030517577, y: 0.00000034332274, z: 0.210405}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5794515011387989150}
+  m_Father: {fileID: 6703132534057219460}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -33.95859, y: -158.20134, z: -37.877647}
+--- !u!1 &8184286508989306224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8241643497034711143}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Neck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8241643497034711143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8184286508989306224}
+  m_LocalRotation: {x: -1.8462947e-14, y: 0.0000010188215, z: -0.3673282, w: 0.9300914}
+  m_LocalPosition: {x: -0.31327683, y: -0.000118103024, z: -3.2756362e-10}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 0.99999994}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1291565327194529584}
+  m_Father: {fileID: 674327174271653023}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -7.687642, y: -18.19536, z: -47.02818}
+--- !u!1 &8436651495349217552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924044742516551748}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Tail4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &924044742516551748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436651495349217552}
+  m_LocalRotation: {x: -1.9737407e-16, y: 0.00000007054862, z: -0.025435809, w: 0.99967647}
+  m_LocalPosition: {x: -0.17496729, y: -0.00013069152, z: -3.6263373e-10}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7559074000172413576}
+  m_Father: {fileID: 8044027159403445470}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -8.344923, y: -6.272058, z: 1.7670071}
+--- !u!1 &8575565559645710057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7559074000172413576}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Tail5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7559074000172413576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8575565559645710057}
+  m_LocalRotation: {x: -1.3147988e-13, y: 0.0000002395992, z: -0.086385615, w: 0.9962618}
+  m_LocalPosition: {x: -0.16450176, y: -0.00012191772, z: -3.381865e-10}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3351178972230311535}
+  m_Father: {fileID: 924044742516551748}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -13.110106, y: -9.649703, z: -4.381996}
+--- !u!1 &8673572514897569767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7989980633620183971}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ L Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7989980633620183971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8673572514897569767}
+  m_LocalRotation: {x: 0.012691424, y: 0.11264994, z: -0.17495652, w: 0.97802824}
+  m_LocalPosition: {x: -0.4628723, y: 0.000000019073486, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6298671508841364080}
+  - {fileID: 1284969625165809184}
+  - {fileID: 9013512717021653579}
+  m_Father: {fileID: 5794515011387989150}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -10.400918, y: 15.861098, z: -51.172127}
+--- !u!1 &8973049799622756469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1291565327194529584}
+  - component: {fileID: 4179710617642030012}
+  m_Layer: 0
+  m_Name: Dimaxillosaurus_ Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1291565327194529584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973049799622756469}
+  m_LocalRotation: {x: 2.6052514e-13, y: 0.00000009939788, z: -0.035836466, w: 0.9993577}
+  m_LocalPosition: {x: -0.20305435, y: 0, z: 5.820766e-13}
+  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8225409661478559178}
+  - {fileID: 3991737503711707268}
+  - {fileID: 6861020376558628344}
+  m_Father: {fileID: 8241643497034711143}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.604067, y: 8.408256, z: -7.9880857}
+--- !u!135 &4179710617642030012
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973049799622756469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.8
+  m_Center: {x: -0.78, y: 0, z: 0}
