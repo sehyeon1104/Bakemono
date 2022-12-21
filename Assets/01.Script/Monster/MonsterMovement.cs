@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class MonsterMovement : MonoBehaviour ,IAgentStat
+public class MonsterMovement : MonoSingleton<MonsterMovement> ,IAgentStat
 {
     float x;
     float z;
@@ -27,14 +27,17 @@ public class MonsterMovement : MonoBehaviour ,IAgentStat
     readonly int headValue = Animator.StringToHash("TurnValue");
     readonly int isTurn = Animator.StringToHash("IsTurn");
     public Vector3 cashed_move = Vector3.zero;
+   public float mouseValue =1;
+   
 
     public float CurrentHp { get ; set ; }
     public float MaxHp { get ; set; }
     public float Speed { get => speed; set => speed = value; }
+    
 
     private void Awake()
     {
-        rotateValue = new Vector3(0,0.3f,0);
+        rotateValue = new Vector3(0, mouseValue, 0);
         monstercontroller = GetComponent<CharacterController>();
         monsterAni = GetComponent<Animator>();
     }
@@ -42,7 +45,7 @@ public class MonsterMovement : MonoBehaviour ,IAgentStat
     {
         rotateInput = Mathf.Clamp(rotateInput, -10, 10);
         monsterAni.SetBool(isTurn, cashed_move.x == 0 && cashed_move.z == 0 && Mathf.Abs(rotateInput) >= float.Epsilon);
-        transform.rotation *= Quaternion.Euler(rotateInput * rotateValue); 
+        transform.rotation *= Quaternion.Euler(rotateInput * new Vector3(0,mouseValue/5,0)); 
         monsterAni.SetFloat(headValue, rotateInput);
     }
     public void MoveMonster(Vector3 moveInput)
