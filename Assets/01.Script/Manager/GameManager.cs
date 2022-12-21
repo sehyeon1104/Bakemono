@@ -61,6 +61,7 @@ public class GameManager : MonoSingleton<GameManager>
         for (int i = 0; i < spawnPos.Count; ++i)
         {
             EnemySpawnManager.Instance.InstantiateMaleResearcher(spawnPos[i]);
+
             //GameObject rMale = Instantiate(researcherMalePrefab);
             //rMale.transform.position = spawnPos[i];
             //rMale.transform.SetParent(spawnPos[i].transform);
@@ -72,7 +73,8 @@ public class GameManager : MonoSingleton<GameManager>
     {
         for (int i = 0; i < spawnPos.Count; ++i)
         {
-            EnemySpawnManager.Instance.InstantiateFemaleResearcher(spawnPos[i]);
+            EnemySpawnManager.Instance.InstantiateSoldier(spawnPos[i]);
+
             //GameObject rFemale = Instantiate(soldierPrefab);
             //rFemale.transform.position = spawnPos[i].transform.position;
             //rFemale.transform.SetParent(spawnPos[i].transform);
@@ -84,7 +86,8 @@ public class GameManager : MonoSingleton<GameManager>
     {
         for (int i = 0; i < spawnPos.Count; ++i)
         {
-            EnemySpawnManager.Instance.InstantiateSoldier(spawnPos[i]);
+            EnemySpawnManager.Instance.InstantiateFemaleResearcher(spawnPos[i]);
+
             //GameObject soldier = Instantiate(researcherFemalePrefab);
             //soldier.transform.position = spawnPos[i].transform.position;
             //soldier.transform.SetParent(spawnPos[i].transform);
