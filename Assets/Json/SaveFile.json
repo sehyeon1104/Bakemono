@@ -3,10 +3,10 @@
     "hp": 100.0,
     "experience": 0.0,
     "level": 1,
-    "password": "7642",
+    "password": "8600",
     "passwordRoomsName": [
         "Room3Hint",
-        "Room4Hint",
+        "LaboratorHint",
         "ServerRoomHint",
         "Room1Hint"
     ]

@@ -28,8 +28,7 @@ public class UIManager : MonoSingleton<UIManager>
     [SerializeField]
     private TextMeshProUGUI diedTMP;
 
-    [SerializeField]
-    private GameObject fadeObj = null;
+    public GameObject fadeObj = null;
 
     public bool isPause { private set; get; } = false;
 
