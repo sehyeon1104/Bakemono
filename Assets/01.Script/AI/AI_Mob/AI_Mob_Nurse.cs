@@ -30,6 +30,9 @@ public  class AI_Mob_Nurse : AI_Mob_Default
 
     public override void Idle()
     {
+        agent.isStopped = true;
+        agent.SetDestination(transform.position);
+
         anim.SetBool(hashMove, false);
         if (actionCoroutine == null)
             actionCoroutine = StartCoroutine(Motion());
