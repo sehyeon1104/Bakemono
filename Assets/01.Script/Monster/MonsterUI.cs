@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -18,6 +19,10 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     public Image skillImage;
     Animator monsterAni;
     AnimatorStateInfo info;
+    [SerializeField]
+    TextMeshProUGUI hpText;
+    [SerializeField]
+    TextMeshProUGUI expText;
     readonly int idle = Animator.StringToHash("Idle");
     readonly int bite = Animator.StringToHash("BiteAttack");
     private void Awake()
@@ -59,8 +64,10 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     }
     public void UIUpdate()
     {
-        hpBar.fillAmount = monster.CurrentHp / (float)monster.MaxHp;
-        expBar.fillAmount = monster.CurrentExp / (float)monster.LevelPerExp;
+        hpText.text = $"{monster.CurrentHp / monster.MaxHp * 100}%";
+        expText.text = $"{monster.CurrentExp / monster.LevelPerExp*100}%";
+        hpBar.fillAmount = monster.CurrentHp / monster.MaxHp;
+        expBar.fillAmount = monster.CurrentExp / monster.LevelPerExp;
     }
     public void FindEnemy()
     {
