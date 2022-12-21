@@ -42,10 +42,6 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            GetHit(150, gameObject);
-        }
         DistanceCheck();
     }
 
