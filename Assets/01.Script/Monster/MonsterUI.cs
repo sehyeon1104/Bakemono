@@ -32,7 +32,8 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     }
     private void Start()
     {
-
+        AudioMixer.SetFloat("MyExposedParam", 0);
+        MonsterMovement.Instance.mouseValue = 5;
     }
     void Update()
     {
@@ -45,7 +46,7 @@ public class MonsterUI : MonoSingleton<MonsterUI>
         }
         else
         {
-            attackImg.fillAmount = 0;
+            attackImg.fillAmount = 0;   
         }
     }
     public void AudioAdjust()
