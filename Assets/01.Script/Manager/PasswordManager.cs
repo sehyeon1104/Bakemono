@@ -121,7 +121,7 @@ public class PasswordManager : MonoSingleton<PasswordManager>
         for (int i = 0; i < 4; ++i)
         {
             passwordRoom[i].SetActive(true);
-            passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().text = (i + 1) + password[i].ToString();
+            passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().text = $"<size=0.5> {(i + 1)}</size>" + SaveManager.Instance.CurrentUser.password[i].ToString();
             passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().font = fontAsset;
             passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
             //passwordRoom[i].GetComponentInChildren<TextMeshProUGUI>().fontMaterial.SetColor("_FaceColor", Color.red);
@@ -146,7 +146,7 @@ public class PasswordManager : MonoSingleton<PasswordManager>
                 if(passwordRoom[j].name == roomName)
                 {
                     passwordRoom[j].SetActive(true);
-                    passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().text = (n + 1) + SaveManager.Instance.CurrentUser.password[n].ToString();
+                    passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().text = $"<size=0.5> {(n + 1)}</size>" + SaveManager.Instance.CurrentUser.password[n].ToString();
                     passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
                     ++n;
                 }
