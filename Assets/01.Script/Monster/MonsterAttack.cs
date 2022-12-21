@@ -174,6 +174,7 @@ public class MonsterAttack : MonoBehaviour
     {
         monsterAni.SetBool(isDie, true);
         monsterAni.SetTrigger(dieAniHash);
+        UIManager.Instance.ToggleGameOverPanel();
     }
     private void OnDrawGizmos()
     {
