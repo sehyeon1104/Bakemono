@@ -65,7 +65,7 @@ public class MonsterMovement : MonoSingleton<MonsterMovement> ,IAgentStat
 
         cashed_move.x = moveInput.x;
         cashed_move.z = moveInput.z;
-        monstercontroller.Move(transform.rotation*(cashed_move * Speed*Time.deltaTime));
+        monstercontroller.Move(transform.rotation*(cashed_move.normalized * Speed*Time.deltaTime * MonsterInput.Instance.runValue));
 
         if (Input.GetKeyDown(KeyCode.Space)&&monstercontroller.isGrounded)
         {
