@@ -59,11 +59,11 @@ public class UIManager : MonoSingleton<UIManager>
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            ToggleGameOverPanel();
-            SaveManager.Instance.SaveToJson();
-        }
+        //if (Input.GetKeyDown(KeyCode.C))
+        //{
+        //    ToggleGameOverPanel();
+        //    SaveManager.Instance.SaveToJson();
+        //}
     }
     public void DisableAllPanels()
     {
@@ -114,7 +114,7 @@ public class UIManager : MonoSingleton<UIManager>
         DisableAllPanels();
         gameoverPanel.SetActive(!gameoverPanel.activeSelf);
         diedTMP.DOFade(1f, 4f);
-
+        SaveManager.Instance.SaveToJson();
         StartCoroutine(RestartScene());
     }
 
