@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-public class MonsterInput : MonoBehaviour
+public class MonsterInput : MonoSingleton<MonsterInput>
 {
     [Header("몬스터가 입력받는 모든것을 넣는 스크립트")]
 
@@ -12,7 +12,7 @@ public class MonsterInput : MonoBehaviour
     [SerializeField] UnityEvent OpenDoor;
     [SerializeField] private GameObject doorLock = null;
     [SerializeField] private float doorLockDis = 5f;
-
+     public float runValue; 
     [SerializeField]
     private void Update()
     {
@@ -27,7 +27,14 @@ public class MonsterInput : MonoBehaviour
                 UIManager.Instance.TogglePasswordPanel(false);
             }
         }
-
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            runValue = 2;
+        }
+        else
+        {
+            runValue = 1;
+        }
         MonsterMove();
         MonsterRotate();
         InputKey();
@@ -38,7 +45,7 @@ public class MonsterInput : MonoBehaviour
     }
    public void MonsterMove()
     {   
-        moveKeyPress?.Invoke((new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"))).normalized);
+        moveKeyPress?.Invoke(new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"))*runValue);
     }
     public void InputKey()
     {
