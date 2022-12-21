@@ -45,6 +45,7 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] AudioMixerGroup audioMix;
     [SerializeField] GameObject leftHand;
     [SerializeField] GameObject rightHand;
+    AI_Mob_Default a;
     float timer = 0f;
     void Start()
     {
@@ -94,8 +95,8 @@ public class MonsterAttack : MonoBehaviour
             {
                 if (hit.transform.GetComponent<AI_Mob_Default>().IsDie)
                     return;
-                AI_Mob_Default a = hit.transform.GetComponent<AI_Mob_Default>();
-                if (a.CurrentHp / a.MaxHp < 0.3f)
+                 a = hit.transform.GetComponent<AI_Mob_Default>();
+                if (a.CurrentHp / a.MaxHp < 0.3f && !a.IsDie)
                 {
                     if (isComplete)
                     {
@@ -104,7 +105,7 @@ public class MonsterAttack : MonoBehaviour
                     }
                     imageColor.DOColor(new Color(0.7f, 0, 0), changeTime);
 
-                   agentHit = hit.transform.GetComponent<IHittable>();
+                        agentHit = hit.transform.GetComponent<IHittable>();
                     if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
                     {
                         monsterAni.SetTrigger(BiteNameHash);
@@ -146,7 +147,8 @@ public class MonsterAttack : MonoBehaviour
   
     public void Eat()
     {
-        agentHit.GetHit(100,gameObject);   
+        agentHit.GetHit(100,gameObject);
+        Monster.Instance.CurrentExp += a.exp;
     }
     public void GetHitAni()
     {

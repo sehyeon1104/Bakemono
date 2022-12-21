@@ -27,7 +27,7 @@ public class MonsterMovement : MonoSingleton<MonsterMovement> ,IAgentStat
     readonly int headValue = Animator.StringToHash("TurnValue");
     readonly int isTurn = Animator.StringToHash("IsTurn");
     public Vector3 cashed_move = Vector3.zero;
-   public float mouseValue =1;
+   public float mouseValue =5;
    
 
     public float CurrentHp { get ; set ; }
@@ -37,7 +37,6 @@ public class MonsterMovement : MonoSingleton<MonsterMovement> ,IAgentStat
 
     private void Awake()
     {
-        rotateValue = new Vector3(0, mouseValue, 0);
         monstercontroller = GetComponent<CharacterController>();
         monsterAni = GetComponent<Animator>();
     }
@@ -45,7 +44,7 @@ public class MonsterMovement : MonoSingleton<MonsterMovement> ,IAgentStat
     {
         rotateInput = Mathf.Clamp(rotateInput, -10, 10);
         monsterAni.SetBool(isTurn, cashed_move.x == 0 && cashed_move.z == 0 && Mathf.Abs(rotateInput) >= float.Epsilon);
-        transform.rotation *= Quaternion.Euler(rotateInput * new Vector3(0,mouseValue/5,0)); 
+        transform.rotation *= Quaternion.Euler(rotateInput * new Vector3(0,mouseValue/2,0)); 
         monsterAni.SetFloat(headValue, rotateInput);
     }
     public void MoveMonster(Vector3 moveInput)
