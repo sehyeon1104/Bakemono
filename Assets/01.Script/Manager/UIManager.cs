@@ -40,6 +40,9 @@ public class UIManager : MonoSingleton<UIManager>
 
     private void Update()
     {
+        if (Monster.Instance.isDie)
+            return;
+
         InputKey();
     }
 
