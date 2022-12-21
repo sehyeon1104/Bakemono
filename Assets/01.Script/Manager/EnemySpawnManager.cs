@@ -47,7 +47,7 @@ public class EnemySpawnManager : MonoSingleton<EnemySpawnManager>
     public void InstantiateMaleResearcher(Transform spawnPos)
     {
         maleResearcherPool.Get();
-        maleResearcherPool.Get().transform.position = spawnPos.transform.position;
+        maleResearcherPool.Get().transform.position = spawnPos.position;
         maleResearcherPool.Get().transform.SetParent(spawnPos);
     }
 
