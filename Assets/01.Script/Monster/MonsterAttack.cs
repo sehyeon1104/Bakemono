@@ -43,7 +43,7 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] AudioMixerGroup audioMix;
     [SerializeField] GameObject leftHand;
     [SerializeField] GameObject rightHand;
-
+    WaitForSeconds waitAttack = new WaitForSeconds(0.35f);
     void Start()
     {
 
@@ -149,31 +149,13 @@ public class MonsterAttack : MonoBehaviour
         {
             monsterAni.SetTrigger(leftAttack);
             isLeft = false;
-            BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
-            Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
-            if (attackCol != null)
-            {
-                foreach (Collider coll in attackCol)
-                {
-                    IHittable enemyHit = coll.GetComponent<IHittable>();
-                    enemyHit.GetHit(Monster.Instance.damage, gameObject);
-                }
-            }
+            Invoke("waitLeftAttack", 0.35f);
         }
         else //¿À¸¥ÂÊ
         {
             monsterAni.SetTrigger(rightAttack);
             isLeft = true;
-            BoxCollider righthandbox = rightHand.GetComponent<BoxCollider>();
-            Collider[] attackCol = Physics.OverlapBox(rightHand.transform.position, righthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
-            if (attackCol != null)
-            {
-                foreach (Collider coll in attackCol)
-                {
-                    IHittable enemyHit = coll.GetComponent<IHittable>();
-                    enemyHit.GetHit(Monster.Instance.damage, gameObject);
-                }
-            }
+            Invoke("WaitRightAttack", 0.35f);
         }
     }
 
@@ -186,5 +168,31 @@ public class MonsterAttack : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(leftHand.transform.position, rightHand.GetComponent<BoxCollider>().size/2);
+    }
+  void waitLeftAttack()
+    {
+        BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
+        Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
+        if (attackCol != null)
+        {
+            foreach (Collider coll in attackCol)
+            {
+                IHittable enemyHit = coll.GetComponent<IHittable>();
+                enemyHit.GetHit(Monster.Instance.damage, gameObject);
+            }
+        }
+    }
+ void WaitRightAttack()
+    {
+        BoxCollider righthandbox = rightHand.GetComponent<BoxCollider>();
+        Collider[] attackCol = Physics.OverlapBox(rightHand.transform.position, righthandbox.size, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
+        if (attackCol != null)
+        {
+            foreach (Collider coll in attackCol)
+            {
+                IHittable enemyHit = coll.GetComponent<IHittable>();
+                enemyHit.GetHit(Monster.Instance.damage, gameObject);
+            }
+        }
     }
 }

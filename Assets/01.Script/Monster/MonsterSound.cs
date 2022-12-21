@@ -20,4 +20,8 @@ public class MonsterSound : SoundManager
     {
         PlaySound(deadAudio);
     }
+    public void audioAdjust()
+    {
+        PlaySound(attackAudio);
+    }
 }
