@@ -84,16 +84,16 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     {
         //print(currentHp);
         currentHp = Mathf.Clamp(currentHp, 0, MaxHp);
-    }
-
-    void LateUpdate()
-    {
-
         if(!isDie&&currentHp==0)
         {
             isDie = true;
             onDie?.Invoke();
         }
+
+    }
+
+    void LateUpdate()
+    {
 
         if (currentExp >= levelPerExp)
         {

@@ -31,6 +31,7 @@ public class MonsterAttack : MonoBehaviour
     readonly int BiteNameHash = Animator.StringToHash("Bite");
     readonly int dieAniHash = Animator.StringToHash("Die");
     readonly int getHit = Animator.StringToHash("Damaged");
+    readonly int isDie = Animator.StringToHash("isDie");
     bool isLeft = true;
     AnimatorStateInfo info;
     Transform imageTrans;
@@ -42,16 +43,13 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] AudioMixerGroup audioMix;
     [SerializeField] GameObject leftHand;
     [SerializeField] GameObject rightHand;
-    AudioSource audiosource;
-    [SerializeField]
-    AudioClip attackAudio;
+
     void Start()
     {
 
     }
     private void Awake()
     {
-        audiosource = GetComponent<AudioSource>();
         monsterAni = GetComponent<Animator>();
         imageTrans = MonsterUI.Instance.skillImage.transform;
         imageColor = MonsterUI.Instance.skillImage;
@@ -125,10 +123,7 @@ public class MonsterAttack : MonoBehaviour
             }
             if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash)
             {
-                monsterAttack?.Invoke();
-
-                audiosource.clip = attackAudio;
-                audiosource.Play();
+                monsterAttack?.Invoke();    
             }
             if (isFind)
             {
@@ -184,6 +179,7 @@ public class MonsterAttack : MonoBehaviour
 
     public void onDie()
     {
+        monsterAni.SetBool(isDie, true);
         monsterAni.SetTrigger(dieAniHash);
     }
     private void OnDrawGizmos()

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class MonsterUI : MonoSingleton<MonsterUI>
 {
     public Slider audioSlider;
+    public Slider mouseSlider;
     [SerializeField]
     AudioMixer AudioMixer;
     Monster monster;
@@ -47,9 +48,14 @@ public class MonsterUI : MonoSingleton<MonsterUI>
         audioSlider.value = Mathf.Clamp(audioSlider.value, -35, 0);
         if (audioSlider.value == -35)
         {
-            AudioMixer.SetFloat("MyExposedParam", 40);
+            AudioMixer.SetFloat("MyExposedParam", -40);
         }
         else AudioMixer.SetFloat("MyExposedParam", audioSlider.value);
+    }
+    public void MouseSenseAdj() 
+    {
+        mouseSlider.value = Mathf.Clamp(mouseSlider.value, 1, 5);
+        MonsterMovement.Instance.mouseValue = mouseSlider.value;
     }
     public void UIUpdate()
     {
