@@ -27,7 +27,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     protected float currentHp;
     protected float maxHp;
     protected bool isDie = false;
-
+    public bool IsDie =>isDie;
     public float CurrentHp => currentHp;
     public float MaxHp => maxHp;    
     public abstract void Action(Transform target);
@@ -71,10 +71,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
         }
 
     }
-    public void GetEat()
-    {
-      
-    }    
+ 
     public void GetHit(float damage, GameObject damageDealer)
     {
         currentHp -= damage;

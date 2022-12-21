@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine.TextCore.Text;
+using Unity.VisualScripting;
 
 public class PasswordManager : MonoSingleton<PasswordManager>
 {
@@ -131,12 +132,13 @@ public class PasswordManager : MonoSingleton<PasswordManager>
 
     public void LoadPasswordRoom()
     {
+        char[] passwordNum = { ' ', };
         int n = 0;
         for(int i = 0; i < passwordRoom.Count; ++i)
         {
             passwordRoom[i].SetActive(false);
         }
-
+        
         foreach(var roomName in SaveManager.Instance.CurrentUser.passwordRoomsName)
         {
             for(int j = 0; j < passwordRoom.Count; ++j)
@@ -145,7 +147,6 @@ public class PasswordManager : MonoSingleton<PasswordManager>
                 {
                     passwordRoom[j].SetActive(true);
                     passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().text = (n + 1) + SaveManager.Instance.CurrentUser.password[n].ToString();
-                    passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().font = fontAsset;
                     passwordRoom[j].GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
                     ++n;
                 }
