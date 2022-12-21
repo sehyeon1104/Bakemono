@@ -22,12 +22,15 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     protected readonly int hashAttack = Animator.StringToHash("Attack");
     protected readonly int hashHit = Animator.StringToHash("Hit");
     protected readonly int hashDie = Animator.StringToHash("Die");
-
-    [SerializeField]protected float currentHp;
+    
+    public float exp;
+    protected float currentHp;
+    protected float maxHp;
+    
     protected bool isDie = false;
-
+    public bool IsDie =>isDie;
     public float CurrentHp => currentHp;
-
+    public float MaxHp => maxHp;    
     public abstract void Action(Transform target);
     public abstract void Move(Vector3 targetPos);
     public abstract void Idle();
@@ -36,16 +39,14 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-
+        
+        maxHp = enemySO.Hp;
+        exp = enemySO.Exp;
         currentHp = enemySO.Hp;
         agent.speed = enemySO.Speed;
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            GetHit(150, gameObject);
-        }
         DistanceCheck();
     }
 
@@ -72,6 +73,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
         }
 
     }
+ 
     public void GetHit(float damage, GameObject damageDealer)
     {
         currentHp -= damage;

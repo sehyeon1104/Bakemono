@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: 00_Doctor
   m_EditorClassIdentifier: 
   type: 0
-  maxHp: 100
-  hp: 100
-  speed: 10
-  power: 10
+  hp: 80
+  speed: 5
+  power: 3
   exp: 10
