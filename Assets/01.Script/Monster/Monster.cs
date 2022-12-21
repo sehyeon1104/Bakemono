@@ -82,7 +82,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
 
     private void Update()
     {
-        print(currentHp);
+        //print(currentHp);
         currentHp = Mathf.Clamp(currentHp, 0, MaxHp);
     }
 
