@@ -14,6 +14,8 @@ public class TitleSceneManager : MonoBehaviour
     private GameObject helpButton = null;
     [SerializeField]
     private GameObject bloodBorder = null;
+    [SerializeField]
+    private GameObject helpPanel = null;
 
     [Space]
     [Header("시작 연출")]
@@ -44,7 +46,10 @@ public class TitleSceneManager : MonoBehaviour
 
     private void Update()
     {
-        InputKey();
+        if (!helpPanel.activeSelf)
+        {
+            InputKey();
+        }
     }
 
     private void InputKey()
@@ -55,6 +60,7 @@ public class TitleSceneManager : MonoBehaviour
             {
                 return;
             }
+            if (Input.GetKeyDown(KeyCode.Escape)) return;
 
             StopCoroutine(MotionCoroutine());
             GameStart();
