@@ -38,6 +38,7 @@ public class QuestManager : MonoSingleton<QuestManager>
         UIManager.Instance.questTitle.text = "Tasty People";
         UIManager.Instance.questContent.text = "Defeat all people.";
 
+        isClear = false;
         doQuest = true;
         UIManager.Instance.ToggleQuestUI(doQuest);
 
@@ -71,6 +72,7 @@ public class QuestManager : MonoSingleton<QuestManager>
             yield return new WaitForEndOfFrame();
         }
 
+        isClear = false;
         SaveManager.Instance.SaveToJson();
         UIManager.Instance.ToggleQuestUI(doQuest);
         yield break;
@@ -82,8 +84,10 @@ public class QuestManager : MonoSingleton<QuestManager>
         UIManager.Instance.questTitle.text = "New Skill..?";
         UIManager.Instance.questContent.text = "Defeat all people \n who guard a laborator.";
 
+        isClear = false;
         doQuest = true;
 
+        UIManager.Instance.ToggleQuestUI(doQuest);
         StartCoroutine(LaboratorQuest());
     }
 
@@ -115,6 +119,7 @@ public class QuestManager : MonoSingleton<QuestManager>
             yield return new WaitForEndOfFrame();
         }
 
+        isClear = false;
         SaveManager.Instance.SaveToJson();
         UIManager.Instance.ToggleQuestUI(doQuest);
         yield break;
@@ -125,6 +130,28 @@ public class QuestManager : MonoSingleton<QuestManager>
         Debug.Log("Interfere Communication");
         UIManager.Instance.questTitle.text = "Interfere with communication";
         UIManager.Instance.questContent.text = "A person is communicating to the outside. \nGet in the way!";
+    }
+
+    public void TreatmentQuest()
+    {
+        Debug.Log("Treatment Quest");
+        isClear = false;
+        doQuest = true;
+        UIManager.Instance.questTitle.text = "Go to Treatment Room!!";
+        UIManager.Instance.questContent.text = "Go to treatment room to heal your hp";
+        UIManager.Instance.ToggleQuestUI(doQuest);
+
+        while (!isClear)
+        {
+            if(Monster.Instance.CurrentHp >= 100)
+            {
+                isClear = true;
+                doQuest = false;
+            }
+        }
+
+        isClear = false;
+        UIManager.Instance.ToggleQuestUI(doQuest);
     }
 
     void InstantiateResearcher(int researcherCount, Transform[] spawnPos)

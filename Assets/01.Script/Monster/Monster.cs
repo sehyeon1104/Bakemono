@@ -95,11 +95,15 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
 
     void LateUpdate()
     {
-        
         if (currentExp >= levelPerExp)
         {
             level++;
             levelUp?.Invoke(level);
+        }
+
+        if(currentHp <= 30)
+        {
+            QuestManager.Instance.TreatmentQuest();
         }
     }
 
@@ -111,6 +115,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
             Destroy(other.gameObject);
         }
     }
+
     public void Levelactive(int level)
     {
         maxHp *=  (1f+level/80);
