@@ -35,7 +35,7 @@ public class UIManager : MonoSingleton<UIManager>
     private void Start()
     {
         fadeObj.SetActive(true);
-        Fade.Instance.FadeOut();
+        Fade.Instance.FadeOut(2);
         DisableAllPanels();
     }
 
