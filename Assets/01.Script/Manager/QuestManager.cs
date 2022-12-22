@@ -132,22 +132,25 @@ public class QuestManager : MonoSingleton<QuestManager>
         UIManager.Instance.questContent.text = "A person is communicating to the outside. \nGet in the way!";
     }
 
-    public void TreatmentQuest()
+    public IEnumerator TreatmentQuest()
     {
         Debug.Log("Treatment Quest");
         isClear = false;
         doQuest = true;
-        UIManager.Instance.questTitle.text = "Go to Treatment Room!!";
+        UIManager.Instance.questTitle.text = "Heal!!";
         UIManager.Instance.questContent.text = "Go to treatment room to heal your hp";
-        UIManager.Instance.ToggleQuestUI(doQuest);
+        UIManager.Instance.ToggleQuestUI(true);
 
         while (!isClear)
         {
-            if(Monster.Instance.CurrentHp >= 100)
+            if (Monster.Instance.CurrentHp >= 100)
             {
+                Debug.Log("clear treatment quest");
                 isClear = true;
                 doQuest = false;
             }
+
+            yield return new WaitForEndOfFrame();
         }
 
         isClear = false;
