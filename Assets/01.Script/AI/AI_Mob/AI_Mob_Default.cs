@@ -28,7 +28,11 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     protected float maxHp;
     
     protected bool isDie = false;
-    public bool IsDie =>isDie;
+    public bool IsDie
+    {
+        get => isDie;
+        set => isDie = value;
+    }
     public float CurrentHp => currentHp;
     public float MaxHp => maxHp;    
     public abstract void Action(Transform target);

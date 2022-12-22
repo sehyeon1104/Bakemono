@@ -106,8 +106,9 @@ public class MonsterAttack : MonoBehaviour
                     imageColor.DOColor(new Color(0.7f, 0, 0), changeTime);
 
                         agentHit = hit.transform.GetComponent<IHittable>();
-                    if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
+                    if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash &&timer>0.4f)
                     {
+                        timer = 0;
                         monsterAni.SetTrigger(BiteNameHash);
                         Invoke("Eat", 0.4f);
                         
@@ -132,7 +133,7 @@ public class MonsterAttack : MonoBehaviour
             {
                 isLeft = true;
             }
-            if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash)
+            if (Input.GetMouseButtonDown(0) && isAttackClick && info.shortNameHash == IdleNameHash && !UIManager.Instance.isPause)
             {
                 monsterAttack?.Invoke();
             }
