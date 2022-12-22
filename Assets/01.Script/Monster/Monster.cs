@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
 {
     float currentExp = 0;
-    float levelPerExp = 100;
+    float levelPerExp = 3;
     int  level = 1;
    public bool isDie = false;
     //public PlayerBase playerBase;
@@ -94,7 +94,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
 
     void LateUpdate()
     {
-
+        
         if (currentExp >= levelPerExp)
         {
             level++;
@@ -112,17 +112,15 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     }
     public void Levelactive(int level)
     {
-        levelPerExp *= 1.2f;
+        maxHp *=  (1f+level/80);
+        damage *= (1f + level / 80);
+        transform.localScale +=  transform.localScale*level/300;
+        levelPerExp = level*2+level ;
         if (level == 5)
         {
             activeDoorOpen = true;
         }
 
     }
-    //public void SavePlayerStat()
-    //{
-    //    SaveManager.Instance.CurrentUser.hp = CurrentHp;
-    //    SaveManager.Instance.CurrentUser.experience = CurrentExp;
-    //    SaveManager.Instance.CurrentUser.level = level;
-    //}
+
 }
