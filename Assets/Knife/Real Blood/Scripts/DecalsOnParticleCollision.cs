@@ -136,8 +136,14 @@ namespace Knife.RealBlood
                 }
 
                 decal.transform.localScale *= Random.Range(minScale, maxScale) * scale;
-                Destroy(decal, destroyDelay);
+                BackToPool(decal);
             }
+        }
+
+        private IEnumerator BackToPool(GameObject decal)
+        {
+            yield return new WaitForSeconds(destroyDelay);
+            decal.SetActive(false);
         }
 
         protected virtual bool ShouldSpawn(ParticleCollisionEvent particleCollisionEvent)

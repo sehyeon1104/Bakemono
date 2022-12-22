@@ -120,7 +120,7 @@ public class UIManager : MonoSingleton<UIManager>
     private IEnumerator RestartScene()
     {
         yield return new WaitForSeconds(4f);
-        Fade.Instance.FadeIn();
+        Fade.Instance.FadeIn(2);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(1);
     }

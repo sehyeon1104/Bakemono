@@ -10,13 +10,13 @@ public class Fade : MonoSingleton<Fade>
 {
     [SerializeField] Image fadeImg;
 
-    public void FadeIn()
+    public void FadeIn(float fadeTime)
     {
-        fadeImg.DOFade(1f, 2f);
+        fadeImg.DOFade(1f, fadeTime);
     }
 
-    public void FadeOut()
+    public void FadeOut(float fadeTime)
     {
-        fadeImg.DOFade(0f, 2f);
+        fadeImg.DOFade(0f, fadeTime);
     }
 }

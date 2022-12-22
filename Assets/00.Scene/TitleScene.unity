@@ -1989,6 +1989,12 @@ MonoBehaviour:
   quitButton: {fileID: 1668151702}
   quitPanel: {fileID: 1509988733}
   helpButton: {fileID: 967478368}
+  monsterAnim: {fileID: 8147116867265999507}
+  mobCam: {fileID: 55197541}
+  rotationSpeed: 2.5
+  finalPos: {x: 0, y: 0.84, z: 1.3}
+  finalRot: {x: -9.32, y: 180, z: -10.32}
+  finalFov: 43.1
 --- !u!4 &1884095494
 Transform:
   m_ObjectHideFlags: 0
@@ -2167,7 +2173,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 1500, y: 1500}
+  m_SizeDelta: {x: 2000, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007501976
 MonoBehaviour:
