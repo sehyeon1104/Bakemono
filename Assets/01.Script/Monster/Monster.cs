@@ -16,6 +16,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     float currentHp = 100;
     public bool activeDoorOpen = false;
     public float damage = 30f;
+    private bool isTreat = false;
 
     [SerializeField] UnityEvent onDie;
     [SerializeField] UnityEvent<int> levelUp;
@@ -101,10 +102,12 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
             levelUp?.Invoke(level);
         }
 
-        if(currentHp <= 30)
+        if(currentHp <= 30 && !QuestManager.Instance.doQuest)
         {
-            QuestManager.Instance.TreatmentQuest();
+            Debug.Log($"CurrentHP : {currentHp}");
+            StartCoroutine(QuestManager.Instance.TreatmentQuest());
         }
+
     }
 
     private void OnTriggerEnter(Collider other)

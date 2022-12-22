@@ -117,7 +117,7 @@ public class UIManager : MonoSingleton<UIManager>
         DisableAllPanels();
         gameoverPanel.SetActive(!gameoverPanel.activeSelf);
         diedTMP.DOFade(1f, 4f);
-        SaveManager.Instance.SaveToJson();
+        //SaveManager.Instance.SaveToJson();
         StartCoroutine(RestartScene());
     }
 

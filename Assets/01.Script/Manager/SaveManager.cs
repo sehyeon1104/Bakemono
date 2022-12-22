@@ -38,11 +38,11 @@ public class SaveManager : MonoSingleton<SaveManager>
         if (File.Exists(SAVE_PATH + SAVE_FILENAME))
         {
             string json = File.ReadAllText(SAVE_PATH + SAVE_FILENAME);
-            //json = Crypto.AESDecrypt128(json);
+            json = Crypto.AESDecrypt128(json);
             user = JsonUtility.FromJson<User>(json);    
             Debug.Log("로딩완료");
 
-
+            LoadPlayerStat();
             //SceneSerialization.ImportScene(SAVE_SCENE);
         }
     }
@@ -54,7 +54,7 @@ public class SaveManager : MonoSingleton<SaveManager>
         //SaveSpawnPos();
 
         string json = JsonUtility.ToJson(user, true);
-        //json = Crypto.AESEncrypt128(json);
+        json = Crypto.AESEncrypt128(json);
         File.WriteAllText(SAVE_PATH + SAVE_FILENAME, json, System.Text.Encoding.UTF8);
         Debug.Log("저장완료");
 
@@ -67,6 +67,13 @@ public class SaveManager : MonoSingleton<SaveManager>
         CurrentUser.hp = Monster.Instance.CurrentHp;
         CurrentUser.experience = Monster.Instance.CurrentExp;
         CurrentUser.level = Monster.Instance.CurrentLevel;
+    }
+
+    public void LoadPlayerStat()
+    {
+        Monster.Instance.CurrentHp = CurrentUser.hp;
+        Monster.Instance.CurrentExp = CurrentUser.experience;
+        Monster.Instance.CurrentLevel = CurrentUser.level;
     }
 
     //public void SaveSpawnPos()
