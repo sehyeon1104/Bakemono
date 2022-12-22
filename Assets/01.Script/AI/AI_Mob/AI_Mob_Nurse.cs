@@ -25,13 +25,15 @@ public  class AI_Mob_Nurse : AI_Mob_Default
             actionCoroutine = null;
         }
         agent.isStopped = true;
+        agent.velocity = Vector3.zero;
+
         anim.SetBool(hashMove, false);
     }
 
     public override void Idle()
     {
         agent.isStopped = true;
-        agent.SetDestination(transform.position);
+        agent.velocity = Vector3.zero;
 
         anim.SetBool(hashMove, false);
         if (actionCoroutine == null)
