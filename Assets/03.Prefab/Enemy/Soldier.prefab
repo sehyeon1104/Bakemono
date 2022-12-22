@@ -111,7 +111,7 @@ MonoBehaviour:
   actionDistance: 5
   scanDistance: 7
   enemySO: {fileID: 11400000, guid: fe13b1e5dee4d3140b1e77516e63f3e8, type: 2}
-  bloodParticle: {fileID: 6613161332155477312, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
+  exp: 0
   handPos: {fileID: 1570323203555203987}
   muzzleFlash: {fileID: 6354787094693141422}
 --- !u!195 &1570323202651620773

@@ -910,6 +910,7 @@ MonoBehaviour:
   actionDistance: 1.5
   scanDistance: 10
   enemySO: {fileID: 11400000, guid: e6a0f0e9da19b7049b6ae3dc482518a1, type: 2}
+  exp: 0
   attackCol:
   - {fileID: 3704661243709059294}
   - {fileID: 8740117747868287508}

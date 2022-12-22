@@ -1876,7 +1876,7 @@ MonoBehaviour:
   actionDistance: 1
   scanDistance: 4.5
   enemySO: {fileID: 11400000, guid: 94ccaec2abd41c74dab16966790a18de, type: 2}
-  bloodParticle: {fileID: 6613161332155477312, guid: 45e18651f4a45934a887eaa906c9a07b, type: 3}
+  exp: 0
 --- !u!195 &899728398741800785
 NavMeshAgent:
   m_ObjectHideFlags: 0
