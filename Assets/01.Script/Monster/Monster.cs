@@ -123,7 +123,6 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     {
         maxHp *=  (1f+level/80);
         damage *= (1f + level / 80);
-        transform.localScale +=  transform.localScale*level/300;
         levelPerExp = level*2+level ;
         if (level == 5)
         {

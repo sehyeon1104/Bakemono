@@ -766,9 +766,10 @@ GameObject:
   - component: {fileID: 942551515883218879}
   - component: {fileID: 1627916176070421825}
   - component: {fileID: 4547415689392846458}
-  m_Layer: 0
+  - component: {fileID: 6419946301506161278}
+  m_Layer: 7
   m_Name: JobMob
-  m_TagString: Monster
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -937,6 +938,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
+--- !u!136 &6419946301506161278
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174791923757728563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &2414198208706337758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,11 +1124,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3078905655082839768}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.75
-  m_Center: {x: -0.36, y: 0.18, z: 0}
+  m_Center: {x: 0, y: 0.18, z: 0}
 --- !u!1 &3196755050800215847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,11 +1842,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5710417910639453094}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.75
-  m_Center: {x: -0.36, y: 0.18, z: 0}
+  m_Center: {x: 0, y: 0.18, z: 0}
 --- !u!1 &5842970744367645325
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ using Unity.Mathematics;
 public class MonsterAttack : MonoBehaviour
 {
     [SerializeField] UnityEvent monsterAttack;
-    [SerializeField] UnityEvent findEnemy;
+    [SerializeField] UnityEvent Bite;
     public Transform Shootraytrans;
     public bool isAttackClick = true;
     [SerializeField]
@@ -109,6 +109,7 @@ public class MonsterAttack : MonoBehaviour
                     if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash &&timer>0.4f)
                     {
                         timer = 0;
+                        Bite?.Invoke();
                         monsterAni.SetTrigger(BiteNameHash);
                         Invoke("Eat", 0.4f);
                         

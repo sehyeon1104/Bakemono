@@ -18,7 +18,7 @@ public class MonsterMovement : MonoSingleton<MonsterMovement> ,IAgentStat
     [SerializeField]
     float rotateAniSpeed = 0.1f;
     [SerializeField]
-    float jumpSpeed = 2f;
+    float jumpSpeed = 1.5f;
     [SerializeField]
     float gravity = 5f;
     readonly int jump = Animator.StringToHash("Jump");
