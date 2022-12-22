@@ -30,7 +30,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
 
             if (actionCoroutine != null)
             {
-                StopCoroutine("Attack");
+                StopCoroutine(actionCoroutine);
                 actionCoroutine = null;
             }
         }
@@ -58,7 +58,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
 
         if (actionCoroutine != null)
         {
-            StopCoroutine("Attack");
+            StopCoroutine(actionCoroutine);
             actionCoroutine = null;
         }
     }
@@ -74,7 +74,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
 
         if (actionCoroutine != null)
         {
-            StopCoroutine("Attack");
+            StopCoroutine(actionCoroutine);
             actionCoroutine = null;
         }
     }
@@ -84,6 +84,9 @@ public class AI_Mob_Soldier : AI_Mob_Default
         while (true)
         {
             anim.SetTrigger(hashTrigger);
+
+            yield return new WaitForSeconds(0.2f);
+            
             var hits = Physics.SphereCastAll(handPos.position, 0.2f, transform.forward, 6f);
             foreach(var hit in hits)
             {

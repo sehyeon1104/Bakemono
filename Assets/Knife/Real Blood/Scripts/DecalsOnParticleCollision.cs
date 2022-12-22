@@ -136,7 +136,7 @@ namespace Knife.RealBlood
                 }
 
                 decal.transform.localScale *= Random.Range(minScale, maxScale) * scale;
-                BackToPool(decal);
+                Destroy(decal, destroyDelay);
             }
         }
 

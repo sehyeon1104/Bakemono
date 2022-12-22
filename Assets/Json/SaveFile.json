@@ -1,6 +1,6 @@
 ﻿{
     "maxHp": 0.0,
-    "hp": 0.0,
+    "hp": 100.0,
     "experience": 0.0,
     "level": 1,
     "password": "8600",
