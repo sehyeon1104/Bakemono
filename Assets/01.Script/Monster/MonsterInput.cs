@@ -25,7 +25,7 @@ public class MonsterInput : MonoSingleton<MonsterInput>
     [SerializeField]
     private void Update()
     {
-        print(runValue);
+       
         if (UIManager.Instance.isPause || Monster.Instance.isDie)
         {
             return;
@@ -69,6 +69,7 @@ public class MonsterInput : MonoSingleton<MonsterInput>
             if(Vector3.Distance(doorLock.transform.position, transform.position) < doorLockDis && !PasswordManager.Instance.isSucceed)
             {
                 UIManager.Instance.TogglePasswordPanel(!UIManager.Instance.passwordPanel.activeSelf);
+
             }
         }
         healText.SetActive(false);

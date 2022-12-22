@@ -5,12 +5,13 @@ using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine.TextCore.Text;
 using Unity.VisualScripting;
-
+using UnityEngine.Playables;
 public class PasswordManager : MonoSingleton<PasswordManager>
 {
     [Header("InputPassword")]
     public Texture faceTexture;
     public TMP_FontAsset fontAsset;
+    public PlayableDirector opendoor;
     public string password { private set; get; } = "";
     [SerializeField]
     private TextMeshProUGUI[] inputPasswords;
@@ -90,7 +91,8 @@ public class PasswordManager : MonoSingleton<PasswordManager>
             }
         }
 
-        Debug.Log("Succeed!");
+        print("ss");
+        opendoor.Play();
         // 입력한 번호가 맞다면 isSucceed = true
         isSucceed = true;
         UIManager.Instance.TogglePasswordPanel(false);
