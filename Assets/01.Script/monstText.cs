@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class monstText : MonoBehaviour
 {
+    public GameObject a;
+    public GameObject b;
     public Canvas maincanvas;
     public void UIEnabledFalse()
     {
@@ -11,6 +13,8 @@ public class monstText : MonoBehaviour
     }
     public void UIEnabledTrue()
     {
+        a.SetActive(false);
+        b.SetActive(false);
         maincanvas.gameObject.SetActive(true);
     }
 }
