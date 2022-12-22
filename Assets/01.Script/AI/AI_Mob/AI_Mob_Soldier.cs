@@ -7,6 +7,12 @@ public class AI_Mob_Soldier : AI_Mob_Default
 {
     [SerializeField] private Transform handPos;
     [SerializeField] private ParticleSystem muzzleFlash;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private IObjectPool<AI_Mob_Soldier> soldierPool;
     public void SetPool(IObjectPool<AI_Mob_Soldier> pool)
@@ -102,6 +108,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
             }
 
             muzzleFlash.Play();
+            audioSource.Play();
             yield return new WaitForSeconds(attackDelay);
         }
     }
