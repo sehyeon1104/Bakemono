@@ -23,6 +23,8 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     TextMeshProUGUI hpText;
     [SerializeField]
     TextMeshProUGUI expText;
+    [SerializeField]
+    TextMeshProUGUI LvText;
     readonly int idle = Animator.StringToHash("Idle");
     readonly int bite = Animator.StringToHash("BiteAttack");
     private void Awake()
@@ -65,6 +67,7 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     }
     public void UIUpdate()
     {
+        LvText.text = $"LV {monster.CurrentLevel}";
         hpText.text = $"{monster.CurrentHp / monster.MaxHp * 100}%";
         expText.text = $"{monster.CurrentExp / monster.LevelPerExp*100}%";
         hpBar.fillAmount = monster.CurrentHp / monster.MaxHp;

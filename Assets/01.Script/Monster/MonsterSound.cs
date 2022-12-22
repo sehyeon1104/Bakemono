@@ -6,7 +6,7 @@ public class MonsterSound : SoundManager
 {
     [SerializeField]
     AudioClip attackAudio,
-         gethitAudio, deadAudio;
+         gethitAudio, deadAudio,levelUp;
 
     public void AttackSound()
     {
@@ -23,5 +23,9 @@ public class MonsterSound : SoundManager
     public void audioAdjust()
     {
         PlaySound(attackAudio);
+    }
+    public void LevelUpSound()
+    {
+        PlaySound(levelUp);
     }
 }

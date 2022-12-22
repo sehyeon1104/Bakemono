@@ -163,7 +163,7 @@ public class MonsterAttack : MonoBehaviour
         {
             monsterAni.SetTrigger(leftAttack);
             isLeft = false;
-            Invoke("waitLeftAttack", 0.35f);
+            Invoke("WaitLeftAttack", 0.35f);
         }
         else //¿À¸¥ÂÊ
         {
@@ -183,7 +183,7 @@ public class MonsterAttack : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(leftHand.transform.position, rightHand.GetComponent<BoxCollider>().size / 2);
     }
-    void waitLeftAttack()
+    void WaitLeftAttack()
     {
         BoxCollider lefthandbox = leftHand.GetComponent<BoxCollider>();
         Collider[] attackCol = Physics.OverlapBox(leftHand.transform.position, lefthandbox.size*2, quaternion.identity, 1 << LayerMask.NameToLayer("Enemy"));
