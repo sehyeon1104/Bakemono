@@ -24,6 +24,7 @@ public class AI_Mob_Soldier : AI_Mob_Default
         if (Vector3.Distance(transform.position, target.position) < 3)
         {
             agent.isStopped = false;
+
             anim.SetBool(hashMove, true);
             anim.SetBool(hashAttack, false);
             agent.SetDestination(transform.position - target.position);
@@ -31,21 +32,20 @@ public class AI_Mob_Soldier : AI_Mob_Default
             if (actionCoroutine != null)
             {
                 StopCoroutine(actionCoroutine);
+                muzzleFlash.Stop();
                 actionCoroutine = null;
             }
         }
         else
         {
             agent.isStopped = true;
-            agent.SetDestination(transform.position);
+            agent.velocity = Vector3.zero;
 
             anim.SetBool(hashMove, false);
             anim.SetBool(hashAttack, true);
 
-            transform.LookAt(target.position);
-
             if (actionCoroutine == null)
-                actionCoroutine = StartCoroutine(Attack(2f));
+                actionCoroutine = StartCoroutine(Attack(2f, target));
         }
 
     }
@@ -53,12 +53,15 @@ public class AI_Mob_Soldier : AI_Mob_Default
     public override void Idle()
     {
         agent.isStopped = true;
+        agent.velocity = Vector3.zero;
+
         anim.SetBool(hashMove, false);
         anim.SetBool(hashAttack, false);
 
         if (actionCoroutine != null)
         {
             StopCoroutine(actionCoroutine);
+            muzzleFlash.Stop();
             actionCoroutine = null;
         }
     }
@@ -75,14 +78,16 @@ public class AI_Mob_Soldier : AI_Mob_Default
         if (actionCoroutine != null)
         {
             StopCoroutine(actionCoroutine);
+            muzzleFlash.Stop();
             actionCoroutine = null;
         }
     }
 
-    private IEnumerator Attack(float attackDelay)
+    private IEnumerator Attack(float attackDelay, Transform target)
     {
         while (true)
         {
+            transform.LookAt(target.position);
             anim.SetTrigger(hashTrigger);
 
             yield return new WaitForSeconds(0.2f);

@@ -15,6 +15,9 @@ public class AI_Mob_ZMonster : AI_Mob_Default
 
     public override void Action(Transform target)
     {
+        agent.isStopped = true;
+        agent.velocity = Vector3.zero;
+
         transform.LookAt(target.transform);
         if(actionCoroutine == null)
             actionCoroutine = StartCoroutine(Attack(5f));
@@ -22,6 +25,9 @@ public class AI_Mob_ZMonster : AI_Mob_Default
 
     public override void Idle()
     {
+        agent.isStopped = true;
+        agent.velocity = Vector3.zero;
+
         if (actionCoroutine != null)
         {
             StopCoroutine("Attack");

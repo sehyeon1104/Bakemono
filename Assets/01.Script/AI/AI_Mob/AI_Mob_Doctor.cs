@@ -22,7 +22,7 @@ public class AI_Mob_Doctor : AI_Mob_Default
     public override void Action(Transform target)
     {
         agent.isStopped = true;
-        agent.SetDestination(transform.position);
+        agent.velocity = Vector3.zero;
 
         anim.SetBool(hashMove, false);
         anim.SetBool(hashAttack, true);
@@ -36,7 +36,7 @@ public class AI_Mob_Doctor : AI_Mob_Default
     public override void Idle()
     {
         agent.isStopped = true;
-        agent.SetDestination(transform.position);
+        agent.velocity = Vector3.zero;
 
         anim.SetBool(hashMove, false);
         anim.SetBool(hashAttack, false);
