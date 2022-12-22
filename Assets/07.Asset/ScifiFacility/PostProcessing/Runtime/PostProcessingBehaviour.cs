@@ -51,6 +51,7 @@ namespace UnityEngine.PostProcessing
 
         void OnEnable()
         {
+           
             m_CommandBuffers = new Dictionary<Type, KeyValuePair<CameraEvent, CommandBuffer>>();
             m_MaterialFactory = new MaterialFactory();
             m_RenderTextureFactory = new RenderTextureFactory();
