@@ -82,7 +82,12 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     {
         currentHp -= damage;
 
-        if(currentHp <= 0 && !isDie)
+        BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
+        BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 1.5f;
+        BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
+        BloodSprayEffect.Instance.BloodEffect.Play();
+
+        if (currentHp <= 0 && !isDie)
         {
             isDie = true;
             agent.isStopped = true;
@@ -99,11 +104,6 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
             anim.SetTrigger(hashTrigger);
             Destroy(gameObject, 3f);
         }
-
-        BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
-        BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 1.5f;
-        BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
-        BloodSprayEffect.Instance.BloodEffect.Play();
         
         anim.SetTrigger(hashHit);
     }

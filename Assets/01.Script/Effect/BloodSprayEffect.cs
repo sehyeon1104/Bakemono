@@ -10,6 +10,7 @@ public class BloodSprayEffect : MonoSingleton<BloodSprayEffect>
     private void Awake()
     {
         BloodEffect = Instantiate(bloodEffect);
+        BloodEffect.name = "BloodEffect";
     }
 
 }
