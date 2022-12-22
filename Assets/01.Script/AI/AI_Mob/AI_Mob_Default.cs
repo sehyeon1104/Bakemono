@@ -26,7 +26,8 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     public float exp;
     protected float currentHp;
     protected float maxHp;
-    
+
+    private bool isHit = false;
     protected bool isDie = false;
     public bool IsDie
     {
@@ -57,7 +58,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
     public void DistanceCheck()
     {
         if (MainModule.player == null) return;
-        if (isDie) return;
+        if (isDie || isHit) return;
 
         Transform playerPos = MainModule.player.transform;
 
@@ -80,26 +81,31 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
  
     public void GetHit(float damage, GameObject damageDealer)
     {
+        isHit = true;
         currentHp -= damage;
+        agent.isStopped = true;
+        agent.velocity = Vector3.zero;
+
+        if (actionCoroutine != null)
+        {
+            StopCoroutine(actionCoroutine);
+            actionCoroutine = null;
+        }
 
         if (currentHp <= 0 && !isDie)
         {
             isDie = true;
             agent.isStopped = true;
-
-            if (actionCoroutine != null)
-            {
-                StopCoroutine(actionCoroutine);
-                actionCoroutine = null;
-            }
             agent.speed = 0;
             agent.angularSpeed = 0;
+            agent.velocity = Vector3.zero;
 
             anim.SetBool(hashDie, true);
             anim.SetTrigger(hashTrigger);
             BloodSprayEffect.Instance.BloodEffect.transform.SetParent(null);
             Destroy(gameObject, 3f);
         }
+
         if (!isDie)
         {
             BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
@@ -108,7 +114,11 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
             BloodSprayEffect.Instance.BloodEffect.Play();
         }
         
-        anim.SetTrigger(hashHit);
+        anim.SetTrigger(hashHit, ()=>
+        {
+            isHit = false;
+        }
+        ,0.75f);
     }
 
 }
