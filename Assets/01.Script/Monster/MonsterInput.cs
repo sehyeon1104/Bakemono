@@ -12,7 +12,15 @@ public class MonsterInput : MonoSingleton<MonsterInput>
     [SerializeField] UnityEvent OpenDoor;
     [SerializeField] private GameObject doorLock = null;
     [SerializeField] private float doorLockDis = 5f;
-     public float runValue; 
+    [SerializeField] private GameObject healText;
+
+    private LayerMask bedLayer;
+    public float runValue;
+
+    private void Awake()
+    {
+        bedLayer = 1 << 10;
+    }
     [SerializeField]
     private void Update()
     {
@@ -57,10 +65,16 @@ public class MonsterInput : MonoSingleton<MonsterInput>
                 UIManager.Instance.TogglePasswordPanel(!UIManager.Instance.passwordPanel.activeSelf);
             }
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        healText.SetActive(false);
+        RaycastHit hit;
+        if (Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 1f, bedLayer))
         {
-            // 치료실 회복
-            GameManager.Instance.HealMonster();
+            healText.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                // 치료실 회복
+                GameManager.Instance.HealMonster();
+            }
         }
 
     }

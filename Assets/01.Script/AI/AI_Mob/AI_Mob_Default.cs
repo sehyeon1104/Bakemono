@@ -110,6 +110,7 @@ public abstract class AI_Mob_Default : MonoBehaviour, IHittable
         {
             BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
             BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 1.5f;
+            BloodSprayEffect.Instance.BloodEffect.transform.SetParent(null);
             BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
             BloodSprayEffect.Instance.BloodEffect.Play();
         }
