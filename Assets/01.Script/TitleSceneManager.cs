@@ -34,6 +34,8 @@ public class TitleSceneManager : MonoBehaviour
     {
         isQuitPanelActive = false;
         DisableAllPanel();
+
+        StartCoroutine(MotionCoroutine());
     }
 
     private void Update()
@@ -50,6 +52,7 @@ public class TitleSceneManager : MonoBehaviour
                 return;
             }
 
+            StopCoroutine(MotionCoroutine());
             GameStart();
         }
     }
@@ -61,6 +64,15 @@ public class TitleSceneManager : MonoBehaviour
         monsterAnim.SetTrigger("Bite");
 
         StartCoroutine(GameStartCoroutine());
+    }
+
+    private IEnumerator MotionCoroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(10f);
+            monsterAnim.SetTrigger("Damaged");
+        }
     }
 
     private IEnumerator GameStartCoroutine()
