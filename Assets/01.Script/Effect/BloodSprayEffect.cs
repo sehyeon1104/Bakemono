@@ -11,6 +11,8 @@ public class BloodSprayEffect : MonoSingleton<BloodSprayEffect>
     {
         BloodEffect = Instantiate(bloodEffect);
         BloodEffect.name = "BloodEffect";
+
+        DontDestroyOnLoad(BloodEffect);
     }
 
 }
