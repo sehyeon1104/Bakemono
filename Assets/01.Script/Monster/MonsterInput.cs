@@ -15,6 +15,7 @@ public class MonsterInput : MonoSingleton<MonsterInput>
     [SerializeField] private GameObject healText;
 
     private LayerMask bedLayer;
+    private float healCooltime = 180;
     public float runValue;
 
     private void Awake()
@@ -44,6 +45,10 @@ public class MonsterInput : MonoSingleton<MonsterInput>
         {
             runValue = 1;
         }
+
+        if(healCooltime <= 180f)
+            healCooltime += Time.deltaTime;
+
         MonsterMove();
         MonsterRotate();
         InputKey();
@@ -67,14 +72,19 @@ public class MonsterInput : MonoSingleton<MonsterInput>
             }
         }
         healText.SetActive(false);
-        RaycastHit hit;
-        if (Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 1f, bedLayer))
+
+        if (healCooltime >= 180f && Monster.Instance.CurrentHp < Monster.Instance.MaxHp)
         {
-            healText.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
+            RaycastHit hit;
+            if (Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 1f, bedLayer))
             {
-                // 치료실 회복
-                GameManager.Instance.HealMonster();
+                healText.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    // 치료실 회복
+                    healCooltime = 0f;
+                    GameManager.Instance.HealMonster();
+                }
             }
         }
 
