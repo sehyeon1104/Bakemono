@@ -28,12 +28,13 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
             onGethit?.Invoke();
             currentHp -= damage;
             Debug.Log($"{damage}만큼 아프다");
-        }
-        BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
-        BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 2;
-        BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
 
-        BloodSprayEffect.Instance.BloodEffect.Play();
+            BloodSprayEffect.Instance.BloodEffect.transform.SetParent(gameObject.transform);
+            BloodSprayEffect.Instance.BloodEffect.transform.localPosition = Vector3.up * 2;
+            BloodSprayEffect.Instance.BloodEffect.transform.LookAt(damageDealer.transform);
+
+            BloodSprayEffect.Instance.BloodEffect.Play();
+        }
 
         //대충 적한테 맞았을 때 
     }
