@@ -16,6 +16,11 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField]
     private GameObject researcherFemalePrefab = null;
 
+    [SerializeField]
+    private GameObject undergroundLabo = null;
+    [SerializeField]
+    private GameObject undergroundLaboDoor = null;
+
     public List<Transform> researcherFemaleSpawnPos = new List<Transform>();
     public List<Transform> soldierSpawnPos = new List<Transform>();
     public List<Transform> researcherMaleSpawnPos = new List<Transform>();
@@ -42,6 +47,15 @@ public class GameManager : MonoSingleton<GameManager>
         }
 
         curDelay += Time.deltaTime;
+
+        if(Vector3.Distance(Monster.Instance.transform.position, undergroundLaboDoor.transform.position) > 5f)
+        {
+            undergroundLabo.SetActive(false);
+        }
+        else
+        {
+            undergroundLabo.SetActive(true);
+        }
     }
 
     public void HealMonster()
