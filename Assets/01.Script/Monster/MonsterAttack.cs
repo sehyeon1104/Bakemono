@@ -32,7 +32,9 @@ public class MonsterAttack : MonoBehaviour
     readonly int dieAniHash = Animator.StringToHash("Die");
     readonly int getHit = Animator.StringToHash("Damaged");
     readonly int isDie = Animator.StringToHash("isDie");
+    readonly int biteAttack = Animator.StringToHash("BiteAttack");
     bool isLeft = true;
+    IHittable agentHit;
     AnimatorStateInfo info;
     Transform imageTrans;
     [SerializeField] TextMeshProUGUI doorTrueText;
@@ -43,6 +45,8 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] AudioMixerGroup audioMix;
     [SerializeField] GameObject leftHand;
     [SerializeField] GameObject rightHand;
+    AI_Mob_Default a;
+    float timer = 0f;
     void Start()
     {
 
@@ -56,6 +60,7 @@ public class MonsterAttack : MonoBehaviour
 
     private void Update()
     {
+        timer += Time.deltaTime;
         if (!Monster.Instance.isDie)
         {
             Debug.DrawRay(Shootraytrans.position, Shootraytrans.forward * eatDistance, Color.red);
@@ -88,8 +93,10 @@ public class MonsterAttack : MonoBehaviour
             }
             if (Physics.Raycast(Shootraytrans.position, Shootraytrans.forward, out hit, eatDistance, 1 << LayerMask.NameToLayer("Enemy")))
             {
-                AI_Mob_Default a = hit.transform.GetComponent<AI_Mob_Default>();
-                if (a.CurrentHp / a.MaxHp < 0.3f)
+                if (hit.transform.GetComponent<AI_Mob_Default>().IsDie)
+                    return;
+                 a = hit.transform.GetComponent<AI_Mob_Default>();
+                if (a.CurrentHp / a.MaxHp < 0.3f && !a.IsDie)
                 {
                     if (isComplete)
                     {
@@ -98,11 +105,13 @@ public class MonsterAttack : MonoBehaviour
                     }
                     imageColor.DOColor(new Color(0.7f, 0, 0), changeTime);
 
-                    IHittable agenthit = hit.transform.GetComponent<IHittable>();
+                        agentHit = hit.transform.GetComponent<IHittable>();
                     if (Input.GetMouseButtonDown(1) && info.shortNameHash == IdleNameHash)
                     {
                         monsterAni.SetTrigger(BiteNameHash);
-
+                        Invoke("Eat", 0.4f);
+                        
+                     
                     }
                 }
             }
@@ -135,7 +144,12 @@ public class MonsterAttack : MonoBehaviour
             }
         }
     }
-
+  
+    public void Eat()
+    {
+        agentHit.GetHit(100,gameObject);
+        Monster.Instance.CurrentExp += a.exp;
+    }
     public void GetHitAni()
     {
         monsterAni.SetTrigger(getHit);

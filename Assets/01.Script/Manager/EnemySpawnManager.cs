@@ -46,9 +46,9 @@ public class EnemySpawnManager : MonoSingleton<EnemySpawnManager>
     #region MaleResearcher
     public void InstantiateMaleResearcher(Transform spawnPos)
     {
-        maleResearcherPool.Get();
-        maleResearcherPool.Get().transform.position = spawnPos.transform.position;
-        maleResearcherPool.Get().transform.SetParent(spawnPos);
+        AI_Mob_Doctor maleResearcher = maleResearcherPool.Get();
+        maleResearcher.transform.position = spawnPos.position;
+        maleResearcher.transform.SetParent(spawnPos);
     }
 
     private AI_Mob_Doctor CreateMaleResearcher()
@@ -78,9 +78,9 @@ public class EnemySpawnManager : MonoSingleton<EnemySpawnManager>
     #region FemaleResearcher
     public void InstantiateFemaleResearcher(Transform spawnPos)
     {
-        femaleResearcherPool.Get();
-        femaleResearcherPool.Get().transform.position = spawnPos.transform.position;
-        femaleResearcherPool.Get().transform.SetParent(spawnPos);
+        AI_Mob_Nurse femaleResearcher = femaleResearcherPool.Get();
+        femaleResearcher.transform.position = spawnPos.position;
+        femaleResearcher.transform.SetParent(spawnPos);
     }
 
     private AI_Mob_Nurse CreateFemaleResearcher()
@@ -110,9 +110,9 @@ public class EnemySpawnManager : MonoSingleton<EnemySpawnManager>
     #region Soldier
     public void InstantiateSoldier(Transform spawnPos)
     {
-        maleResearcherPool.Get();
-        maleResearcherPool.Get().transform.position = spawnPos.transform.position;
-        maleResearcherPool.Get().transform.SetParent(spawnPos);
+        AI_Mob_Soldier soldier = soldierPool.Get();
+        soldier.transform.position = spawnPos.position;
+        soldier.transform.SetParent(spawnPos);
     }
 
     private AI_Mob_Soldier CreateSoldier()
