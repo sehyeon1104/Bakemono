@@ -200,9 +200,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fc790000
-      m_LastClickedID: 31228
-      m_ExpandedIDs: 12fbffff187a0000787a00008e7a0000
+      m_SelectedIDs: c87b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 3284f0ff12fbffff187a0000787a00008e7a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 0
     width: 693.6
     height: 375.2
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 9}
   m_Panes:
   - {fileID: 8}
@@ -885,8 +885,8 @@ MonoBehaviour:
     y: 375.2
     width: 693.6
     height: 355.59998
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -959,22 +959,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/07.Asset
+    - Assets/00.Scene/TitleScene
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/07.Asset
+  - Assets/00.Scene/TitleScene
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\USER\Documents\Bakemono
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a27f0000
-    m_LastClickedID: 32674
-    m_ExpandedIDs: 000000006e7f0000707f0000727f0000747f0000767f0000787f00007a7f00007c7f00007e7f0000807f0000827f0000847f0000867f000000ca9a3b
+    m_SelectedIDs: 940a0400
+    m_LastClickedID: 264852
+    m_ExpandedIDs: 000000006e7f0000707f0000727f0000747f0000767f0000787f00007a7f00007c7f00007e7f0000807f0000827f0000847f0000867f0000947f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1027,9 +1027,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: fc790000
-    m_LastClickedInstanceID: 31228
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: c87b0000
+    m_LastClickedInstanceID: 31688
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: d4484400d8484400
     m_RenameOverlay:
       m_UserAcceptedRename: 0
