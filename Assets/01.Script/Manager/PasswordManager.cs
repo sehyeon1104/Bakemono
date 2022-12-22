@@ -91,6 +91,7 @@ public class PasswordManager : MonoSingleton<PasswordManager>
         }
 
         Debug.Log("Succeed!");
+        // 입력한 번호가 맞다면 isSucceed = true
         isSucceed = true;
         UIManager.Instance.TogglePasswordPanel(false);
         

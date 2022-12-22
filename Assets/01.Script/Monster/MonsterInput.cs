@@ -24,6 +24,7 @@ public class MonsterInput : MonoSingleton<MonsterInput>
     [SerializeField]
     private void Update()
     {
+        print(runValue);
         if (UIManager.Instance.isPause || Monster.Instance.isDie)
         {
             return;

@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class MonsterUI : MonoSingleton<MonsterUI>
 {
     public Slider audioSlider;
@@ -34,6 +34,7 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     }
     private void Start()
     {
+        LvText.DOFade(0, 0);
         AudioMixer.SetFloat("MyExposedParam", 0);
         MonsterMovement.Instance.mouseValue = 5;
     }
@@ -67,7 +68,7 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     }
     public void UIUpdate()
     {
-        LvText.text = $"LV {monster.CurrentLevel}";
+       
         hpText.text = $"{monster.CurrentHp / monster.MaxHp * 100}%";
         expText.text = $"{monster.CurrentExp / monster.LevelPerExp*100}%";
         hpBar.fillAmount = monster.CurrentHp / monster.MaxHp;
@@ -76,5 +77,10 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     public void FindEnemy()
     {
         skillImage.color = Color.red;
+    }
+    public void LevelUpEffect(int level)
+    {
+        LvText.text = $"<size=50%>LV</size>\n <color=#770000>{level}";
+        LvText.DOFade(1, 3).OnComplete(() => LvText.DOFade(0, 3));
     }
 }

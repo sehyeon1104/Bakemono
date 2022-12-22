@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Pool;
 
 public class EnemySpawnManager : MonoSingleton<EnemySpawnManager>
@@ -49,6 +50,7 @@ public class EnemySpawnManager : MonoSingleton<EnemySpawnManager>
         AI_Mob_Doctor maleResearcher = maleResearcherPool.Get();
         maleResearcher.transform.position = spawnPos.position;
         maleResearcher.transform.SetParent(spawnPos);
+        maleResearcher.GetComponent<NavMeshAgent>().enabled = true;
     }
 
     private AI_Mob_Doctor CreateMaleResearcher()
@@ -81,6 +83,7 @@ public class EnemySpawnManager : MonoSingleton<EnemySpawnManager>
         AI_Mob_Nurse femaleResearcher = femaleResearcherPool.Get();
         femaleResearcher.transform.position = spawnPos.position;
         femaleResearcher.transform.SetParent(spawnPos);
+        femaleResearcher.GetComponent<NavMeshAgent>().enabled = true;
     }
 
     private AI_Mob_Nurse CreateFemaleResearcher()
@@ -113,6 +116,7 @@ public class EnemySpawnManager : MonoSingleton<EnemySpawnManager>
         AI_Mob_Soldier soldier = soldierPool.Get();
         soldier.transform.position = spawnPos.position;
         soldier.transform.SetParent(spawnPos);
+        soldier.GetComponent<NavMeshAgent>().enabled = true;
     }
 
     private AI_Mob_Soldier CreateSoldier()

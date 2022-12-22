@@ -49,9 +49,9 @@ public class MonsterMovement : MonoSingleton<MonsterMovement> ,IAgentStat
     }
     public void MoveMonster(Vector3 moveInput)
     {
-        print(gravity);
         x = Mathf.Lerp(monsterAni.GetFloat(horizontal), moveInput.x, Time.deltaTime * animatoinSpeed);
         z = Mathf.Lerp(monsterAni.GetFloat(vertical), moveInput.z, Time.deltaTime * animatoinSpeed);
+       moveInput = moveInput.normalized;
         if (Mathf.Abs(x) < 0.0001f)
         {
             x = 0;
@@ -65,7 +65,8 @@ public class MonsterMovement : MonoSingleton<MonsterMovement> ,IAgentStat
 
         cashed_move.x = moveInput.x;
         cashed_move.z = moveInput.z;
-        monstercontroller.Move(transform.rotation*(cashed_move.normalized * Speed*Time.deltaTime * MonsterInput.Instance.runValue)); 
+        
+        monstercontroller.Move(transform.rotation*(cashed_move *Time.deltaTime * speed *MonsterInput.Instance.runValue)); 
         if (Input.GetKeyDown(KeyCode.Space)&&monstercontroller.isGrounded)
         {
             monsterAni.SetTrigger(jump);

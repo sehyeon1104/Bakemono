@@ -95,20 +95,26 @@ public class QuestManager : MonoSingleton<QuestManager>
         InstantiateResearcher(summonResearcherMaleCount, LaboratorMobSpawnPos);
         InstantiateSoldier(summonSoldierCount, LaboratorMobSpawnPos);
 
-        for (int i = 0; i < LaboratorMobSpawnPos.Length; ++i)
+        while (!isClear)
         {
-            if (LaboratorMobSpawnPos[i].childCount != 0)
+
+            for (int i = 0; i < LaboratorMobSpawnPos.Length; ++i)
             {
-                break;
+                if (LaboratorMobSpawnPos[i].childCount != 0)
+                {
+                    break;
+                }
+
+                if (i == LaboratorMobSpawnPos.Length - 1)
+                {
+                    isClear = true;
+                    doQuest = false;
+                }
             }
 
-            if (i == LaboratorMobSpawnPos.Length - 1)
-            {
-                isClear = true;
-                doQuest = false;
-            }
+            yield return new WaitForEndOfFrame();
         }
-        
+
         SaveManager.Instance.SaveToJson();
         UIManager.Instance.ToggleQuestUI(doQuest);
         yield break;
