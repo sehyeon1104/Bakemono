@@ -12,6 +12,8 @@ public class TitleSceneManager : MonoBehaviour
     private GameObject quitPanel = null;
     [SerializeField]
     private GameObject helpButton = null;
+    [SerializeField]
+    private GameObject bloodBorder = null;
 
     [Space]
     [Header("시작 연출")]
@@ -19,6 +21,8 @@ public class TitleSceneManager : MonoBehaviour
     private Animator monsterAnim;
     [SerializeField]
     private Camera mobCam;
+    [SerializeField]
+    private AudioSource mobSound;
 
     [Space]
     [Header("카메라 회전")]
@@ -62,6 +66,7 @@ public class TitleSceneManager : MonoBehaviour
         Fade.Instance.FadeIn(1.25f);
 
         monsterAnim.SetTrigger("Bite");
+        mobSound.Play();
 
         StartCoroutine(GameStartCoroutine());
     }
@@ -79,7 +84,11 @@ public class TitleSceneManager : MonoBehaviour
     {
         float timer = 0f;
         float retTime = Time.deltaTime * rotationSpeed;
-        while(timer < 1.3f)
+
+        yield return new WaitForSeconds(0.2f);
+        bloodBorder.SetActive(true);
+
+        while (timer < 1.1f)
         {
             timer += Time.deltaTime;
 
