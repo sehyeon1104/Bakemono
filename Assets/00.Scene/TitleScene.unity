@@ -3478,9 +3478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Game Title
-
-'
+  m_text: Taster
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 92db1675dd9a59540b24f411f2e960dc, type: 2}
   m_sharedMaterial: {fileID: 8335790564389648535, guid: 92db1675dd9a59540b24f411f2e960dc, type: 2}

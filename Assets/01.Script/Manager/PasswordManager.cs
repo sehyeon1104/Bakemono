@@ -13,6 +13,7 @@ public class PasswordManager : MonoSingleton<PasswordManager>
     public TMP_FontAsset fontAsset;
     public PlayableDirector opendoor;
     public PlayableAsset a;
+    public Animation sa;
     public string password { private set; get; } = "";
     [SerializeField]
     private TextMeshProUGUI[] inputPasswords;
@@ -25,7 +26,8 @@ public class PasswordManager : MonoSingleton<PasswordManager>
 
     private void Start()
     {
-      
+
+        opendoor.Play();
         if (SaveManager.Instance.CurrentUser.password == "")
         {
             Debug.Log("패스워드 없음");
@@ -96,6 +98,7 @@ public class PasswordManager : MonoSingleton<PasswordManager>
         isSucceed = true;
         opendoor.playableAsset = a;
         opendoor.Play();
+
         UIManager.Instance.TogglePasswordPanel(false);
         
     }
