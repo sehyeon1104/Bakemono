@@ -46,7 +46,7 @@ public class MonsterInput : MonoSingleton<MonsterInput>
             runValue = 1;
         }
 
-        if(healCooltime <= 180f)
+        if(healCooltime <= 60f)
             healCooltime += Time.deltaTime;
 
         MonsterMove();
@@ -74,7 +74,7 @@ public class MonsterInput : MonoSingleton<MonsterInput>
         }
         healText.SetActive(false);
 
-        if (healCooltime >= 180f && Monster.Instance.CurrentHp < Monster.Instance.MaxHp)
+        if (healCooltime >= 60f && Monster.Instance.CurrentHp < Monster.Instance.MaxHp)
         {
             RaycastHit hit;
             if (Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 1f, bedLayer))

@@ -60,7 +60,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void HealMonster()
     {
-        if(curDelay < 180f)
+        if(curDelay < 60)
         {
             return;
         }
