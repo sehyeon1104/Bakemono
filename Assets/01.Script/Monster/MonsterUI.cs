@@ -9,7 +9,6 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     public Slider mouseSlider;
     [SerializeField]
     AudioMixer AudioMixer;
-    Monster monster;
     [SerializeField]
      Image hpBar;
     [SerializeField]
@@ -30,7 +29,6 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     private void Awake()
     {
         monsterAni = GetComponent<Animator>();
-        monster = GetComponent<Monster>();
     }
     private void Start()
     {
@@ -68,11 +66,10 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     }
     public void UIUpdate()
     {
-       
-        hpText.text = $"{monster.CurrentHp / monster.MaxHp * 100}%";
-        expText.text = $"{monster.CurrentExp / monster.LevelPerExp*100}%";
-        hpBar.fillAmount = monster.CurrentHp / monster.MaxHp;
-        expBar.fillAmount = monster.CurrentExp / monster.LevelPerExp;
+        hpText.text = $"{Monster.Instance.CurrentHp / Monster.Instance.MaxHp * 100}%";
+        expText.text = $"{Monster.Instance.CurrentExp / Monster.Instance.LevelPerExp*100}%";
+        hpBar.fillAmount = Monster.Instance.CurrentHp / Monster.Instance.MaxHp;
+        expBar.fillAmount = Monster.Instance.CurrentExp / Monster.Instance.LevelPerExp;
     }
     public void FindEnemy()
     {

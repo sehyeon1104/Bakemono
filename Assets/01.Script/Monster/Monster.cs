@@ -10,10 +10,10 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     int  level = 1;
    public bool isDie = false;
     //public PlayerBase playerBase;
-    float maxHp = 100;
+    float maxHp = 100f;
     [SerializeField]
     [Range(0, 100)]
-    float currentHp = 100;
+    float currentHp = 100f;
     public bool activeDoorOpen = true;
     public float damage = 30f;
 
@@ -60,6 +60,10 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
             {
                 currentHp = maxHp;
             }
+            if(currentHp < 0)
+            {
+                currentHp = 0;
+            }
 
         }
 
@@ -76,16 +80,17 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
     public float Speed { get; set; }
     public float MaxHp { get => maxHp;  set => maxHp =value; }
 
-    //void Awake()
-    //{
-    //    playerBase = new PlayerBase();
-    //}
+    void Awake()
+    {
+        CurrentHp = 100f;
+        MaxHp = 100f;
+    }
 
     private void Update()
     {
         //print(currentHp);
-        currentHp = Mathf.Clamp(currentHp, 0, MaxHp);
-        if(!isDie&&currentHp==0)
+        //currentHp = Mathf.Clamp(currentHp, 0, MaxHp);
+        if (!isDie && SaveManager.Instance.CurrentUser.hp == 0)
         {
             isDie = true;
             onDie?.Invoke();
@@ -95,6 +100,7 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
 
     void LateUpdate()
     {
+
         if (currentExp >= levelPerExp)
         {
             level++;

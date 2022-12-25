@@ -23,7 +23,10 @@ public class SaveManager : MonoSingleton<SaveManager>
             Directory.CreateDirectory(SAVE_PATH);
             File.WriteAllText(SAVE_PATH + SAVE_FILENAME, JsonUtility.ToJson(new User()), System.Text.Encoding.UTF8);
         }
-        LoadFromJson();
+        else
+        {
+            LoadFromJson();
+        }
     }
 
     private void Start()
@@ -64,13 +67,27 @@ public class SaveManager : MonoSingleton<SaveManager>
 
     public void SavePlayerStat()
     {
+        CurrentUser.maxHp = Monster.Instance.MaxHp;
         CurrentUser.hp = Monster.Instance.CurrentHp;
         CurrentUser.experience = Monster.Instance.CurrentExp;
         CurrentUser.level = Monster.Instance.CurrentLevel;
+
+        if(CurrentUser.hp == 0)
+        {
+            InitPlayerStat();
+        }
+    }
+
+    public void InitPlayerStat()
+    {
+        CurrentUser.hp = 100;
+        CurrentUser.maxHp = 100;
+        CurrentUser.experience = 0;
     }
 
     public void LoadPlayerStat()
     {
+        Monster.Instance.MaxHp = CurrentUser.maxHp;
         Monster.Instance.CurrentHp = CurrentUser.hp;
         Monster.Instance.CurrentExp = CurrentUser.experience;
         Monster.Instance.CurrentLevel = CurrentUser.level;

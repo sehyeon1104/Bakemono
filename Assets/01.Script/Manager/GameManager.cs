@@ -29,6 +29,9 @@ public class GameManager : MonoSingleton<GameManager>
     {
         MouseManager.Lock(true);
         MouseManager.Visible(true);
+
+        Monster.Instance.CurrentHp = 100f;
+        Monster.Instance.MaxHp = 100f;
     }
 
     private void Start()
@@ -60,7 +63,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void HealMonster()
     {
-        if(curDelay < 60)
+        if(curDelay < 60f)
         {
             return;
         }
