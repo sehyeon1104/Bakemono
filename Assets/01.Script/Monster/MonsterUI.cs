@@ -66,8 +66,8 @@ public class MonsterUI : MonoSingleton<MonsterUI>
     }
     public void UIUpdate()
     {
-        hpText.text = $"{Monster.Instance.CurrentHp / Monster.Instance.MaxHp * 100}%";
-        expText.text = $"{Monster.Instance.CurrentExp / Monster.Instance.LevelPerExp*100}%";
+        hpText.text = $"{(Monster.Instance.CurrentHp / Monster.Instance.MaxHp * 100):F0}%";
+        expText.text = $"{(Monster.Instance.CurrentExp / Monster.Instance.LevelPerExp*100):F0}%";
         hpBar.fillAmount = Monster.Instance.CurrentHp / Monster.Instance.MaxHp;
         expBar.fillAmount = Monster.Instance.CurrentExp / Monster.Instance.LevelPerExp;
     }

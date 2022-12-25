@@ -126,7 +126,11 @@ public class Monster : MonoSingleton<Monster>, IHittable, IAgentStat
 
     public void Levelactive(int level)
     {
-        maxHp *=  (1f+level/80);
+        float temp = MaxHp;
+        MaxHp += 1; //(1f+level/80);
+        CurrentHp += MaxHp - temp;
+        Debug.Log($"MaxHP : {MaxHp}");
+        Debug.Log($"CurrentHp : {CurrentHp}");
         damage *= (1f + level / 80);
         levelPerExp = level*2+level ;
         if (level == 5)
